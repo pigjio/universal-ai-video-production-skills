@@ -38,7 +38,28 @@
 
 ## 快速开始
 
-### 1. 获取仓库
+### 在 Codex 中安装（推荐）
+
+最简单的方法是不手动下载文件，直接把 GitHub 链接交给 Codex。复制下面整段文字，新建一个 Codex 任务并粘贴发送：
+
+```text
+请使用 $skill-installer 从这个 GitHub 仓库安装全部 Skills：
+https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
+
+请安装仓库 skills/ 目录下的全部十个 Skill，保留每个 Skill 的 references、scripts、assets 等配套资源。安装完成后，请列出成功安装的 Skill；如果当前账户无法访问这个私有仓库，请先提示我登录或授权 GitHub，不要改用来源不明的副本。
+```
+
+然后按 Codex 的提示完成 GitHub 登录或授权。安装完成后，通常可以立即使用；如果新 Skill 没有出现在 Codex 中，请重启 Codex 再检查。
+
+后续可直接用自然语言开始，不需要记住 Skill 名，例如：
+
+```text
+我是第一次使用这套 AI 影像制作 Skills。我只有一个模糊想法，请一次只带我完成一个小目标；我不知道时给我容易比较的选项。
+```
+
+Codex 官方说明：[`$skill-installer` 可以从其他仓库下载 Skills](https://developers.openai.com/codex/skills#install-curated-skills-for-local-use)。
+
+### 手动获取并作为项目使用
 
 ```bash
 git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
@@ -47,7 +68,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 这是私有仓库时，需要使用具备访问权限的 GitHub 账户。
 
-### 2. 在 Agent 中打开仓库
+### 在 Agent 中打开仓库
 
 - **Codex / Hermes 及兼容 Agent**：打开仓库根目录；入口规则位于 [`AGENTS.md`](AGENTS.md)。
 - **Claude Code**：打开仓库根目录；入口规则位于 [`CLAUDE.md`](CLAUDE.md)。
@@ -55,7 +76,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 无需手动选择 Skill。总控会根据任务加载最小必要的领域方法。
 
-### 3. 用自然语言开始
+### 用自然语言开始
 
 可以直接复制：
 
@@ -75,7 +96,7 @@ cd universal-ai-video-production-skills-v0.5.0
 这是角色参考图和生成结果。请先判断身份漂移发生在哪里，再给最小修复方案。
 ```
 
-### 4. 确认并保存阶段成果
+### 确认并保存阶段成果
 
 阶段成果成熟后，Agent 会让你选择：**确认并保存、确认但暂不保存、继续修改**。需要保存时可说：
 
@@ -91,7 +112,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 阶段成果默认按 `名称_vNNN.md` 保存。完整保存还包括回读主文件、更新并回读项目索引和会话交接。
 
-### 5. 下次继续
+### 下次继续
 
 在新会话中说：
 
@@ -174,4 +195,3 @@ python evals/validate_package.py .
 ## 验证边界
 
 0.5.0 已建立结构化工作流、静态检查和部分 Agent 行为证据，但这不代表所有模型、平台入口、随机种子、艺术风格和真实用户路径都已验证。平台能力会变化；涉及模型时长、素材数量、声音或编辑能力的结论，应记录来源、模型、入口和核验日期。
-

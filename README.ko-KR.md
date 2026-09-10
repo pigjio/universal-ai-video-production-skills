@@ -38,7 +38,28 @@ AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 창작 �
 
 ## 빠른 시작
 
-### 1. 저장소 받기
+### Codex에서 설치하기 (권장)
+
+파일을 직접 내려받지 않고 GitHub 링크를 Codex에 전달하는 방법이 가장 간단합니다. 아래 내용을 전부 복사하여 새 Codex 작업에 붙여 넣고 전송하세요.
+
+```text
+$skill-installer를 사용하여 다음 GitHub 저장소의 모든 Skills를 설치해 주세요.
+https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
+
+저장소의 skills/ 디렉터리에 있는 10개의 Skill을 모두 설치하고, 각 Skill의 references, scripts, assets 등 관련 리소스도 함께 유지해 주세요. 설치가 끝나면 성공적으로 설치된 Skill 목록을 보여 주세요. 현재 계정으로 이 비공개 저장소에 접근할 수 없다면 출처가 불분명한 복사본을 사용하지 말고, 먼저 GitHub 로그인 또는 권한 승인이 필요하다고 알려 주세요.
+```
+
+이후 Codex 안내에 따라 GitHub 로그인 또는 권한 승인을 완료합니다. 설치된 Skills는 일반적으로 바로 인식됩니다. 새 Skill이 Codex에 표시되지 않으면 Codex를 재시작한 뒤 다시 확인하세요.
+
+설치 후에는 Skill 이름을 외우지 않고 자연어로 바로 시작할 수 있습니다.
+
+```text
+이 AI 영상 제작 Skills를 처음 사용합니다. 지금은 막연한 아이디어만 있습니다. 한 번에 작은 목표 하나씩 진행해 주세요. 제가 모르겠다고 하면 쉽게 비교할 수 있는 선택지를 제안해 주세요.
+```
+
+Codex 공식 안내: [`$skill-installer`로 다른 저장소에서 Skills를 다운로드할 수 있습니다](https://developers.openai.com/codex/skills#install-curated-skills-for-local-use).
+
+### 수동으로 저장소를 받아 프로젝트로 사용하기
 
 ```bash
 git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
@@ -47,7 +68,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 비공개 저장소인 경우 접근 권한이 있는 GitHub 계정이 필요합니다.
 
-### 2. Agent에서 저장소 열기
+### Agent에서 저장소 열기
 
 - **Codex / Hermes 및 호환 Agent**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`AGENTS.md`](AGENTS.md)에 있습니다.
 - **Claude Code**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`CLAUDE.md`](CLAUDE.md)에 있습니다.
@@ -55,7 +76,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 사용자가 Skill을 직접 고를 필요는 없습니다. 라우터가 현재 작업에 필요한 최소한의 전문 방법을 선택합니다.
 
-### 3. 자연어로 시작하기
+### 자연어로 시작하기
 
 다음 문장을 그대로 사용할 수 있습니다.
 
@@ -75,7 +96,7 @@ cd universal-ai-video-production-skills-v0.5.0
 캐릭터 레퍼런스와 생성 결과입니다. 먼저 정체성 드리프트가 어디에서 발생했는지 판단하고 최소 수정안을 제시해 주세요.
 ```
 
-### 4. 단계 산출물 확정 및 저장
+### 단계 산출물 확정 및 저장
 
 단계 산출물이 충분히 완성되면 Agent는 **확정 후 저장 / 확정하되 지금은 저장하지 않기 / 계속 수정** 중 하나를 선택하도록 안내합니다. 저장하려면 다음처럼 말할 수 있습니다.
 
@@ -91,7 +112,7 @@ cd universal-ai-video-production-skills-v0.5.0
 
 단계 산출물은 기본적으로 `이름_vNNN.md` 형식으로 저장됩니다. 완전한 저장 작업에는 본문 파일 재확인, 프로젝트 인덱스와 세션 인계 문서 업데이트 및 재확인이 포함됩니다.
 
-### 5. 다음 세션에서 이어가기
+### 다음 세션에서 이어가기
 
 새 대화에서 다음과 같이 요청합니다.
 
@@ -174,4 +195,3 @@ python evals/validate_package.py .
 ## 검증 범위
 
 0.5.0은 구조화된 워크플로, 정적 검사, 일부 Agent 행동 증거를 갖추고 있지만 모든 모델, 플랫폼 진입점, 랜덤 시드, 예술 스타일, 실제 사용자 경로가 검증되었다는 뜻은 아닙니다. 플랫폼 기능은 바뀔 수 있으므로 모델 길이, 소재 수, 음향 또는 편집 기능에 관한 판단에는 출처, 모델, 진입점, 확인 날짜를 기록해야 합니다.
-
