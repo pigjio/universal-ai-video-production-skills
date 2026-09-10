@@ -1,0 +1,608 @@
+[
+  {
+    "artifact_id": "SCENE-window",
+    "version": "v1",
+    "artifact_type": "scene",
+    "creative_mode": "perceptual",
+    "subject_type": "environment-led",
+    "lifecycle_status": "candidate",
+    "production_status": "not_applicable",
+    "approval_level": "none",
+    "upstream_versions": {},
+    "confirmed_evidence": [
+      "U1"
+    ],
+    "open_questions": [
+      "布局光源风向提案待用户采纳",
+      "画幅与物理尺度未定"
+    ],
+    "recheck_trigger": [
+      "基准或机位改变",
+      "新参考加入"
+    ],
+    "next_action": "review_scene_proposal",
+    "payload": {
+      "character": null,
+      "character_fields": "不适用",
+      "function": "观察布帘遮挡光面由闭到开再闭的变化",
+      "first_read": "暗墙衬出的浅灰下垂布帘",
+      "second_read": "布边抬起后露出的窗洞亮面与破损窗框",
+      "world_premise": "普通受风房间；破损为既定起态，不补灾难史",
+      "world_evidence": [
+        "墙面剥落、窗框缺损为设计线索，不是已观察事实"
+      ],
+      "space": {
+        "boundaries": [
+          "背墙及其窗洞",
+          "地面",
+          "两侧墙的局部边缘"
+        ],
+        "entry_exit": [
+          "气流由窗洞进入室内；门及人物通道在取景外，不设计人物路线"
+        ],
+        "landmark_chain": [
+          "暗地面前景",
+          "中景帘布及窗框",
+          "远景窗外亮面"
+        ],
+        "support_surfaces": [
+          "帘布上沿固定在窗洞上方横杆",
+          "地面承托少量静止碎屑"
+        ],
+        "scale_reference": "以窗洞为相对标尺；绝对尺寸未知",
+        "action_or_motion_envelope": [
+          "起态垂落",
+          "极值向室内鼓起且下缘抬高",
+          "回落接近起态；全程不脱杆、不穿框、不碰地面碎屑"
+        ]
+      },
+      "camera": {
+        "position": "室内固定平视中宽景",
+        "direction": "略斜对窗洞且完整包含横杆和下缘",
+        "aspect_ratio": null,
+        "visual_flow": "布边→露出亮面→回落布边"
+      },
+      "neutral_combination_test": {
+        "method": "文字结构预检；后续用中性布体占位检查起态、最大摆幅、终态",
+        "evidence": [],
+        "result": "pending"
+      },
+      "light_key": {
+        "source": "窗外漫射天光提案",
+        "direction": "从窗洞入室",
+        "area_and_falloff": "窗洞面积光源向室内衰减",
+        "fill": "暗弱墙面反射",
+        "shadow": "与布帘遮挡同步的柔边投影"
+      },
+      "look": {
+        "value": "暗墙地面/中灰布料/亮窗外",
+        "color": "全程黑白",
+        "materials": [
+          "哑光薄布轻微透光",
+          "粗糙剥落墙面",
+          "粗糙破损窗框"
+        ],
+        "weather": "仅提案一阵减弱气流，不新增雨雪"
+      },
+      "baseline_state": "黑白破损无人房间；没有完好彩色前置母版",
+      "variant_delta": {
+        "keep": [
+          "墙框破损与地标",
+          "黑白",
+          "无角色",
+          "机位"
+        ],
+        "change": [
+          "布形与遮光范围随时间变化"
+        ],
+        "add": [],
+        "remove": []
+      },
+      "assets": [
+        "窗帘为Hero及Dynamic",
+        "窗框墙面为Supporting",
+        "静止少量碎屑为Fill；均仅文本定义"
+      ],
+      "handoff": {
+        "recipient": "观看卡与外部执行者",
+        "invariants": [
+          "固定地标和悬挂点",
+          "全程保留摆幅空间"
+        ],
+        "variables": [
+          "未定画幅由用户核验后选定"
+        ],
+        "unresolved": [
+          "碰撞与尺度需占位验证",
+          "不保证无参考的精确拓扑复现"
+        ]
+      },
+      "quality_check": {
+        "result": "pending",
+        "reasons": [
+          "只有文字预检；未做灰盒动画、缩略图、静音单帧、裁切或风格融合实测"
+        ]
+      }
+    }
+  },
+  {
+    "artifact_id": "SHOT-window",
+    "version": "v1",
+    "artifact_type": "storyboard",
+    "creative_mode": "perceptual",
+    "subject_type": "environment-led",
+    "lifecycle_status": "candidate",
+    "production_status": "not_applicable",
+    "approval_level": "none",
+    "upstream_versions": {
+      "SCENE-window": "v1"
+    },
+    "confirmed_evidence": [
+      "U1"
+    ],
+    "open_questions": [
+      "导演秒数及画幅未定",
+      "节奏需实际预演核验"
+    ],
+    "recheck_trigger": [
+      "SCENE-window改版",
+      "动作或取景改变"
+    ],
+    "next_action": "assemble_prompt",
+    "payload": {
+      "character": null,
+      "character_goal_reaction_decision": "不适用",
+      "viewing_task": "完整读出一次掀开—露亮—回落，不靠切镜证明动作",
+      "first_second_read": "先辨垂帘与窗框；再追布边及亮面增减",
+      "camera": "固定平视中宽景、略斜对窗；横杆、布下缘及最大鼓起范围保持入画",
+      "state_chain": [
+        "垂帘遮窗、短暂建立空间",
+        "气流从窗洞入室、布体鼓起下缘抬高",
+        "亮面逐渐露出且悬挂点不动",
+        "气流减弱、布体回摆下落",
+        "接近初始下垂且余摆衰减、遮光恢复"
+      ],
+      "pacing": "先读起态，再连续显示极值及回落，终态留可辨观察余量；不虚填秒数",
+      "completion_criteria": [
+        "起中终态连续可读",
+        "悬挂不脱落且无穿透",
+        "布边不出画",
+        "窗墙几何稳定",
+        "黑白破损无人固定镜头不变"
+      ],
+      "sound_requirement": null,
+      "sound_scope": "用户未要求声音，暂不作为本任务验收项；不声称静音或音轨已通过",
+      "cut_condition": "余摆衰减且回落可确认后结束；无后续镜头",
+      "next_segment_interface": null,
+      "verification": "文本观看谱；未绘制或播放Animatic"
+    }
+  },
+  {
+    "artifact_id": "PROMPT-window",
+    "version": "v1",
+    "artifact_type": "prompt",
+    "creative_mode": "perceptual",
+    "subject_type": "environment-led",
+    "lifecycle_status": "candidate",
+    "production_status": "not_applicable",
+    "approval_level": "none",
+    "upstream_versions": {
+      "SCENE-window": "v1",
+      "SHOT-window": "v1"
+    },
+    "confirmed_evidence": [
+      "U1"
+    ],
+    "open_questions": [
+      "平台模型参数未核验",
+      "提案待用户采纳"
+    ],
+    "recheck_trigger": [
+      "上游改版",
+      "实际平台限制与合同冲突"
+    ],
+    "next_action": "handoff_to_external_executor",
+    "payload": {
+      "character": null,
+      "contract_type": "temporal-video",
+      "operation": "create",
+      "target_goal": "固定观看破损房间窗帘一次掀开回落的遮光变化",
+      "units": {
+        "shot_ids": [
+          "SHOT-window"
+        ],
+        "edit_unit_ids": [
+          "EDIT-window"
+        ],
+        "request_id": "REQ-window"
+      },
+      "reference_duties": [],
+      "reference_scope": "从一开始即为无参考图纯文字方案，不是替换缺失母版；不承诺图像身份继承",
+      "capability_evidence": [],
+      "submission_layer": {
+        "platform": null,
+        "model": null,
+        "parameters": {
+          "duration": null,
+          "aspect_ratio": null,
+          "resolution": null,
+          "seed": null,
+          "audio": null
+        },
+        "complete_required_context": "下列positive_prompt是完整拟提交文本，不依赖本地文件、ID或历史会话",
+        "positive_prompt": "制作一个连续的黑白环境观察视频，只有一间本来已经破损的无人房间。 室内固定平视中宽景，略斜对背墙窗洞；全程机位、焦距和取景保持不变，不切镜。 画面包括暗地面前景、剥落灰墙、局部缺损窗框、窗洞上方横杆及悬挂其上的浅灰哑光薄布帘，窗外为漫射亮面。 窗帘上沿始终固定在横杆，完整布体下缘与最大鼓起范围留在画面内，周围留足不碰墙框及地面碎屑的空间。 开始布帘自然下垂遮住窗洞，先让窗框和布边关系清晰可读。 随后一阵气流由窗洞向室内吹入，布料连续向室内鼓起，下缘随之抬高，窗外亮面沿布边逐渐露出；布料保持连贯柔软褶皱和轻微透光，不变成硬板。 达到清晰可辨的掀开极值后气流减弱，布帘在重力下连续回摆下落，重新遮住窗洞，最后接近初始下垂，余摆逐渐衰减，保留足以看清回落结果的结束段。 漫射天光由窗洞进入室内，暗墙、中灰布与亮窗外分层，柔边投影随遮挡变化而非全画面曝光闪烁。 窗墙地面和少量静止碎屑的位置与破损程度全程稳定，不修复成新房，不转彩色。 不出现人物、动物、文字或新增事件；布料不得脱离横杆、穿透窗框、突然瞬移或在回落前截断。",
+        "actual_uploaded_assets": [],
+        "planned_but_not_uploaded": [],
+        "verified_context_inheritance": []
+      },
+      "temporal_fields": {
+        "state_chain": [
+          "下垂",
+          "入室气流使布鼓起抬边",
+          "露亮极值",
+          "风弱回落",
+          "余摆衰减"
+        ],
+        "camera": "固定",
+        "audio_requirement": null
+      },
+      "completion_criteria": [
+        "完整掀开回落",
+        "支撑与空间稳定",
+        "黑白破损无人",
+        "不裁断极值及终态"
+      ],
+      "high_risk_constraints": [
+        "布边出画或穿框",
+        "以曝光闪烁替代遮光",
+        "破损基准被修复"
+      ],
+      "next_segment_interface": null,
+      "blocked_reason": "平台可执行参数待外部核验；Agent不具提交权限",
+      "human_decision": "pending",
+      "human_decision_evidence": null
+    }
+  },
+  {
+    "artifact_id": "CLIP-window",
+    "version": "v1",
+    "artifact_type": "clip",
+    "creative_mode": "perceptual",
+    "subject_type": "environment-led",
+    "lifecycle_status": "candidate",
+    "production_status": "awaiting_external_generation",
+    "approval_level": "none",
+    "upstream_versions": {
+      "PROMPT-window": "v1"
+    },
+    "confirmed_evidence": [
+      "U1"
+    ],
+    "open_questions": [
+      "外部平台与模型未知",
+      "窗口画幅输出获取和费用规则待用户核验"
+    ],
+    "recheck_trigger": [
+      "合同换版",
+      "平台能力已核验",
+      "外部回传到达"
+    ],
+    "next_action": "request_external_result",
+    "payload": {
+      "profile": "general",
+      "character": null,
+      "authorized_actions": [
+        "prepare_handoff",
+        "save_requested_records"
+      ],
+      "prohibited_agent_actions": [
+        "upload",
+        "submit",
+        "pay"
+      ],
+      "authorization_evidence": "U1明确选择用户外部执行且禁止Agent提交花钱",
+      "external_executor": "用户",
+      "shot_ids": [
+        "SHOT-window"
+      ],
+      "generation_request_id": "REQ-window",
+      "edit_units": [
+        {
+          "edit_unit_id": "EDIT-window",
+          "source_request_id": "REQ-window",
+          "planned_in_out": "保留起态至余摆衰减的完整段，秒点待原片",
+          "actual_in_out": null
+        }
+      ],
+      "director_duration_target": null,
+      "requested_window": null,
+      "actual_output_duration": null,
+      "actual_used_duration": null,
+      "capability_checks": [
+        {
+          "capabilities": [
+            "文生视频",
+            "窗口",
+            "画幅分辨率",
+            "字数限制",
+            "参考槽位",
+            "首尾帧续接",
+            "多镜头",
+            "种子",
+            "音频",
+            "费用",
+            "输出下载"
+          ],
+          "status": "unknown",
+          "source": null,
+          "checked_at": null,
+          "model": null,
+          "project_tested": false
+        }
+      ],
+      "request_strategy": "候选单请求覆盖单镜完整变化；平台不支持时先回看窗口与状态边界，不擅删回落或拆出新剧情",
+      "complete_submission_text_ref": "PROMPT-window:v1.payload.submission_layer.positive_prompt（本文件已完整展开，复制该全文，不复制此ID短语）",
+      "reference_duties": [],
+      "planned_but_not_uploaded": [],
+      "actual_uploaded_assets": [],
+      "actual_submission_snapshot": null,
+      "platform_model_parameters": {
+        "platform": null,
+        "model": null,
+        "parameters": null
+      },
+      "returned_task_id": null,
+      "returned_output_id": null,
+      "result_file": null,
+      "baseline": null,
+      "first_return_baseline": null,
+      "accepted_baseline": null,
+      "human_decision": "pending",
+      "human_decision_evidence": null,
+      "return_checklist": [
+        "用户先采纳提案并核验平台能力及自身费用授权",
+        "保存实际完整提交文本及所有修改",
+        "回传模型版本参数和任务输出ID",
+        "回传可访问原片及实际时长音轨信息",
+        "无上传时记无上传否则附真实回执",
+        "失败时回传错误及受理情况"
+      ]
+    }
+  },
+  {
+    "artifact_id": "REVIEW-missing",
+    "version": "v1",
+    "artifact_type": "review",
+    "creative_mode": null,
+    "subject_type": null,
+    "lifecycle_status": "draft",
+    "production_status": "not_applicable",
+    "approval_level": "none",
+    "upstream_versions": {},
+    "confirmed_evidence": [],
+    "open_questions": [
+      "缺媒体及其ID版本",
+      "缺创作模式与主体类型",
+      "缺动作声音验收要求",
+      "缺实际输入记录及真实人工裁决"
+    ],
+    "recheck_trigger": [
+      "补齐媒体与模式",
+      "提供明确裁决证据"
+    ],
+    "next_action": "request_evidence",
+    "payload": {
+      "record_completeness": "incomplete",
+      "character": null,
+      "character_applicability": "未知，不代表无人或不适用",
+      "result_artifact": null,
+      "actual_input_record": null,
+      "requirement_refs": [
+        "U2要求确认动作声音并写人工批准；该请求不是看过结果后的批准证据"
+      ],
+      "observation_scope": {
+        "visual": "not_observed",
+        "intervals": [],
+        "audio": "not_checked",
+        "method": "text_intake_only"
+      },
+      "evidence_index": [],
+      "facts_observed": [],
+      "review_matrix": [
+        {
+          "id": "action",
+          "applicable": true,
+          "requirement": "具体动作标准未知，用户请求检查",
+          "evidence": [],
+          "scope": "无媒体无时间码",
+          "item_status": "unconfirmable"
+        },
+        {
+          "id": "sound",
+          "applicable": true,
+          "requirement": "具体声音标准未知，用户请求检查",
+          "evidence": [],
+          "scope": "未听取音轨",
+          "item_status": "unconfirmable"
+        },
+        {
+          "id": "identity",
+          "applicable": null,
+          "requirement": null,
+          "evidence": [],
+          "scope": "主体未知",
+          "item_status": "unconfirmable"
+        }
+      ],
+      "symptoms": [],
+      "competing_root_causes": [],
+      "minimal_tests": [],
+      "repair": {
+        "responsible_layer": "undetermined",
+        "allowed_changes": [],
+        "execution_status": "not_started"
+      },
+      "human_decision": "pending",
+      "human_decision_evidence": null,
+      "handoff": {
+        "recipient": "用户",
+        "required_inputs": [
+          "带ID版本的可访问完整原片与音轨",
+          "模式主体及动作声音标准",
+          "实际提交记录"
+        ],
+        "acceptance_conditions": [
+          "明确实际观察区间与听音方式",
+          "定位证据后再判",
+          "人工裁决须有明确对象范围及来源"
+        ]
+      }
+    }
+  },
+  {
+    "artifact_id": "REVIEW-impact-CHR-a",
+    "version": "v1",
+    "artifact_type": "review",
+    "creative_mode": "narrative",
+    "subject_type": "character-led",
+    "lifecycle_status": "draft",
+    "production_status": "not_applicable",
+    "approval_level": "none",
+    "upstream_versions": {
+      "CHR-a": "v2",
+      "SHOT-a": "v1",
+      "PROMPT-a": "v1",
+      "CLIP-a": "v1",
+      "REVIEW-a": "v1",
+      "SCENE-empty": "v1"
+    },
+    "confirmed_evidence": [
+      "U3"
+    ],
+    "open_questions": [
+      "原消费者完整头与批准历史未提供",
+      "头轮廓具体几何差量未知",
+      "新版可见性需逐项重审"
+    ],
+    "recheck_trigger": [
+      "取得原记录",
+      "完成按拓扑顺序复核",
+      "依赖或轮廓再次改变"
+    ],
+    "next_action": "apply_guarded_patches_to_fixture_records",
+    "payload": {
+      "record_completeness": "incomplete",
+      "fixture_only": true,
+      "media_observed": false,
+      "change": {
+        "artifact_id": "CHR-a",
+        "from": "v1",
+        "to": "v2",
+        "field": "头轮廓",
+        "confirmation": "U3已确认此变更",
+        "old_geometry": null,
+        "new_geometry": null
+      },
+      "scope": "当前确认仅涉及CHR-a轮廓变更，不代表消费者通过或本报告已获人工批准",
+      "patch_kind": "guarded_difference_patch",
+      "apply_policy": [
+        "本报告引用CHR-a:v2用于影响检查，不替换任何消费者原依赖",
+        "读取目标v1原记录并校验下列旧依赖；不符则暂停，禁止猜原头",
+        "原产物及原证据先完整归档；既有payload.approval_history原样保留",
+        "取消当前批准前，将原approval_level及其真实确认依据、适用版本追加到payload.approval_history；若无当前批准无需编造事件，未知历史不得填空覆盖",
+        "仅合并set字段并追加复核原因；其他原字段保留，不用null覆盖未知值"
+      ],
+      "patches": [
+        {
+          "target": "SHOT-a:v1",
+          "guard_upstream_versions": {
+            "CHR-a": "v1"
+          },
+          "set": {
+            "lifecycle_status": "needs_recheck",
+            "approval_level": "none"
+          },
+          "append_recheck_reason": "直接依赖旧头轮廓；构图剪影遮挡与身份可读性需重审",
+          "preserve": [
+            "upstream_versions",
+            "production_status",
+            "历史记录与证据"
+          ]
+        },
+        {
+          "target": "PROMPT-a:v1",
+          "guard_upstream_versions": {
+            "SHOT-a": "v1"
+          },
+          "set": {
+            "lifecycle_status": "needs_recheck",
+            "approval_level": "none"
+          },
+          "append_recheck_reason": "经SHOT-a传递影响；身份描述与实际绑定范围需重审",
+          "preserve": [
+            "upstream_versions",
+            "production_status",
+            "历史记录与证据"
+          ]
+        },
+        {
+          "target": "CLIP-a:v1",
+          "guard_upstream_versions": {
+            "PROMPT-a": "v1"
+          },
+          "guard_production_status": "generated",
+          "set": {
+            "lifecycle_status": "needs_recheck",
+            "approval_level": "none"
+          },
+          "append_recheck_reason": "经PROMPT-a传递影响；旧片不能自动代表新轮廓合格",
+          "preserve": [
+            "upstream_versions",
+            "production_status=generated",
+            "原结果引用",
+            "历史记录与证据"
+          ]
+        },
+        {
+          "target": "REVIEW-a:v1",
+          "guard_upstream_versions": {
+            "CLIP-a": "v1"
+          },
+          "set": {
+            "lifecycle_status": "needs_recheck",
+            "approval_level": "none"
+          },
+          "append_recheck_reason": "经CLIP-a传递影响；旧评审结论不覆盖新轮廓",
+          "preserve": [
+            "upstream_versions",
+            "production_status",
+            "原评审内容",
+            "历史记录与证据"
+          ]
+        }
+      ],
+      "unaffected": [
+        {
+          "target": "SCENE-empty:v1",
+          "checked_character": null,
+          "checked_upstream_versions": {},
+          "reason": "无角色且无依赖，不在传播可达集合；头轮廓变更不影响该场景",
+          "action": "保持原状态和历史，不重做，不创建批准"
+        }
+      ],
+      "regression": {
+        "order": [
+          "SHOT-a",
+          "PROMPT-a",
+          "CLIP-a",
+          "REVIEW-a"
+        ],
+        "method": "先核新版轮廓对镜头可见性的影响，再核合同与绑定，之后检查实际片段，最后重审旧结论",
+        "restore_gate": "记录实际采用版本、证据及相应批准后才恢复confirmed；必要时另版生成，不预设全量重做",
+        "rollback": "保留v1档案可查，但不得将旧批准冒充v2有效门禁"
+      },
+      "human_decision": "pending",
+      "human_decision_evidence": null
+    }
+  }
+]

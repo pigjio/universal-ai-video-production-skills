@@ -1,0 +1,773 @@
+{
+  "package_version": "0.5.0",
+  "baseline_version": "0.4.0",
+  "manifest_self_excluded": true,
+  "summary": {
+    "files_excluding_manifest": 137,
+    "added": 35,
+    "modified": 27,
+    "removed": 0,
+    "unchanged": 75
+  },
+  "added": [
+    "03_0.5.0_新手引导与阶段落盘验证报告.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "START_HERE.md",
+    "evals/check_novice_runs.py",
+    "evals/novice-cases-0.5.0.md",
+    "evals/novice-run-check-0.5.0.json",
+    "evals/runs/novice-0.5.0/case-1-cold-start/output.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/output.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/project/AUTHORIZATIONS.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/project/PROJECT_INDEX.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/project/SESSION_HANDOFF.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v001.md",
+    "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v002.md",
+    "evals/runs/novice-0.5.0/case-3-capability-fallback/output.md",
+    "evals/static-validation-0.5.0.json",
+    "provenance/README.md",
+    "research-extension/README.md",
+    "shared/novice-guidance-protocol.md",
+    "skills/ai-character-design/references/novice-guidance-protocol.md",
+    "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
+    "skills/ai-generation-review/references/novice-guidance-protocol.md",
+    "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
+    "skills/ai-scene-design/references/novice-guidance-protocol.md",
+    "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
+    "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
+    "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
+    "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
+    "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
+    "templates/AUTHORIZATIONS.md",
+    "templates/DECISIONS.md",
+    "templates/PROJECT_BRIEF.md",
+    "templates/PROJECT_INDEX.md",
+    "templates/SESSION_HANDOFF.md",
+    "templates/stage-deliverable-template.md"
+  ],
+  "modified": [
+    "00_通用AI影像制作Skills_审查总文档.md",
+    "00_通用AI影像制作Skills_总览.md",
+    "09_通用提示词格式与项目实测规则融合.md",
+    "README_审查包说明.md",
+    "evals/validate_package.py",
+    "shared/common-contract.md",
+    "skills/ai-character-design/SKILL.md",
+    "skills/ai-character-design/references/common-contract.md",
+    "skills/ai-creative-workflow-router/SKILL.md",
+    "skills/ai-creative-workflow-router/references/common-contract.md",
+    "skills/ai-creative-workflow-router/references/user-guide.md",
+    "skills/ai-generation-review/SKILL.md",
+    "skills/ai-generation-review/references/common-contract.md",
+    "skills/ai-prompt-execution-contract/SKILL.md",
+    "skills/ai-prompt-execution-contract/references/common-contract.md",
+    "skills/ai-scene-design/SKILL.md",
+    "skills/ai-scene-design/references/common-contract.md",
+    "skills/ai-screenplay-development/SKILL.md",
+    "skills/ai-screenplay-development/references/common-contract.md",
+    "skills/ai-storyboard-design/SKILL.md",
+    "skills/ai-storyboard-design/references/common-contract.md",
+    "skills/ai-video-production-classroom/SKILL.md",
+    "skills/ai-video-production-classroom/references/common-contract.md",
+    "skills/ai-visual-ideation/SKILL.md",
+    "skills/ai-visual-ideation/references/common-contract.md",
+    "skills/ai-worldbuilding/SKILL.md",
+    "skills/ai-worldbuilding/references/common-contract.md"
+  ],
+  "removed": [],
+  "files": [
+    {
+      "path": "00_通用AI影像制作Skills_审查总文档.md",
+      "sha256": "9d56aa45ae730f97a26b52bddafd2fec43c9c5f6230640d6245b5da458cc5417",
+      "bytes": 170519
+    },
+    {
+      "path": "00_通用AI影像制作Skills_总览.md",
+      "sha256": "ad0a78bed80647118dae27320e588da34f88d6bc8f7ddc29c20fb8dabd701c52",
+      "bytes": 3826
+    },
+    {
+      "path": "01_0.4.0_Seedance生产融合与验证报告.md",
+      "sha256": "f82a8b5845eddb90db7709478a4d4187e64a2b1c911062d46bffe72b57b9da59",
+      "bytes": 3266
+    },
+    {
+      "path": "02_Seedance方法迁移矩阵.md",
+      "sha256": "37b5b5c9deca92d297939497adcc322165f4bd50bf755f18eecbb02b625980fb",
+      "bytes": 3127
+    },
+    {
+      "path": "03_0.5.0_新手引导与阶段落盘验证报告.md",
+      "sha256": "834da2275eca7a889dd758b950d220ac5c57a7ae9d71b6bd7621cb9e7cc11668",
+      "bytes": 4879
+    },
+    {
+      "path": "09_通用提示词格式与项目实测规则融合.md",
+      "sha256": "b2caf055958f1f0ff6374b091478404fad5ab86c69150e304b71413166d8a1fa",
+      "bytes": 3090
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "adfe3eba15af2cf3cebc6feedc1c7113f83554be3184349e36363d91641aea15",
+      "bytes": 1789
+    },
+    {
+      "path": "CLAUDE.md",
+      "sha256": "099b53d5201a51e212597b323d521452c354e2a315cce3fe5d46705503a383f9",
+      "bytes": 1558
+    },
+    {
+      "path": "evals/check_novice_runs.py",
+      "sha256": "a8c4909a5c0d54e13a328795abbded3ce2e6eae8361f0d301d10b38f1daa7b70",
+      "bytes": 3036
+    },
+    {
+      "path": "evals/fixtures/handoff.json",
+      "sha256": "f2ddf03ea183dd33d5feb66239f4cc5145017cdbe12760b9b2c114b8b82be965",
+      "bytes": 21150
+    },
+    {
+      "path": "evals/novice-cases-0.5.0.md",
+      "sha256": "401eb8280602c5685228761c5663773dd7985236317cab14ce5b88691387d5e6",
+      "bytes": 5835
+    },
+    {
+      "path": "evals/novice-run-check-0.5.0.json",
+      "sha256": "ce93491a6f3d736f1966a183292a8040e4b47fdf4c55aca7c580045d2d1aebb0",
+      "bytes": 1789
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-1-cold-start/output.md",
+      "sha256": "4912514d53cb8ef288bb72b7bd2620ba50b09b3d1801d1bbe8e946566cbe6497",
+      "bytes": 2130
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/output.md",
+      "sha256": "b2c77327ee93726d83d0cd27829ac9fe4e90a4786a4acacee922ce8ecdbe80f0",
+      "bytes": 4152
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/AUTHORIZATIONS.md",
+      "sha256": "61cecd9c22ca102989c8a8985a9b801773a1728bea30f5ecbd5bfeefe679a445",
+      "bytes": 240
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/PROJECT_INDEX.md",
+      "sha256": "002486445641d8097d72bf015a9ba21faeadfb65c9d53cf6e24ffba08f020e4c",
+      "bytes": 1090
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/SESSION_HANDOFF.md",
+      "sha256": "97a6ea5f2a4b587cbfc9c48a265050eadaea6cee080c9be0f6d50d905bad867e",
+      "bytes": 1596
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v001.md",
+      "sha256": "1aa2336d776812e6f7c45e3c440fc8ee2d5df5df64f87d4e651f8ec6a4513e87",
+      "bytes": 218
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v002.md",
+      "sha256": "4352f5c1307c38e7ac6497a5c120c9cc75639b09eeffb7bd859c1ad7f23617f3",
+      "bytes": 1957
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-3-capability-fallback/output.md",
+      "sha256": "e3350e5b06f983d59dc2a10a6f288fea8fd92377c0798ef2cf8ac3f25c01f653",
+      "bytes": 10004
+    },
+    {
+      "path": "evals/runs/seedance-0.4.0/case-1-formal-request/output.md",
+      "sha256": "cf3adb73121a3ae19dc2f0b12a3416c74789640098e895ab365ff05b12089993",
+      "bytes": 19843
+    },
+    {
+      "path": "evals/runs/seedance-0.4.0/case-2-grouping/output.md",
+      "sha256": "6663e73bff9c2eff9ba102c886fe5f935c96bf85362dc6d4a2367c5eb76a8fdb",
+      "bytes": 17350
+    },
+    {
+      "path": "evals/runs/seedance-0.4.0/case-3-review/output.md",
+      "sha256": "26517f5d689d185697037942af7a89371abe169705e05d9937656ce9ecefbe4a",
+      "bytes": 17415
+    },
+    {
+      "path": "evals/seedance-cases-0.4.0.md",
+      "sha256": "7d5f374507c748714a73580f25719d418bb2a7553f0324028d60735e6c89f34e",
+      "bytes": 2097
+    },
+    {
+      "path": "evals/static-validation-0.4.0.json",
+      "sha256": "3ef621be6d337d5afd78c57af41342b464c497acefa73ec513d00e3fb40e5c70",
+      "bytes": 1390
+    },
+    {
+      "path": "evals/static-validation-0.5.0.json",
+      "sha256": "9e618878fa3b85d1ed11cc7200b93544eed34151694c250858e2140a45cd95c2",
+      "bytes": 168
+    },
+    {
+      "path": "evals/validate_package.py",
+      "sha256": "59f17d27e264ef72b228cf1acc21a3bc3dbcfbf702a2b05e5f4181709a180e20",
+      "bytes": 9814
+    },
+    {
+      "path": "provenance/README.md",
+      "sha256": "69e534aa90f7a0ea76a7db808256d33f334b30bd09689d5602692732394ec331",
+      "bytes": 1156
+    },
+    {
+      "path": "README_审查包说明.md",
+      "sha256": "7274297d8bf74105d405c678cb6d5907f4c69a610eb9b82ff3368bfff1b9592e",
+      "bytes": 5160
+    },
+    {
+      "path": "research-extension/README.md",
+      "sha256": "cc11a0e12ba8754fff153965c4d78fad38a14aa9fd58f3140eb4aa0eb999d040",
+      "bytes": 1672
+    },
+    {
+      "path": "shared/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "shared/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-character-design/references/branches-and-diagnostics.md",
+      "sha256": "6fb9e103918247f8112531f14dd1aa9ead94fe8b555104701c713de110a6745c",
+      "bytes": 6597
+    },
+    {
+      "path": "skills/ai-character-design/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-character-design/references/design-foundations.md",
+      "sha256": "1f5306ebb651865cf68bd291514c5c5ab89ff6efb19823e263fe5d6c5df3d19c",
+      "bytes": 9129
+    },
+    {
+      "path": "skills/ai-character-design/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-character-design/references/performance-and-production.md",
+      "sha256": "8e80d9ed2bab7a1b567690d53aa332dfe85ebc623aede6f95762fba6e9c3c63f",
+      "bytes": 9785
+    },
+    {
+      "path": "skills/ai-character-design/references/source-map.md",
+      "sha256": "eddb6ff94117d5c62fc852417f444de570b9135e558fe2321481b1760e43f93e",
+      "bytes": 5935
+    },
+    {
+      "path": "skills/ai-character-design/references/state-version-and-templates.md",
+      "sha256": "5aaa270bfa51e2634a9caf9305afbee2a404e6643878235a6440017f6b9f90a1",
+      "bytes": 3097
+    },
+    {
+      "path": "skills/ai-character-design/SKILL.md",
+      "sha256": "f9fbf7e14746eced83fbab897d714b94612d9ae342e7de764e10a38871e15663",
+      "bytes": 26663
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/references/end-to-end-handoff.md",
+      "sha256": "32fb84b0d7db5a643ea926782ed061f6ff95219d59cdd526d6d8cc83faae28cd",
+      "bytes": 3829
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/references/source-map.md",
+      "sha256": "a1f71fed152473e93cb10cb20f97f67940d7e596f9e015e56f63fe6bb7c9f00b",
+      "bytes": 1039
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/references/user-guide.md",
+      "sha256": "5eb14f42987fed09bf2daf42b9d511021a67da156c1d2d7b73de6eee7f7e8138",
+      "bytes": 7088
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/SKILL.md",
+      "sha256": "5da438040b22904d5f362b69c6b4b0e0f3f3a6c81b76374fb5c0e5ed6066c25d",
+      "bytes": 12391
+    },
+    {
+      "path": "skills/ai-generation-review/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-generation-review/references/evidence-and-scope.md",
+      "sha256": "8d5a6957cf80569ff06785f92dfd8392745d9f4ca89d1a720b2368b7b524754a",
+      "bytes": 3613
+    },
+    {
+      "path": "skills/ai-generation-review/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-generation-review/references/review-template.md",
+      "sha256": "a97ab80e78040a0ab9fbfe9bfb54d59f34eccd75552c06ac17df28c3e263e576",
+      "bytes": 5533
+    },
+    {
+      "path": "skills/ai-generation-review/references/routing-and-regression.md",
+      "sha256": "fa2a22282bbe7cefc2c15cea7f03710ce3f56247f623e75ce9e6ebdccb7de5e2",
+      "bytes": 5671
+    },
+    {
+      "path": "skills/ai-generation-review/references/seedance-video-ten-dimension-review.md",
+      "sha256": "d73dcaf54449d44db68e2544cbc5dbf765e102ce5f129348bad514f97392131d",
+      "bytes": 6093
+    },
+    {
+      "path": "skills/ai-generation-review/references/source-map.md",
+      "sha256": "53e622d67ce05cb56bc2c9c36f3a75f884bf574495f777e3c5cea2cceeec2b5d",
+      "bytes": 2566
+    },
+    {
+      "path": "skills/ai-generation-review/references/worked-examples.md",
+      "sha256": "bf9f4e215385fe90f603e0bf2d0edb308bfa480aea96a305251ef803fe58a45a",
+      "bytes": 4656
+    },
+    {
+      "path": "skills/ai-generation-review/SKILL.md",
+      "sha256": "b9d62a37ade1bf156870a2bfc6589822b45129db7266b379a0f3ab93aa1b7845",
+      "bytes": 14514
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/causality-and-diagnostics.md",
+      "sha256": "b0db07b7bde2308e81bcab9cee7dedce26bb8eede4c3273e9a551aac49d7b35d",
+      "bytes": 4033
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/methodology-map.md",
+      "sha256": "3ab5f7e18fbc2d27311b573d6b119bc269c856ae8985730671924a769558b085",
+      "bytes": 2524
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/reference-duty-and-assembly.md",
+      "sha256": "50dce4730d41f4383e4767612d3cc3e5bf2261cfd7cc41c567a711e4abd9296e",
+      "bytes": 4413
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/seedance-capacity-compression.md",
+      "sha256": "937dd4f1e7c3838cf45f36a5c04196cb745e51b36593b9f06e2c276cc4998b73",
+      "bytes": 2402
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/seedance-formal-request-contract.md",
+      "sha256": "1f50f5d19c7e3669d26e7dd4b5a3dfbec3f0d6def3d66733ff6d2c4dede82830",
+      "bytes": 6177
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/seedance-state-handoff.md",
+      "sha256": "2543d4948ca16fd62c78a94db135763711605aaa21fc1cc594d34ddd2d4ac6a8",
+      "bytes": 3691
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/source-map.md",
+      "sha256": "b08914f157bf6ec79c063b5f3b7ef693ba5c9920288341313160407515841853",
+      "bytes": 2834
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/static-vs-temporal.md",
+      "sha256": "3e4c307d922a896fad1eb7ade13b457f6f759a9660e98da5e3ecab3d8173c17c",
+      "bytes": 3601
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/references/worked-examples.md",
+      "sha256": "e4000a545a0a9a316fda9a728e30246519b6407a897b61c2fa832dd50be18328",
+      "bytes": 4243
+    },
+    {
+      "path": "skills/ai-prompt-execution-contract/SKILL.md",
+      "sha256": "2e7c706e64a977654ec632bbac57c57da6701db25fccff3e70eb8a787373fc25",
+      "bytes": 15151
+    },
+    {
+      "path": "skills/ai-scene-design/references/color-script.md",
+      "sha256": "3e4892f05d5a22a3112f37f8753207d65fce2bd1d959bb0c072c941bb1bdeb1f",
+      "bytes": 5106
+    },
+    {
+      "path": "skills/ai-scene-design/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-scene-design/references/core-methodology.md",
+      "sha256": "ae4f3775257804fbb069e28500695083c7ec0572a3e82e5abd06943e67aaedb7",
+      "bytes": 3038
+    },
+    {
+      "path": "skills/ai-scene-design/references/execution-template.md",
+      "sha256": "4b4d811677025a0d92929b00f97a22ee6d389ab29caa6da58452edac626c5a29",
+      "bytes": 2394
+    },
+    {
+      "path": "skills/ai-scene-design/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-scene-design/references/production-handoff.md",
+      "sha256": "710893815349a7514a7618e1cac8f298141c0cd3b62b925f476c9c24370f7677",
+      "bytes": 4102
+    },
+    {
+      "path": "skills/ai-scene-design/references/source-map.md",
+      "sha256": "24414b65fcd6ef3c3dbf116ed24fa4348226aad8e7e8e59d2dc9e193975fd721",
+      "bytes": 1834
+    },
+    {
+      "path": "skills/ai-scene-design/references/spatial-intent-and-exploration.md",
+      "sha256": "13240dbb72887fdec2881b896c058d72d4a80253d2d94f1cc0205cfafc517a28",
+      "bytes": 6529
+    },
+    {
+      "path": "skills/ai-scene-design/references/state-derivation.md",
+      "sha256": "79bf34995cb3040e06a429f6243eb9c06c247fa5a974ea662e346c090eee1b2b",
+      "bytes": 1984
+    },
+    {
+      "path": "skills/ai-scene-design/SKILL.md",
+      "sha256": "fcd06eb5270bf25ae6120419d3469696b61f6d646029ac2aa8f7132c4c5fc482",
+      "bytes": 19980
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/character-and-opposition.md",
+      "sha256": "2a02509de57e0f2c02c142268dc5aeeb56e6747fd6871738ef73cf20ae884dc1",
+      "bytes": 2510
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/choice-and-information.md",
+      "sha256": "53e688f18dd55f460f2b4140cc535898cc2dee7c23e2161d2bd18ae624e16294",
+      "bytes": 6221
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/diagnosis-and-rewrite.md",
+      "sha256": "863cfe808c3662325e3cdb71295e60bf20142267eba6f01a06dedb99cc7578dd",
+      "bytes": 6939
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/dialogue-and-comedy.md",
+      "sha256": "96c53eaf6f897b2e93237c8118f7cbedec082a99826bab02a5ab16728a48834e",
+      "bytes": 2493
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/format-and-handoff.md",
+      "sha256": "3ac9c6df8354a92d242bc01b5023b3fa8f97d0f6598ce791ee9b1721802b5bcf",
+      "bytes": 5626
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/source-map.md",
+      "sha256": "6f666d04bd42a1d3c7e8d01f7f1a6d3ffe7ba5127fb1f4b8c0e42533ab5f0c8e",
+      "bytes": 1065
+    },
+    {
+      "path": "skills/ai-screenplay-development/references/structure-and-scene-chain.md",
+      "sha256": "789deb15455009ad3dd2c31990c3246323f9a912e757b192e5608a65e870414c",
+      "bytes": 6662
+    },
+    {
+      "path": "skills/ai-screenplay-development/SKILL.md",
+      "sha256": "9bea2cda512832665568b6c9663479902466d45dcde7e05f8ef45740219d6836",
+      "bytes": 16538
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/detailed-shot-expansion.md",
+      "sha256": "b2838ae6431e7c131299c9746c41954c22613640798ba9998639f7c35ca0aa09",
+      "bytes": 17645
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/director-decision-layer.md",
+      "sha256": "4079cd2c09fb022b2d320eed193ef6d2239d493ed6c2eb156786222a5c0aac69",
+      "bytes": 6805
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/full-performance-before-timing-compression.md",
+      "sha256": "e18e592e92855eea9401a47f8e94c9aacea534586d5dfd1e22d7e648d45ccf91",
+      "bytes": 4759
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/pitch-feedback-and-exploration.md",
+      "sha256": "55183c23ffe790aa45b427343d708a5fd67d25eb844383f52298d2291992e28f",
+      "bytes": 5256
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/scene-shot-size-rhythm-rebuild.md",
+      "sha256": "9635f48dd1e4b7e90b4072172de6f2d3de6d2ccf2cc024dba964875caf9d44bc",
+      "bytes": 6978
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/shot-transition-audit.md",
+      "sha256": "e39684c40b8fe58b5522f30735716cceb8d97cac97f84d0e4ec63d8c3f431487",
+      "bytes": 6544
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/source-map.md",
+      "sha256": "6cf98ec2f17c37f9a8582ab37c2fa38eb4068ffc314948f8ce9d9df1d8bc674c",
+      "bytes": 2354
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/storyboard-methodology-map.md",
+      "sha256": "41c72fe015e809d7727fecd633e408da8fec8e3d6d80e3f1ebcf5f10f2639501",
+      "bytes": 5718
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/storyboard-quality-gates.md",
+      "sha256": "a5ddae3c4d51390d62c45aab4acc7ea0af7c32e8541646c592cbb2516dc0b085",
+      "bytes": 6984
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/threat-response-and-emotion-continuity.md",
+      "sha256": "a1c63eb7841229037f60558e659ae7ad2ee882778b22812108271d1a5cf052d4",
+      "bytes": 4053
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/timing-verification.md",
+      "sha256": "f8eec5adfef64a2781b2b76fdd4193b77a8c3733573574d1b23de957af2de01a",
+      "bytes": 3916
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/v3-action-relay-continuity.md",
+      "sha256": "5fea6438f93697a355c63e437f0cfd2c0f34bdd023aa26d825d35b3ac5a7e2a1",
+      "bytes": 6773
+    },
+    {
+      "path": "skills/ai-storyboard-design/references/visual-structure-and-space.md",
+      "sha256": "ddfc9a8f53a27dec9a6dc4fa6c2dfd868f39d607f41e978c1713dc241fcc020d",
+      "bytes": 6337
+    },
+    {
+      "path": "skills/ai-storyboard-design/SKILL.md",
+      "sha256": "a4581648b753651967e24287b98e1af7e6cd48862353728659e9f343f973360d",
+      "bytes": 22084
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/clip-continuity.md",
+      "sha256": "f54ba9614d7567e0c961830c856b2dd594435f5f239ef9f9fe325edd03381189",
+      "bytes": 4768
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/continuation-and-edit-delivery.md",
+      "sha256": "bd3b6f25aec0bb20147ba8288525a10b8b6bcdd6935baa449b2347bace533849",
+      "bytes": 2555
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/production-grouping-and-task-contract.md",
+      "sha256": "155764a9e73191c0cef4a92fd83f11c4f696f473546cd597d1de5eb1d6665900",
+      "bytes": 3970
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/production-modes-and-baseline.md",
+      "sha256": "72062e3a4c5217acb007f811e9b264473700d9d18c199df08286751a9b17f373",
+      "bytes": 5256
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/seedance-capability-and-evidence.md",
+      "sha256": "4ddd591703b38016cfabece8f0fc53990aadbc30c5310373e851fb5ddbd28525",
+      "bytes": 3665
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/source-map.md",
+      "sha256": "43ff36a5cb128886a728d67b6f9b5e99b934b1fc0250d5d23ddf5fe53904fc5e",
+      "bytes": 2602
+    },
+    {
+      "path": "skills/ai-video-production-classroom/references/worked-examples.md",
+      "sha256": "870d3d3d5d7c2ae6c2714c7d83a3a30eb5b8c9e158a84f2a2a5611b53b53568d",
+      "bytes": 4426
+    },
+    {
+      "path": "skills/ai-video-production-classroom/SKILL.md",
+      "sha256": "6f84d77de04f096c6b2fadf4265ede95935232046800035085e831f3b2e1fb59",
+      "bytes": 15362
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/methodology-map.md",
+      "sha256": "2f972e648b889e9a69d8b5a27e539e1ccfdd9a5407f45851f917c0f97353f5d9",
+      "bytes": 2364
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/project-box-and-handoff.md",
+      "sha256": "0aadd50bb1f1d5a59224ea1ef3daacbd5ad3fa4d007bc93537e9438481f413fd",
+      "bytes": 3972
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/raw-material-and-observation.md",
+      "sha256": "6d490736d2930bd4dd3256ec0fb730ec3c3a538516c68401062fa464b2c1c5bd",
+      "bytes": 3914
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/selection-and-counterproof.md",
+      "sha256": "21f7e1ba738868f9893ec68b012cd55a25f687ef8a574fb66b2c9c32a8e30aef",
+      "bytes": 4965
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/source-map.md",
+      "sha256": "3d4a19ef2fe69119724b56ed237a179fd6af1232d5f03242ba95e5f47714e9f1",
+      "bytes": 1011
+    },
+    {
+      "path": "skills/ai-visual-ideation/references/theme-and-core-image.md",
+      "sha256": "f014566c8379c6f76647a0c4cb3b07fe9119ff81d90f6ba83d370adcd515e99f",
+      "bytes": 2420
+    },
+    {
+      "path": "skills/ai-visual-ideation/SKILL.md",
+      "sha256": "0bcd92699f45be8c22485287f5e1c871b2b8e1ff744c0325ce074352f8f449c9",
+      "bytes": 12750
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/common-contract.md",
+      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "bytes": 13568
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/culture-timeline-and-canon.md",
+      "sha256": "3e6afa7ce9a6ae2b041947db61dfafdbd0d405f2bd1ccc08ca0d3227d820b7a9",
+      "bytes": 6766
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
+      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
+      "bytes": 7897
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/rules-costs-and-ethics.md",
+      "sha256": "c0eaa4d46d8ab71ebc268941b228eb69b58a252cbe4091391752167fd1973cb8",
+      "bytes": 2936
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/source-map.md",
+      "sha256": "edaff38017232745387cda034c5c41749f21bddd1a8031d9d0d2488add8fc40b",
+      "bytes": 996
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/spatial-and-environmental-evidence.md",
+      "sha256": "435297748845fd8338f38734c9e873443d74c7297e70ba778a6303d829b3e8f4",
+      "bytes": 2734
+    },
+    {
+      "path": "skills/ai-worldbuilding/references/visual-state-and-handoff.md",
+      "sha256": "3d74602998f6865fd3a3e66b21229381536a74bc553abd5537b7ad6946b72fb2",
+      "bytes": 3036
+    },
+    {
+      "path": "skills/ai-worldbuilding/SKILL.md",
+      "sha256": "34168565ad0e04b5fceef0b384c5b1e9ca07ae6b1c5c203b029ec8f2e1df7e4c",
+      "bytes": 14520
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "f7410c198634e2397ac619f57148c0d4c8e8ce9bcee82d85bf776266eebee631",
+      "bytes": 2628
+    },
+    {
+      "path": "templates/AUTHORIZATIONS.md",
+      "sha256": "e0b5dac954d18eaed1ac5c14e52f924f36750b67dfb36637cc1566bd8fb0433a",
+      "bytes": 2468
+    },
+    {
+      "path": "templates/DECISIONS.md",
+      "sha256": "1e5873e1d411d192aaec4a1484ac60a961ea38444153f1c3308e2c4d93772439",
+      "bytes": 1041
+    },
+    {
+      "path": "templates/PROJECT_BRIEF.md",
+      "sha256": "8d9f49024658fe6a58f4058d690a280a33552f3a94b77518013e7dcf98a53159",
+      "bytes": 976
+    },
+    {
+      "path": "templates/PROJECT_INDEX.md",
+      "sha256": "69f3e7e8da34a368bda11cbf43659c0fb76973da7b65c40845fd3b12f55ef4bb",
+      "bytes": 1441
+    },
+    {
+      "path": "templates/SESSION_HANDOFF.md",
+      "sha256": "a6c7a01434aff4907afdfe7fe557ebf4408d39f40e01f84ac52a40a0762fc9ff",
+      "bytes": 1337
+    },
+    {
+      "path": "templates/stage-deliverable-template.md",
+      "sha256": "4cdf3ea179601c3451f55daf2c973fecd4907e8519357c110a7fee48dab22035",
+      "bytes": 1698
+    }
+  ],
+  "last_updated": "2026-09-10",
+  "post_review_changes": [
+    "Unified one-question stage closeout across all 10 skills",
+    "Automatic first-save initialization of five project record files",
+    "Added N15 empty-project first-save test specification",
+    "Added static regression assertions and UTF-8 fixture decoding for Windows"
+  ]
+}
