@@ -3,8 +3,8 @@
   "baseline_version": "0.4.0",
   "manifest_self_excluded": true,
   "summary": {
-    "files_excluding_manifest": 137,
-    "added": 35,
+    "files_excluding_manifest": 138,
+    "added": 36,
     "modified": 27,
     "removed": 0,
     "unchanged": 75
@@ -13,6 +13,7 @@
     "03_0.5.0_新手引导与阶段落盘验证报告.md",
     "AGENTS.md",
     "CLAUDE.md",
+    "LICENSE",
     "START_HERE.md",
     "evals/check_novice_runs.py",
     "evals/novice-cases-0.5.0.md",
@@ -118,6 +119,11 @@
       "bytes": 1558
     },
     {
+      "path": "LICENSE",
+      "sha256": "313ee4fda47bb7190305a89ae1344f069fbdce53101e4cc3e735773bf6e93ce1",
+      "bytes": 1086
+    },
+    {
       "path": "evals/check_novice_runs.py",
       "sha256": "a8c4909a5c0d54e13a328795abbded3ce2e6eae8361f0d301d10b38f1daa7b70",
       "bytes": 3036
@@ -209,8 +215,8 @@
     },
     {
       "path": "evals/validate_package.py",
-      "sha256": "59f17d27e264ef72b228cf1acc21a3bc3dbcfbf702a2b05e5f4181709a180e20",
-      "bytes": 9814
+      "sha256": "46d0c79f6ef16b21c16568c96bef6564ee91e187c84c8cfd851c7b76f395debd",
+      "bytes": 11171
     },
     {
       "path": "provenance/README.md",
@@ -768,6 +774,10 @@
     "Unified one-question stage closeout across all 10 skills",
     "Automatic first-save initialization of five project record files",
     "Added N15 empty-project first-save test specification",
-    "Added static regression assertions and UTF-8 fixture decoding for Windows"
+    "Added static regression assertions and UTF-8 fixture decoding for Windows",
+    "Replaced private leakage literals with generic personal-path detection and synthetic regression cases",
+    "Documented supported desktop, CLI, workspace import, and IDE installation paths",
+    "Pinned the Marketplace source to the v0.5.0 release tag",
+    "Added the declared MIT license text"
   ]
 }

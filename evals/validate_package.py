@@ -17,6 +17,37 @@ REQUIRED_ROOT = ['START_HERE.md','AGENTS.md','CLAUDE.md','shared/common-contract
 FIELDS = ['artifact_id','version','artifact_type','creative_mode','subject_type','lifecycle_status','production_status','approval_level','upstream_versions','confirmed_evidence','open_questions','recheck_trigger','next_action']
 ENUMS = {'artifact_type':set('idea script world character scene storyboard prompt clip review'.split()), 'creative_mode':set('narrative perceptual conceptual'.split()),'subject_type':set('character-led environment-led object-led abstract'.split()),'lifecycle_status':set('draft candidate confirmed needs_recheck invalidated'.split()), 'production_status':set('not_applicable not_started planned awaiting_external_generation submitted generated under_review reviewed failed'.split()),'approval_level':set('none direction_approved production_approved human_confirmed'.split())}
 errors=[];warnings=[];refs_count=0;records=0
+
+# Detect personal absolute paths without embedding any real user, machine, or
+# project identifiers in the validator itself. Common documentation
+# placeholders remain allowed.
+PLACEHOLDER_USERS = {'user','username','example','example-user','your-name','name'}
+UNIX_USER_PATH = re.compile(r'(?<![\w/])/(?:home|Users)/([^/\s`"\']+)(?:/[^\s`"\']+)?')
+WINDOWS_USER_PATH = re.compile(r'(?i)(?<![\w])(?:[a-z]:[\\/])Users[\\/]([^\\/\s`"\']+)(?:[\\/][^\s`"\']+)?')
+MOUNTED_DRIVE_PATH = re.compile(r'(?<![\w/])/mnt/[a-z]/[^\s`"\']+')
+
+def private_path_hits(data):
+    hits=[]
+    for lineno,line in enumerate(data.splitlines(),1):
+        for pattern in (UNIX_USER_PATH,WINDOWS_USER_PATH):
+            for match in pattern.finditer(line):
+                if match.group(1).lower() not in PLACEHOLDER_USERS:
+                    hits.append((lineno,match.group(0)))
+        for match in MOUNTED_DRIVE_PATH.finditer(line):
+            hits.append((lineno,match.group(0)))
+    return hits
+
+# Synthetic regression cases are assembled in pieces so the validator can
+# safely scan its own source without treating the fixtures as package leaks.
+privacy_cases = [
+    ('/home/'+'example-person'+'/private-work', True),
+    ('/mnt/'+'x'+'/private-knowledge-base', True),
+    ('C:\\Users\\'+'example-person'+'\\drafts', True),
+    ('/home/'+'user'+'/project', False),
+]
+for sample,expected in privacy_cases:
+    if bool(private_path_hits(sample)) != expected:
+        errors.append('privacy path detector regression')
 if set(SKILLS)!=EXPECTED: errors.append('Unexpected skill names/count')
 canonical=(ROOT/'shared/common-contract.md').read_bytes()
 novice_canonical=(ROOT/'shared/novice-guidance-protocol.md').read_bytes()
@@ -68,8 +99,8 @@ for name,body in sorted(SKILLS.items()):
         data=f.read_text(encoding='utf-8');where=str(f.relative_to(ROOT))
         if '\ufffd' in data:errors.append(f'{where}: replacement character')
         if '\\n' in data and not re.search(r'```(?:python|bash)',data):warnings.append(f'{where}: possible literal escaped newline')
-        for forbidden in ['verify_shot_timing.py','/home/mk','/mnt/d/知识库','异世界冒险']:
-            if forbidden in data:errors.append(f'{where}: private/stale dependency {forbidden}')
+        for lineno,_hit in private_path_hits(data):
+            errors.append(f'{where}:{lineno}: personal absolute path detected')
         if re.search(r'^\s*status:\s',data,re.M):errors.append(f'{where}: legacy generic status field')
         for block in re.findall(r'```ya?ml\s*\n(.*?)```',data,re.S):
             try:
@@ -96,11 +127,11 @@ if fixture.exists():
 
 # Package-wide release leakage and onboarding assertions.
 for f in ROOT.rglob('*'):
-    if f.resolve()==Path(__file__).resolve():continue
+    if '.git' in f.parts:continue
     if not f.is_file() or f.suffix.lower() not in {'.md','.py','.json','.yaml','.yml','.txt'}:continue
     data=f.read_text(encoding='utf-8',errors='replace');where=str(f.relative_to(ROOT))
-    for forbidden in ['/home/mk','/mnt/d/知识库','异世界冒险','墨狼','骨笔']:
-        if forbidden in data:errors.append(f'{where}: private/project leakage {forbidden}')
+    for lineno,_hit in private_path_hits(data):
+        errors.append(f'{where}:{lineno}: personal absolute path detected')
 auth=(ROOT/'templates/AUTHORIZATIONS.md').read_text(encoding='utf-8') if (ROOT/'templates/AUTHORIZATIONS.md').exists() else ''
 if not re.search(r'research',auth,re.I) or not re.search(r'(denied|not_granted|未授权|不允许)',auth,re.I):
     errors.append('AUTHORIZATIONS template must keep research unauthorized by default')

@@ -23,7 +23,7 @@ AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창
 
 ## Plugin에 포함된 10개의 Skills
 
-이 10개의 Skill은 하나의 Plugin에 포함된 전문 모듈이므로 각각 설치할 필요가 없습니다. `ai-creative-workflow-router`가 진입과 단계 간 라우팅을 담당하고, 나머지 9개 Skill은 작업에 따라 자동으로 참여합니다.
+이 10개의 Skill은 하나의 Plugin에 포함된 전문 모듈이므로 각각 설치할 필요가 없습니다. 설치 후 새 대화에서 사용할 수 있으며, Codex가 현재 작업에 맞는 Skill을 필요할 때 로드합니다. 보통은 자연어로 요청하면 되고, 지원되는 화면에서는 `@`로 특정 Skill을 직접 호출할 수도 있습니다.
 
 | Skill | 용도 |
 |---|---|
@@ -40,18 +40,25 @@ AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창
 
 ## 빠른 시작
 
-### Codex에서 설치하기 (권장)
+### ChatGPT 데스크톱 / Codex
 
-파일을 직접 내려받거나 10개의 Skill을 따로 설치할 필요가 없습니다. 아래 내용을 전부 복사하여 새 Codex 작업에 붙여 넣고 전송하세요.
+**Plugins** 디렉터리를 열고 `Universal AI Video Production`을 찾아 설치합니다. 현재 이 저장소는 비공개이므로 해당 계정 또는 워크스페이스에 GitHub 읽기 권한이 있어야 합니다. 설치가 끝나면 새 대화나 세션을 시작하세요. 10개의 Skill이 사용 가능한 기능으로 등록되고, 작업과 맞을 때 필요에 따라 로드됩니다.
+
+### Codex CLI
+
+Codex CLI에서 `/plugins`를 입력하고, 설정된 Marketplace에서 `universal-ai-video-production`을 설치한 다음 새 세션을 시작합니다. Codex IDE 확장 프로그램은 현재 Plugins를 지원하지 않습니다. IDE에서는 아래의 “수동으로 저장소를 받아 프로젝트로 사용하기” 방식을 이용하세요.
+
+### 워크스페이스 관리자가 GitHub에서 가져오기
+
+관리자는 **Admin → Plugins → Add → Import marketplace**로 이동한 뒤 다음 저장소 주소를 입력합니다.
 
 ```text
-다음 GitHub 저장소를 하나의 완전한 Codex Plugin으로 설치해 주세요.
 https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
-
-이 저장소에는 Marketplace 매니페스트가 포함되어 있습니다. skills/ 디렉터리의 10개 Skill을 따로 설치하지 마세요. 이 GitHub 저장소를 Plugin Marketplace로 추가한 뒤 그 안의 universal-ai-video-production을 설치해 주세요. 설치 후 내부 10개 Skill이 모두 인식되는지 확인해 주세요. 현재 계정으로 이 비공개 저장소에 접근할 수 없다면 출처가 불분명한 복사본을 사용하지 말고 먼저 GitHub 로그인 또는 권한 승인이 필요하다고 알려 주세요.
 ```
 
-이후 Codex 안내에 따라 GitHub 로그인 또는 권한 승인을 완료합니다. 설치 후에는 하나의 `Universal AI Video Production` Plugin이 표시되고, 10개의 Skill은 내부 기능으로 자동 로드됩니다. 새 플러그인이 표시되지 않으면 새 작업을 만들거나 Codex를 재시작한 뒤 다시 확인하세요.
+Marketplace 매니페스트는 저장소 루트의 `.agents/plugins/marketplace.json`에 있으므로 **Path는 비워 둡니다**. 안내에 따라 이 비공개 저장소에 대한 GitHub 읽기 권한을 승인하고, 가져오기가 끝나면 구성원이 Plugins 디렉터리에서 설치할 수 있습니다.
+
+로컬 Agent에 GitHub 및 플러그인 관리 기능이 이미 있다면 위 단계를 도와달라고 요청할 수도 있습니다. 이는 편의를 위한 선택 사항이며 모든 Codex 진입점에서 지원되는 공통 설치 방식은 아닙니다.
 
 설치 후에는 Skill 이름을 외우지 않고 자연어로 바로 시작할 수 있습니다.
 
@@ -59,7 +66,7 @@ https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 이 AI 영상 제작 Skills를 처음 사용합니다. 지금은 막연한 아이디어만 있습니다. 한 번에 작은 목표 하나씩 진행해 주세요. 제가 모르겠다고 하면 쉽게 비교할 수 있는 선택지를 제안해 주세요.
 ```
 
-Codex 공식 안내: [Plugin 하나에 여러 Skill을 포함할 수 있습니다](https://developers.openai.com/codex/plugins).
+Codex 공식 안내: [Plugin 만들기](https://learn.chatgpt.com/docs/build-plugins), [Plugin 사용하기](https://learn.chatgpt.com/docs/plugins), [엔터프라이즈 워크스페이스 Plugin 관리](https://learn.chatgpt.com/docs/enterprise/plugin-management).
 
 ### 수동으로 저장소를 받아 프로젝트로 사용하기
 

@@ -23,7 +23,7 @@
 
 ## Plugin 内的十个 Skills
 
-这十个 Skill 是同一个 Plugin 的内部专业模块，不需要分别安装。`ai-creative-workflow-router` 负责入口和跨阶段路由，其余九个 Skill 按任务自动参与。
+这十个 Skill 是同一个 Plugin 的内部专业模块，不需要分别安装。安装后它们会在新会话中可用；Codex 会按当前任务加载匹配的 Skill。通常直接描述需求即可，也可以在支持的界面用 `@` 明确调用某个 Skill。
 
 | Skill | 用途 |
 |---|---|
@@ -40,18 +40,25 @@
 
 ## 快速开始
 
-### 在 Codex 中安装（推荐）
+### ChatGPT 桌面端 / Codex
 
-最简单的方法是不手动下载文件，也不分别安装十个 Skill。复制下面整段文字，新建一个 Codex 任务并粘贴发送：
+打开 **Plugins** 目录，找到 `Universal AI Video Production` 并选择安装。这个仓库目前是私有仓库，因此相关账户或工作区必须具有 GitHub 读取权限。安装完成后请新建聊天或会话；十个 Skill 会变为可用能力，并在匹配任务时按需加载。
+
+### Codex CLI
+
+在 Codex CLI 中输入 `/plugins`，从已配置的 Marketplace 安装 `universal-ai-video-production`，然后启动一个新会话。Codex IDE 扩展目前不支持 Plugins；在 IDE 中请改用下方“手动获取并作为项目使用”的方式。
+
+### 工作区管理员从 GitHub 导入
+
+管理员进入 **Admin → Plugins → Add → Import marketplace**，填写仓库地址：
 
 ```text
-请把下面的 GitHub 仓库作为一个完整的 Codex Plugin 安装：
 https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
-
-这是一个包含 Marketplace 清单的 Plugin 仓库，不要把 skills/ 目录中的十个 Skill 分别安装。请把这个 GitHub 仓库添加为 Plugin Marketplace，再安装其中的 universal-ai-video-production。安装后确认内部十个 Skill 均可发现。如果当前账户无法访问这个私有仓库，请先提示我登录或授权 GitHub，不要改用来源不明的副本。
 ```
 
-然后按 Codex 的提示完成 GitHub 登录或授权。安装完成后，用户看到的是一个 `Universal AI Video Production` Plugin；十个 Skill 作为内部能力自动加载，无需逐个选择。如果新插件没有出现在 Codex 中，请新建任务或重启 Codex 后再检查。
+Marketplace 清单位于仓库根目录的 `.agents/plugins/marketplace.json`，因此 **Path 留空**。按提示授权 GitHub 读取这个私有仓库，导入后再由成员通过 Plugins 目录安装。
+
+如果本地 Agent 已具备 GitHub 与插件管理能力，也可以让它协助完成上述步骤；这只是便捷方式，不是所有 Codex 入口都支持的通用安装方式。
 
 后续可直接用自然语言开始，不需要记住 Skill 名，例如：
 
@@ -59,7 +66,7 @@ https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 我是第一次使用这套 AI 影像制作 Skills。我只有一个模糊想法，请一次只带我完成一个小目标；我不知道时给我容易比较的选项。
 ```
 
-Codex 官方说明：[Plugin 可以在一个包中包含多个 Skill](https://developers.openai.com/codex/plugins)。
+Codex 官方说明：[构建 Plugins](https://learn.chatgpt.com/docs/build-plugins)、[使用 Plugins](https://learn.chatgpt.com/docs/plugins)、[企业工作区插件管理](https://learn.chatgpt.com/docs/enterprise/plugin-management)。
 
 ### 手动获取并作为项目使用
 
