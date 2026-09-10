@@ -1,0 +1,177 @@
+# 범용 AI 영상 제작 Skills
+
+[中文](README.md)｜[한국어](README.ko-KR.md)
+
+AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 창작 협업 스킬 모음입니다. 아이디어, 시나리오, 세계관, 캐릭터, 장면, 스토리보드, 생성 요청, 영상 제작, 결과 리뷰를 추적 가능하고 다시 이어갈 수 있는 하나의 워크플로로 연결합니다. Agent를 처음 사용하는 창작자도 자연어로 바로 시작할 수 있습니다.
+
+현재 버전: **0.5.0｜초보자 안내 및 단계별 Markdown 저장 버전**
+
+> Skill 이름이나 프롬프트 작성법을 먼저 배울 필요가 없습니다. 사용자는 설명하고, 비교하고, 거절하고, 확정하면 됩니다. Agent가 방법 선택과 단계·버전·파일 관리를 담당합니다.
+
+## 주요 특징
+
+- **네 가지 자연스러운 시작점**: 막연한 아이디어, 기존 이야기/시나리오, 보유 이미지, 만족스럽지 않은 생성 결과 어디에서든 시작할 수 있습니다.
+- **10개의 전문 Skill 협업**: 초기 아이디어부터 실제 생성 결과 리뷰까지 전 과정을 다룹니다.
+- **초보자·협업·전문가 모드**: 대화 복잡도는 조절하되 전문 판단과 증거 기준은 낮추지 않습니다.
+- **한 번에 하나의 작은 목표**: 실제로 진행을 막는 질문은 최대 하나만 하며, “모르겠다”도 유효한 답입니다.
+- **단계 확정과 저장 분리**: 긍정적인 반응은 확정이 아니며, 저장은 업로드·생성·결제·게시·연구 동의를 뜻하지 않습니다.
+- **완전한 Markdown 단계 산출물**: 확정 후 새 버전을 만들고 기존 버전을 조용히 덮어쓰지 않으며, 저장 뒤 다시 읽어 검증합니다.
+- **세션 간 복구**: 프로젝트 인덱스, 권한 기록, 세션 인계 문서를 통해 실제 진행 상태를 복원합니다.
+- **제작 증거 추적**: planned, submitted, generated, reviewed, 사람의 최종 승인을 구분합니다.
+- **Seedance / Jimeng 제작 지원**: 숏 그룹, 소재 역할, 정식 생성 요청, 이어 만들기, 10차원 리뷰, 부분 수정 방법을 포함합니다.
+- **연구 사용 기본 비활성화**: production, provenance, research를 분리하며 연구 사용에는 별도의 명시적 동의가 필요합니다.
+
+## 10개의 Skills
+
+| Skill | 용도 |
+|---|---|
+| [`ai-creative-workflow-router`](skills/ai-creative-workflow-router/SKILL.md) | 초보자 진입, 단계 간 라우팅, 복구, 최소 범위 되돌리기 |
+| [`ai-visual-ideation`](skills/ai-visual-ideation/SKILL.md) | 막연한 아이디어를 비교 가능한 창작 방향으로 발전 |
+| [`ai-screenplay-development`](skills/ai-screenplay-development/SKILL.md) | 시나리오, 장면 연결, 행동, 대사, 진단과 수정 |
+| [`ai-worldbuilding`](skills/ai-worldbuilding/SKILL.md) | 세계 규칙, 자원 체계, 시공간 관계와 일관성 |
+| [`ai-character-design`](skills/ai-character-design/SKILL.md) | 캐릭터 콘셉트, 외형, 연기와 제작 자산 |
+| [`ai-scene-design`](skills/ai-scene-design/SKILL.md) | 공간 구조, 구도, 빛과 색, 재질, 상태 파생 |
+| [`ai-storyboard-design`](skills/ai-storyboard-design/SKILL.md) | 비트, 블로킹, 숏 리듬과 연속성 |
+| [`ai-prompt-execution-contract`](skills/ai-prompt-execution-contract/SKILL.md) | 정지 이미지 및 영상용 실행 가능한 생성 요청 |
+| [`ai-video-production-classroom`](skills/ai-video-production-classroom/SKILL.md) | 플랫폼 요청, 영상 이어 만들기, 제작 상태와 편집 인계 |
+| [`ai-generation-review`](skills/ai-generation-review/SKILL.md) | 실제 미디어 증거에 기반한 진단, 수정, 회귀 리뷰 |
+
+## 빠른 시작
+
+### 1. 저장소 받기
+
+```bash
+git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
+cd universal-ai-video-production-skills-v0.5.0
+```
+
+비공개 저장소인 경우 접근 권한이 있는 GitHub 계정이 필요합니다.
+
+### 2. Agent에서 저장소 열기
+
+- **Codex / Hermes 및 호환 Agent**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`AGENTS.md`](AGENTS.md)에 있습니다.
+- **Claude Code**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`CLAUDE.md`](CLAUDE.md)에 있습니다.
+- **기타 Agent**: 먼저 [`START_HERE.md`](START_HERE.md), [`shared/novice-guidance-protocol.md`](shared/novice-guidance-protocol.md), [`shared/common-contract.md`](shared/common-contract.md)를 읽게 합니다.
+
+사용자가 Skill을 직접 고를 필요는 없습니다. 라우터가 현재 작업에 필요한 최소한의 전문 방법을 선택합니다.
+
+### 3. 자연어로 시작하기
+
+다음 문장을 그대로 사용할 수 있습니다.
+
+> Agent를 처음 사용합니다. 지금 제게는 【아이디어 / 이야기 또는 시나리오 / 이미지 / 만족스럽지 않은 생성 결과】가 있습니다. 한 번에 작은 목표 하나씩 진행해 주세요. 제가 모르겠다고 하면 쉽게 비교할 수 있는 선택지를 제안해 주세요.
+
+구체적인 작업으로 바로 시작해도 됩니다.
+
+```text
+이별에 관한 단편 영상 아이디어가 있지만 아직 명확하지 않습니다. 먼저 비교하기 쉬운 핵심 이미지 세 가지를 제안해 주세요.
+```
+
+```text
+이것은 제 시나리오입니다. 전체를 다시 쓰지 말고, 먼저 두 번째 장면의 긴장감이 약한 이유를 찾은 뒤 핵심 행동만 시험 삼아 고쳐 주세요.
+```
+
+```text
+캐릭터 레퍼런스와 생성 결과입니다. 먼저 정체성 드리프트가 어디에서 발생했는지 판단하고 최소 수정안을 제시해 주세요.
+```
+
+### 4. 단계 산출물 확정 및 저장
+
+단계 산출물이 충분히 완성되면 Agent는 **확정 후 저장 / 확정하되 지금은 저장하지 않기 / 계속 수정** 중 하나를 선택하도록 안내합니다. 저장하려면 다음처럼 말할 수 있습니다.
+
+> 이 단계를 완료된 것으로 확정합니다. 기존 버전을 덮어쓰지 말고 새로운 Markdown 버전으로 저장해 주세요.
+
+처음 저장할 때는 프로젝트 폴더 하나만 지정하면 됩니다. Agent가 다음 기본 기록 파일 중 누락된 파일을 자동으로 만듭니다.
+
+- `PROJECT_BRIEF.md`
+- `AUTHORIZATIONS.md`
+- `PROJECT_INDEX.md`
+- `SESSION_HANDOFF.md`
+- `DECISIONS.md`
+
+단계 산출물은 기본적으로 `이름_vNNN.md` 형식으로 저장됩니다. 완전한 저장 작업에는 본문 파일 재확인, 프로젝트 인덱스와 세션 인계 문서 업데이트 및 재확인이 포함됩니다.
+
+### 5. 다음 세션에서 이어가기
+
+새 대화에서 다음과 같이 요청합니다.
+
+> AUTHORIZATIONS.md, PROJECT_INDEX.md, SESSION_HANDOFF.md를 먼저 읽고 현재 채택된 전체 산출물 파일도 읽어 주세요. 어디까지 확정되었는지 쉬운 말로 알려 준 뒤, 한 번에 작은 목표 하나씩 진행해 주세요.
+
+## 워크플로
+
+```text
+자연어 요구
+→ Agent가 시작점과 현재 단계 식별
+→ 매 턴 작은 목표 하나 완성
+→ 사용자가 비교·거절·확정
+→ 완전한 단계 산출물 제시
+→ 명시적 확정 및 저장 권한 확인
+→ 새 Markdown 버전 생성 및 재확인
+→ 프로젝트 인덱스와 세션 인계 업데이트
+→ 다음 단계 진행 또는 새 세션에서 복구
+```
+
+스토리보드에서 제작으로 넘어갈 때의 흐름은 다음과 같습니다.
+
+```text
+storyboard shots
+→ production_group / Clip / DO
+→ generation_request
+→ 실제 플랫폼 제출 및 원본 출력
+→ 10차원 리뷰
+→ edit_unit
+→ 사람의 최종 판단과 납품
+```
+
+계획, 제출, 생성, 리뷰, 사람의 최종 승인은 서로 다른 상태입니다. 실제 미디어가 없으면 작업 ID, 타임코드, 음향 판단 또는 통과 결과를 꾸며 내지 않습니다.
+
+## 대화 방식과 작업 깊이
+
+대화 방식은 언제든 바꿀 수 있습니다.
+
+- **초보자 모드**: 기본값이며 쉬운 말로 한 단계씩 진행합니다.
+- **협업 모드**: Agent와 함께 대안을 비교하고 시험 작성하며 다듬습니다.
+- **전문가 모드**: 전체 필드, 의존성, 상태, 제작 인계 정보를 표시합니다.
+
+작업 깊이는 별도로 관리합니다.
+
+- `production`: 기본값이며 실제 창작과 제작에 사용합니다.
+- `provenance`: 필요할 때 방법의 출처와 증거 범위를 확인합니다.
+- `research`: 명시적으로 동의한 경우에만 활성화되며 production 확정 상태를 역으로 바꿀 수 없습니다.
+
+## 권한 경계
+
+다음 행동은 각각 별도의 권한이 필요하며 서로 대신할 수 없습니다.
+
+- 초안 또는 확정본 저장
+- 파일 덮어쓰기 또는 삭제
+- 소재 업로드
+- 유료 생성 실행
+- 작품 게시
+- 평가, 연구, 학습 또는 공개 전시에 작품 사용
+
+“좋아요”, “계속해 주세요”, “방향이 맞아요” 같은 표현은 긍정적인 피드백일 뿐, 단계 확정이나 외부 작업 권한을 자동으로 의미하지 않습니다.
+
+## 검증
+
+저장소 루트에서 다음을 실행합니다.
+
+```bash
+python evals/validate_package.py .
+```
+
+정적 검증은 Skill 버전과 참조, 공유 프로토콜 일관성, 프로젝트 템플릿, 공통 schema, 재귀 리소스, 비공개 경로 노출을 검사합니다. 실제 플랫폼 생성, 예술적 품질 판단, 외부 사용자 테스트를 대신하지는 않습니다.
+
+## 문서 안내
+
+- [초보자 시작 안내](START_HERE.md)
+- [0.5.0 전체 개요](00_通用AI影像制作Skills_总览.md)
+- [상세 사용 설명](skills/ai-creative-workflow-router/references/user-guide.md)
+- [초보자 협업 프로토콜](shared/novice-guidance-protocol.md)
+- [공통 상태 및 권한 프로토콜](shared/common-contract.md)
+- [0.5.0 검증 보고서](03_0.5.0_新手引导与阶段落盘验证报告.md)
+
+## 검증 범위
+
+0.5.0은 구조화된 워크플로, 정적 검사, 일부 Agent 행동 증거를 갖추고 있지만 모든 모델, 플랫폼 진입점, 랜덤 시드, 예술 스타일, 실제 사용자 경로가 검증되었다는 뜻은 아닙니다. 플랫폼 기능은 바뀔 수 있으므로 모델 길이, 소재 수, 음향 또는 편집 기능에 관한 판단에는 출처, 모델, 진입점, 확인 날짜를 기록해야 합니다.
+

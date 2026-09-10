@@ -1,0 +1,177 @@
+# 通用 AI 影像制作 Skills
+
+[中文](README.md)｜[한국어](README.ko-KR.md)
+
+面向 AI 短片、动画和视觉叙事的创作协作技能组。它把创意、剧本、世界观、角色、场景、分镜、生成请求、视频生产和结果评审串成一条可追踪、可恢复的工作流，同时让第一次使用 Agent 的创作者也能直接用自然语言开始。
+
+当前版本：**0.5.0｜新手引导与阶段落盘版**
+
+> 你不需要记住 Skill 名，也不需要先学提示词。你只需描述、比较、否决和确认；Agent 负责选择方法、维护阶段、版本和文件。
+
+## 主要特性
+
+- **四种自然入口**：从模糊想法、现有故事或剧本、已有图片、失败的生成结果任意切入。
+- **十个专业 Skill 协作**：覆盖从早期创意到真实生成结果评审的完整链路。
+- **新手、协作、专业三种交流方式**：复杂度可以调整，专业判断和证据门槛不降低。
+- **每轮一个小目标**：最多询问一个真正阻断的问题；“不知道”是有效回答。
+- **阶段确认与保存分离**：积极反馈不等于定稿，保存不等于上传、生成、付费、发布或研究同意。
+- **完整 Markdown 阶段成果**：确认后创建新版本，不静默覆盖旧版，并回读验证。
+- **跨会话恢复**：通过项目索引、授权记录和会话交接恢复真实进度，不凭聊天记忆猜最新版。
+- **生产证据可追踪**：区分 planned、submitted、generated、reviewed 与人工接受，不把提示词完成冒充生成完成。
+- **Seedance / 即梦生产支持**：包含镜头分组、素材职责、正式请求、续接、十维评审和局部返修方法。
+- **研究默认关闭**：生产、方法溯源和研究分层管理，研究使用必须另行获得明确同意。
+
+## 十个 Skills
+
+| Skill | 用途 |
+|---|---|
+| [`ai-creative-workflow-router`](skills/ai-creative-workflow-router/SKILL.md) | 新手入口、跨阶段路由、恢复与最小回退 |
+| [`ai-visual-ideation`](skills/ai-visual-ideation/SKILL.md) | 从模糊想法形成可比较的创意方向 |
+| [`ai-screenplay-development`](skills/ai-screenplay-development/SKILL.md) | 剧本、场景链、动作、对白、诊断与改写 |
+| [`ai-worldbuilding`](skills/ai-worldbuilding/SKILL.md) | 世界规则、资源制度、时空关系与一致性 |
+| [`ai-character-design`](skills/ai-character-design/SKILL.md) | 角色概念、造型、表演和生产资产 |
+| [`ai-scene-design`](skills/ai-scene-design/SKILL.md) | 场景空间、构图、光色、材质与状态派生 |
+| [`ai-storyboard-design`](skills/ai-storyboard-design/SKILL.md) | Beat、调度、镜头节奏和连续性 |
+| [`ai-prompt-execution-contract`](skills/ai-prompt-execution-contract/SKILL.md) | 静态图像及视频的可执行生成请求 |
+| [`ai-video-production-classroom`](skills/ai-video-production-classroom/SKILL.md) | 平台请求、视频续接、生产状态和剪辑交付 |
+| [`ai-generation-review`](skills/ai-generation-review/SKILL.md) | 基于真实媒体证据的诊断、修复和回归评审 |
+
+## 快速开始
+
+### 1. 获取仓库
+
+```bash
+git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
+cd universal-ai-video-production-skills-v0.5.0
+```
+
+这是私有仓库时，需要使用具备访问权限的 GitHub 账户。
+
+### 2. 在 Agent 中打开仓库
+
+- **Codex / Hermes 及兼容 Agent**：打开仓库根目录；入口规则位于 [`AGENTS.md`](AGENTS.md)。
+- **Claude Code**：打开仓库根目录；入口规则位于 [`CLAUDE.md`](CLAUDE.md)。
+- **其他 Agent**：先让它读取 [`START_HERE.md`](START_HERE.md)、[`shared/novice-guidance-protocol.md`](shared/novice-guidance-protocol.md) 和 [`shared/common-contract.md`](shared/common-contract.md)。
+
+无需手动选择 Skill。总控会根据任务加载最小必要的领域方法。
+
+### 3. 用自然语言开始
+
+可以直接复制：
+
+> 我是第一次使用 Agent。我现在有【一个想法 / 故事或剧本 / 图片 / 不理想的生成结果】。请一次只带我完成一个小目标；我不知道时给我容易比较的选项。
+
+也可以从具体任务开始：
+
+```text
+我有一个关于告别的短片想法，但还没想清楚。先给我三个容易比较的核心意象。
+```
+
+```text
+这是我的剧本。不要全部重写，先找出第二场失去张力的原因，并试改关键动作。
+```
+
+```text
+这是角色参考图和生成结果。请先判断身份漂移发生在哪里，再给最小修复方案。
+```
+
+### 4. 确认并保存阶段成果
+
+阶段成果成熟后，Agent 会让你选择：**确认并保存、确认但暂不保存、继续修改**。需要保存时可说：
+
+> 我确认本阶段完成。请保存为新的 Markdown 版本，不覆盖旧版。
+
+第一次保存时，提供一个项目文件夹即可。Agent 会自动创建缺失的基础记录：
+
+- `PROJECT_BRIEF.md`
+- `AUTHORIZATIONS.md`
+- `PROJECT_INDEX.md`
+- `SESSION_HANDOFF.md`
+- `DECISIONS.md`
+
+阶段成果默认按 `名称_vNNN.md` 保存。完整保存还包括回读主文件、更新并回读项目索引和会话交接。
+
+### 5. 下次继续
+
+在新会话中说：
+
+> 请先读取 AUTHORIZATIONS.md、PROJECT_INDEX.md 和 SESSION_HANDOFF.md，再读取当前采用的完整成果文件。用普通语言告诉我已经确认到哪里，然后一次推进一个小目标。
+
+## 工作流
+
+```text
+自然语言需求
+→ Agent 识别入口与当前阶段
+→ 每轮完成一个小目标
+→ 用户比较、否决或确认
+→ 展示完整阶段成果
+→ 明确确认与授权保存
+→ 创建新的 Markdown 版本并回读验证
+→ 更新项目索引和会话交接
+→ 进入下一阶段或跨会话恢复
+```
+
+从分镜进入生产时：
+
+```text
+storyboard shots
+→ production_group / Clip / DO
+→ generation_request
+→ 真实平台提交与原始输出
+→ 十维评审
+→ edit_unit
+→ 人工裁决与交付
+```
+
+计划、提交、生成、评审和人工接受是不同状态。没有真实媒体时，系统不会伪造任务 ID、时间码、声音结论或通过结果。
+
+## 交互方式与工作深度
+
+交流方式可以随时切换：
+
+- **新手模式**：默认，使用普通语言逐步推进；
+- **协作模式**：共同比较、试写和推敲方案；
+- **专业模式**：显示完整字段、依赖、状态和生产交接。
+
+工作深度独立管理：
+
+- `production`：默认，用于真实创作和生产；
+- `provenance`：按需查看方法来源和证据边界；
+- `research`：只有明确同意后启用，不能反向改变生产确认状态。
+
+## 权限边界
+
+以下行为分别需要相应授权，不能相互替代：
+
+- 保存草稿或定稿；
+- 覆盖或删除文件；
+- 上传素材；
+- 调用付费生成；
+- 发布作品；
+- 将作品用于评测、研究、训练或公开展示。
+
+“不错”“继续”“方向对了”只代表积极反馈，不自动构成阶段确认或任何外部操作授权。
+
+## 校验
+
+在仓库根目录运行：
+
+```bash
+python evals/validate_package.py .
+```
+
+静态校验覆盖 Skill 版本和引用、共享协议一致性、项目模板、公共 schema、递归资源与私有路径泄漏。它不能替代真实平台生成、艺术质量判断或外部用户测试。
+
+## 文档导航
+
+- [新手入口](START_HERE.md)
+- [0.5.0 总览](00_通用AI影像制作Skills_总览.md)
+- [完整使用说明](skills/ai-creative-workflow-router/references/user-guide.md)
+- [新手协作协议](shared/novice-guidance-protocol.md)
+- [公共状态与授权协议](shared/common-contract.md)
+- [0.5.0 验证报告](03_0.5.0_新手引导与阶段落盘验证报告.md)
+
+## 验证边界
+
+0.5.0 已建立结构化工作流、静态检查和部分 Agent 行为证据，但这不代表所有模型、平台入口、随机种子、艺术风格和真实用户路径都已验证。平台能力会变化；涉及模型时长、素材数量、声音或编辑能力的结论，应记录来源、模型、入口和核验日期。
+
