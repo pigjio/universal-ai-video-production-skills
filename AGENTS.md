@@ -12,3 +12,4 @@
 8. 跨会话先按公共协议读取项目模板和实际成果文件，发现冲突则标记待复核，不自行补成 confirmed。
 9. production 为默认工作层；provenance 按需；research-extension 必须单独启用，且不得反向改变 production 确认状态。
 10. 可以读取各 `skills/*/SKILL.md` 进行内部路由，但面向新手使用自然语言，不暴露不必要的技能选择负担。
+11. 默认使用用户当前主要语言回答；韩文请求使用韩文协作。语言切换不改变 Skill 路由、阶段状态、证据门槛或授权边界；韩文的“不知道”、积极反馈、确认、保存和否定授权按 `shared/novice-guidance-protocol.md` 的语义处理。

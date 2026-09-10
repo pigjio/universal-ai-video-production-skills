@@ -1,7 +1,7 @@
 ---
 name: ai-visual-ideation
-description: "用于 AI 电影、动画及视觉作品的创意起步、氛围、核心意象与方向比较；新手自然地说‘我只有一个模糊画面’‘不知道拍什么’‘帮我把这个点子展开’也触发。Use for guided ideation and concrete micro-drafts without requiring a full brief; screenplay rewrites and world mechanics route to their specialist skills."
-version: 0.5.0
+description: "用于 AI 电影、动画及视觉作品的创意起步、氛围、核心意象与方向比较；新手自然地说‘我只有一个模糊画面’‘不知道拍什么’‘帮我把这个点子展开’也触发。한국어로 ‘막연한 장면만 있어요’ ‘아이디어를 펼쳐 주세요’라고 해도 트리거된다. Use for guided ideation and concrete micro-drafts without requiring a full brief; screenplay rewrites and world mechanics route to their specialist skills."
+version: 0.5.1
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

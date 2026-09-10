@@ -1,7 +1,7 @@
 ---
 name: ai-prompt-execution-contract
-description: "用于把已确认的创意、角色、环境、物体、抽象视觉或分镜转成可执行且可评审的生成合同；Seedance/即梦正式 DO、逐镜视频提示词、参考素材职责、状态接力和容量压缩也触发。Use when writing, auditing, assembling or repairing static-image and temporal-video prompts, including self-contained Seedance generation requests. Separate record shorthand from submitted payload, encode observable outcomes, and preserve authorization and evidence boundaries."
-version: 0.5.0
+description: "用于把已确认的创意、角色、环境、物体、抽象视觉或分镜转成可执行且可评审的生成合同；Seedance/即梦正式 DO、逐镜视频提示词、参考素材职责、状态接力和容量压缩也触发。한국어로 ‘이 콘셉트를 실행 가능한 생성 프롬프트로 만들어 주세요’라고 해도 트리거된다. Use when writing, auditing, assembling or repairing static-image and temporal-video prompts, including self-contained Seedance generation requests. Separate record shorthand from submitted payload, encode observable outcomes, and preserve authorization and evidence boundaries."
+version: 0.5.1
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

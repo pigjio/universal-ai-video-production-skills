@@ -1,7 +1,7 @@
 ---
 name: ai-screenplay-development
-description: "用于 AI 电影、动画及视觉作品的剧本、动作谱、场景链、对白、结构诊断和改写；新手自然地说‘帮我把点子写成故事’‘下一场怎么写’‘先试两句对白’也触发，无需完整大纲。Use for guided screenplay drafting through visible action, information and causality; world encyclopedias, character visuals and shot lists route elsewhere."
-version: 0.5.0
+description: "用于 AI 电影、动画及视觉作品的剧本、动作谱、场景链、对白、结构诊断和改写；新手自然地说‘帮我把点子写成故事’‘下一场怎么写’‘先试两句对白’也触发，无需完整大纲。한국어로 ‘이 아이디어를 이야기로 써 주세요’ ‘다음 장면을 써 주세요’라고 해도 트리거된다. Use for guided screenplay drafting through visible action, information and causality; world encyclopedias, character visuals and shot lists route elsewhere."
+version: 0.5.1
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

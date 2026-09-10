@@ -1,7 +1,7 @@
 ---
 name: ai-creative-workflow-router
-description: "AI 影像创作的唯一新手入口与跨阶段总控；用户只需自然地说‘我有个画面但不知道怎么开始’‘帮我做短片’‘接下来做什么’或直接描述需求即可触发。Use for novice onboarding, project routing, stage coordination, Seedance/即梦 production handoff and recovery while preserving versions, evidence and human approval."
-version: 0.5.0
+description: "AI 影像创作的唯一新手入口与跨阶段总控；用户只需自然地说‘我有个画面但不知道怎么开始’‘帮我做短片’‘接下来做什么’或直接描述需求即可触发。한국어로 ‘AI 영상을 처음 만드는데 어디서 시작하나요?’ ‘다음에 무엇을 해야 하나요?’라고 말해도 같은 초보자 라우팅을 적용한다. Use for novice onboarding, project routing, stage coordination, Seedance/即梦 production handoff and recovery while preserving versions, evidence and human approval."
+version: 0.5.1
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

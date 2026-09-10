@@ -1,83 +1,62 @@
 {
-  "package_version": "0.5.0",
-  "baseline_version": "0.4.0",
+  "package_version": "0.5.1",
+  "baseline_version": "0.5.0",
   "manifest_self_excluded": true,
   "summary": {
-    "files_excluding_manifest": 138,
-    "added": 36,
-    "modified": 27,
+    "files_excluding_manifest": 146,
+    "added": 3,
+    "modified": 29,
     "removed": 0,
-    "unchanged": 75
+    "unchanged": 114
   },
   "added": [
-    "03_0.5.0_新手引导与阶段落盘验证报告.md",
-    "AGENTS.md",
-    "CLAUDE.md",
-    "LICENSE",
-    "START_HERE.md",
-    "evals/check_novice_runs.py",
-    "evals/novice-cases-0.5.0.md",
-    "evals/novice-run-check-0.5.0.json",
-    "evals/runs/novice-0.5.0/case-1-cold-start/output.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/output.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/project/AUTHORIZATIONS.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/project/PROJECT_INDEX.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/project/SESSION_HANDOFF.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v001.md",
-    "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v002.md",
-    "evals/runs/novice-0.5.0/case-3-capability-fallback/output.md",
-    "evals/static-validation-0.5.0.json",
-    "provenance/README.md",
-    "research-extension/README.md",
-    "shared/novice-guidance-protocol.md",
-    "skills/ai-character-design/references/novice-guidance-protocol.md",
-    "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
-    "skills/ai-generation-review/references/novice-guidance-protocol.md",
-    "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
-    "skills/ai-scene-design/references/novice-guidance-protocol.md",
-    "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
-    "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
-    "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
-    "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
-    "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
-    "templates/AUTHORIZATIONS.md",
-    "templates/DECISIONS.md",
-    "templates/PROJECT_BRIEF.md",
-    "templates/PROJECT_INDEX.md",
-    "templates/SESSION_HANDOFF.md",
-    "templates/stage-deliverable-template.md"
+    "evals/check_korean_support.py",
+    "evals/korean-cases-0.5.1.json",
+    "evals/korean-validation-0.5.1.md"
   ],
   "modified": [
-    "00_通用AI影像制作Skills_审查总文档.md",
-    "00_通用AI影像制作Skills_总览.md",
-    "09_通用提示词格式与项目实测规则融合.md",
-    "README_审查包说明.md",
+    ".agents/plugins/marketplace.json",
+    ".codex-plugin/plugin.json",
+    "AGENTS.md",
+    "README.ko-KR.md",
+    "README.md",
+    "START_HERE.md",
     "evals/validate_package.py",
-    "shared/common-contract.md",
+    "plugin.json",
+    "shared/novice-guidance-protocol.md",
     "skills/ai-character-design/SKILL.md",
-    "skills/ai-character-design/references/common-contract.md",
+    "skills/ai-character-design/references/novice-guidance-protocol.md",
     "skills/ai-creative-workflow-router/SKILL.md",
-    "skills/ai-creative-workflow-router/references/common-contract.md",
-    "skills/ai-creative-workflow-router/references/user-guide.md",
+    "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
     "skills/ai-generation-review/SKILL.md",
-    "skills/ai-generation-review/references/common-contract.md",
+    "skills/ai-generation-review/references/novice-guidance-protocol.md",
     "skills/ai-prompt-execution-contract/SKILL.md",
-    "skills/ai-prompt-execution-contract/references/common-contract.md",
+    "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
     "skills/ai-scene-design/SKILL.md",
-    "skills/ai-scene-design/references/common-contract.md",
+    "skills/ai-scene-design/references/novice-guidance-protocol.md",
     "skills/ai-screenplay-development/SKILL.md",
-    "skills/ai-screenplay-development/references/common-contract.md",
+    "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
     "skills/ai-storyboard-design/SKILL.md",
-    "skills/ai-storyboard-design/references/common-contract.md",
+    "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
     "skills/ai-video-production-classroom/SKILL.md",
-    "skills/ai-video-production-classroom/references/common-contract.md",
+    "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
     "skills/ai-visual-ideation/SKILL.md",
-    "skills/ai-visual-ideation/references/common-contract.md",
+    "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
     "skills/ai-worldbuilding/SKILL.md",
-    "skills/ai-worldbuilding/references/common-contract.md"
+    "skills/ai-worldbuilding/references/novice-guidance-protocol.md"
   ],
   "removed": [],
   "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "sha256": "c0a6decfe8a3b09d96277cac7ac98b8a86b54e4f37be37734c8401a4b087922e",
+      "bytes": 1014
+    },
+    {
+      "path": ".codex-plugin/plugin.json",
+      "sha256": "c94cfba40db6e670e5c12afe792cab9a500f11b827c13ecab8feeff47645ab11",
+      "bytes": 1567
+    },
     {
       "path": "00_通用AI影像制作Skills_审查总文档.md",
       "sha256": "9d56aa45ae730f97a26b52bddafd2fec43c9c5f6230640d6245b5da458cc5417",
@@ -110,8 +89,8 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "adfe3eba15af2cf3cebc6feedc1c7113f83554be3184349e36363d91641aea15",
-      "bytes": 1789
+      "sha256": "acc8784f59b4098c743ae44e8d93e35d675fb7246d3e2fcb062b34c8554368ca",
+      "bytes": 2085
     },
     {
       "path": "CLAUDE.md",
@@ -124,6 +103,31 @@
       "bytes": 1086
     },
     {
+      "path": "README.ko-KR.md",
+      "sha256": "f3fada94c96f3ce5a9f183abecfe151a97afd2b74f6363dbd43a68ff7025e347",
+      "bytes": 13862
+    },
+    {
+      "path": "README.md",
+      "sha256": "2beff0e17798386aa4554ba7e6d6acf240a8eeae52173416c31395df8428574d",
+      "bytes": 10629
+    },
+    {
+      "path": "README_审查包说明.md",
+      "sha256": "7274297d8bf74105d405c678cb6d5907f4c69a610eb9b82ff3368bfff1b9592e",
+      "bytes": 5160
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "9b0f2409b3e918f053719f7f80682fbe1ab037c52abb65ac241132b523510a57",
+      "bytes": 3087
+    },
+    {
+      "path": "evals/check_korean_support.py",
+      "sha256": "c70f2cf3900542b97a53237676184bed973578580b36a9ae089b6fbc57460fac",
+      "bytes": 3687
+    },
+    {
       "path": "evals/check_novice_runs.py",
       "sha256": "a8c4909a5c0d54e13a328795abbded3ce2e6eae8361f0d301d10b38f1daa7b70",
       "bytes": 3036
@@ -132,6 +136,16 @@
       "path": "evals/fixtures/handoff.json",
       "sha256": "f2ddf03ea183dd33d5feb66239f4cc5145017cdbe12760b9b2c114b8b82be965",
       "bytes": 21150
+    },
+    {
+      "path": "evals/korean-cases-0.5.1.json",
+      "sha256": "04b75146577d3bf36d5137ac36b07cf3eec861d263b2068b37354ddeffcd4c3f",
+      "bytes": 3595
+    },
+    {
+      "path": "evals/korean-validation-0.5.1.md",
+      "sha256": "16d4972876338a76390f611a37391d0cb24da83736364d05ba6c0862f97228fb",
+      "bytes": 2158
     },
     {
       "path": "evals/novice-cases-0.5.0.md",
@@ -215,18 +229,18 @@
     },
     {
       "path": "evals/validate_package.py",
-      "sha256": "46d0c79f6ef16b21c16568c96bef6564ee91e187c84c8cfd851c7b76f395debd",
-      "bytes": 11171
+      "sha256": "d740e5ae4ec094644996cf3292abe7778bdaf592f1d3eac5a5f9b2b7e3922820",
+      "bytes": 11270
+    },
+    {
+      "path": "plugin.json",
+      "sha256": "63a096c9791fcc3339438c197374a481811e92c294c453ab57bccc979cddb292",
+      "bytes": 1725
     },
     {
       "path": "provenance/README.md",
       "sha256": "69e534aa90f7a0ea76a7db808256d33f334b30bd09689d5602692732394ec331",
       "bytes": 1156
-    },
-    {
-      "path": "README_审查包说明.md",
-      "sha256": "7274297d8bf74105d405c678cb6d5907f4c69a610eb9b82ff3368bfff1b9592e",
-      "bytes": 5160
     },
     {
       "path": "research-extension/README.md",
@@ -240,8 +254,13 @@
     },
     {
       "path": "shared/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
+    },
+    {
+      "path": "skills/ai-character-design/SKILL.md",
+      "sha256": "8af30edd2100e10916240df02ad369914137c294ff2db2e8d91efc12ad0d0cbf",
+      "bytes": 26799
     },
     {
       "path": "skills/ai-character-design/references/branches-and-diagnostics.md",
@@ -260,8 +279,8 @@
     },
     {
       "path": "skills/ai-character-design/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-character-design/references/performance-and-production.md",
@@ -279,9 +298,9 @@
       "bytes": 3097
     },
     {
-      "path": "skills/ai-character-design/SKILL.md",
-      "sha256": "f9fbf7e14746eced83fbab897d714b94612d9ae342e7de764e10a38871e15663",
-      "bytes": 26663
+      "path": "skills/ai-creative-workflow-router/SKILL.md",
+      "sha256": "5d70f2823481ed4bad41f15212c1551c9ea5a0518923374e7c5e0806274f3cf7",
+      "bytes": 12574
     },
     {
       "path": "skills/ai-creative-workflow-router/references/common-contract.md",
@@ -295,8 +314,8 @@
     },
     {
       "path": "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-creative-workflow-router/references/source-map.md",
@@ -309,9 +328,9 @@
       "bytes": 7088
     },
     {
-      "path": "skills/ai-creative-workflow-router/SKILL.md",
-      "sha256": "5da438040b22904d5f362b69c6b4b0e0f3f3a6c81b76374fb5c0e5ed6066c25d",
-      "bytes": 12391
+      "path": "skills/ai-generation-review/SKILL.md",
+      "sha256": "1e40f57bb5fc749d8caac07dddae2199d831ca50a2fe64b825d801c57813354f",
+      "bytes": 14624
     },
     {
       "path": "skills/ai-generation-review/references/common-contract.md",
@@ -325,8 +344,8 @@
     },
     {
       "path": "skills/ai-generation-review/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-generation-review/references/review-template.md",
@@ -354,9 +373,9 @@
       "bytes": 4656
     },
     {
-      "path": "skills/ai-generation-review/SKILL.md",
-      "sha256": "b9d62a37ade1bf156870a2bfc6589822b45129db7266b379a0f3ab93aa1b7845",
-      "bytes": 14514
+      "path": "skills/ai-prompt-execution-contract/SKILL.md",
+      "sha256": "acb3a518873175a5cd862a7a70241b7f8883da470aaa9f08d468b3b2bc4385c2",
+      "bytes": 15277
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/causality-and-diagnostics.md",
@@ -375,8 +394,8 @@
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/reference-duty-and-assembly.md",
@@ -414,9 +433,9 @@
       "bytes": 4243
     },
     {
-      "path": "skills/ai-prompt-execution-contract/SKILL.md",
-      "sha256": "2e7c706e64a977654ec632bbac57c57da6701db25fccff3e70eb8a787373fc25",
-      "bytes": 15151
+      "path": "skills/ai-scene-design/SKILL.md",
+      "sha256": "ed4dc334a7f4f199fc37013951953c4cc39faef0b69f89429ef7c5f4bd606c49",
+      "bytes": 20082
     },
     {
       "path": "skills/ai-scene-design/references/color-script.md",
@@ -440,8 +459,8 @@
     },
     {
       "path": "skills/ai-scene-design/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-scene-design/references/production-handoff.md",
@@ -464,9 +483,9 @@
       "bytes": 1984
     },
     {
-      "path": "skills/ai-scene-design/SKILL.md",
-      "sha256": "fcd06eb5270bf25ae6120419d3469696b61f6d646029ac2aa8f7132c4c5fc482",
-      "bytes": 19980
+      "path": "skills/ai-screenplay-development/SKILL.md",
+      "sha256": "fb97bcfec3fff9f7919396f5e54baae23632589f14e46a5f269de0e1213ebfa0",
+      "bytes": 16671
     },
     {
       "path": "skills/ai-screenplay-development/references/character-and-opposition.md",
@@ -500,8 +519,8 @@
     },
     {
       "path": "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-screenplay-development/references/source-map.md",
@@ -514,9 +533,9 @@
       "bytes": 6662
     },
     {
-      "path": "skills/ai-screenplay-development/SKILL.md",
-      "sha256": "9bea2cda512832665568b6c9663479902466d45dcde7e05f8ef45740219d6836",
-      "bytes": 16538
+      "path": "skills/ai-storyboard-design/SKILL.md",
+      "sha256": "a7b866c33a67f315cee0ec6854cd2c1c93590055800cb9ceb47da1dc5e4ef8ee",
+      "bytes": 22182
     },
     {
       "path": "skills/ai-storyboard-design/references/common-contract.md",
@@ -540,8 +559,8 @@
     },
     {
       "path": "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-storyboard-design/references/pitch-feedback-and-exploration.md",
@@ -594,9 +613,9 @@
       "bytes": 6337
     },
     {
-      "path": "skills/ai-storyboard-design/SKILL.md",
-      "sha256": "a4581648b753651967e24287b98e1af7e6cd48862353728659e9f343f973360d",
-      "bytes": 22084
+      "path": "skills/ai-video-production-classroom/SKILL.md",
+      "sha256": "9c3c5bd5e0b7ba5aa6fb61655830e45771c3ed30d01c948c710f306904739643",
+      "bytes": 15469
     },
     {
       "path": "skills/ai-video-production-classroom/references/clip-continuity.md",
@@ -615,8 +634,8 @@
     },
     {
       "path": "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-video-production-classroom/references/production-grouping-and-task-contract.md",
@@ -644,9 +663,9 @@
       "bytes": 4426
     },
     {
-      "path": "skills/ai-video-production-classroom/SKILL.md",
-      "sha256": "6f84d77de04f096c6b2fadf4265ede95935232046800035085e831f3b2e1fb59",
-      "bytes": 15362
+      "path": "skills/ai-visual-ideation/SKILL.md",
+      "sha256": "88ccd5a9becb38ff6ae7160d1165342c160f34e5e1e713b56a64e8aecaa36149",
+      "bytes": 12868
     },
     {
       "path": "skills/ai-visual-ideation/references/common-contract.md",
@@ -660,8 +679,8 @@
     },
     {
       "path": "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-visual-ideation/references/project-box-and-handoff.md",
@@ -689,9 +708,9 @@
       "bytes": 2420
     },
     {
-      "path": "skills/ai-visual-ideation/SKILL.md",
-      "sha256": "0bcd92699f45be8c22485287f5e1c871b2b8e1ff744c0325ce074352f8f449c9",
-      "bytes": 12750
+      "path": "skills/ai-worldbuilding/SKILL.md",
+      "sha256": "355d2c1edbbc3021e13426e6ca2a55b191a0288a7c0f5073689e77433973efd5",
+      "bytes": 14660
     },
     {
       "path": "skills/ai-worldbuilding/references/common-contract.md",
@@ -705,8 +724,8 @@
     },
     {
       "path": "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
-      "sha256": "634ee55e0b591f553a3b9ade0992460de5e3e94ce85e8319d03be3d4beb3d979",
-      "bytes": 7897
+      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-worldbuilding/references/rules-costs-and-ethics.md",
@@ -727,16 +746,6 @@
       "path": "skills/ai-worldbuilding/references/visual-state-and-handoff.md",
       "sha256": "3d74602998f6865fd3a3e66b21229381536a74bc553abd5537b7ad6946b72fb2",
       "bytes": 3036
-    },
-    {
-      "path": "skills/ai-worldbuilding/SKILL.md",
-      "sha256": "34168565ad0e04b5fceef0b384c5b1e9ca07ae6b1c5c203b029ec8f2e1df7e4c",
-      "bytes": 14520
-    },
-    {
-      "path": "START_HERE.md",
-      "sha256": "f7410c198634e2397ac619f57148c0d4c8e8ce9bcee82d85bf776266eebee631",
-      "bytes": 2628
     },
     {
       "path": "templates/AUTHORIZATIONS.md",
@@ -771,13 +780,12 @@
   ],
   "last_updated": "2026-09-10",
   "post_review_changes": [
-    "Unified one-question stage closeout across all 10 skills",
-    "Automatic first-save initialization of five project record files",
-    "Added N15 empty-project first-save test specification",
-    "Added static regression assertions and UTF-8 fixture decoding for Windows",
-    "Replaced private leakage literals with generic personal-path detection and synthetic regression cases",
-    "Documented supported desktop, CLI, workspace import, and IDE installation paths",
-    "Pinned the Marketplace source to the v0.5.0 release tag",
-    "Added the declared MIT license text"
+    "Added Korean natural-language discovery examples to all 10 bundled Skills",
+    "Added user-language following and Korean authorization semantics to the canonical novice protocol and all Skill copies",
+    "Added Korean onboarding examples and behavioral boundaries to Chinese and Korean documentation",
+    "Added 10 Korean routing cases, 6 authorization behavior cases, and a 52-check deterministic suite",
+    "Validated all 16 cases in a read-only ephemeral Codex model smoke test",
+    "Preserved existing Chinese novice-flow regression coverage and privacy-path detection",
+    "Pinned the Marketplace source to the immutable v0.5.1 release tag"
   ]
 }

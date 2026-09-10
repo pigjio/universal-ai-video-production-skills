@@ -1,7 +1,7 @@
 ---
 name: ai-storyboard-design
-description: "Use when discussing, exploring, designing or diagnosing narrative and non-narrative AI storyboards. 支持分镜讨论与非叙事感知/概念序列，比较构图语气、视觉七要素、空间显隐和试讲反馈；按需深化 Beat、Blocking、连续性、Timing 与 Animatic 交接，不替代平台 SOP。"
-version: 0.5.0
+description: "Use when discussing, exploring, designing or diagnosing narrative and non-narrative AI storyboards. 支持分镜讨论与非叙事感知/概念序列，比较构图语气、视觉七要素、空间显隐和试讲反馈；按需深化 Beat、Blocking、连续性、Timing 与 Animatic 交接，不替代平台 SOP。한국어로 ‘이 장면을 스토리보드로 나눠 주세요’라고 해도 트리거된다."
+version: 0.5.1
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
