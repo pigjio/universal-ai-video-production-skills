@@ -1,0 +1,27 @@
+{
+  "name": "pigjio-ai-video",
+  "interface": {
+    "displayName": "Pigjio AI Video"
+  },
+  "plugins": [
+    {
+      "name": "universal-ai-video-production",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git",
+        "ref": "main"
+      },
+      "description": "A guided AI video production workflow with ten coordinated skills.",
+      "version": "0.5.0",
+      "author": {
+        "name": "Domain Knowledge Distillation"
+      },
+      "homepage": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+      "repository": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+      "license": "MIT",
+      "keywords": ["ai-video", "creative-workflow", "screenplay", "storyboard", "production"],
+      "category": "Creative",
+      "tags": ["ai-video", "creative-workflow"]
+    }
+  ]
+}

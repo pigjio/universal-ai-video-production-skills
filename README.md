@@ -1,8 +1,8 @@
-# 通用 AI 影像制作 Skills
+# 通用 AI 影像制作 Plugin
 
 [中文](README.md)｜[한국어](README.ko-KR.md)
 
-面向 AI 短片、动画和视觉叙事的创作协作技能组。它把创意、剧本、世界观、角色、场景、分镜、生成请求、视频生产和结果评审串成一条可追踪、可恢复的工作流，同时让第一次使用 Agent 的创作者也能直接用自然语言开始。
+面向 AI 短片、动画和视觉叙事的 Codex 创作协作插件。用户只需安装一次，即可获得一个总控 Router 和九个专业 Skill；它们共同把创意、剧本、世界观、角色、场景、分镜、生成请求、视频生产和结果评审串成一条可追踪、可恢复的工作流。
 
 当前版本：**0.5.0｜新手引导与阶段落盘版**
 
@@ -11,7 +11,7 @@
 ## 主要特性
 
 - **四种自然入口**：从模糊想法、现有故事或剧本、已有图片、失败的生成结果任意切入。
-- **十个专业 Skill 协作**：覆盖从早期创意到真实生成结果评审的完整链路。
+- **一个 Plugin，十个专业 Skill**：只安装一次，内部覆盖从早期创意到真实生成结果评审的完整链路。
 - **新手、协作、专业三种交流方式**：复杂度可以调整，专业判断和证据门槛不降低。
 - **每轮一个小目标**：最多询问一个真正阻断的问题；“不知道”是有效回答。
 - **阶段确认与保存分离**：积极反馈不等于定稿，保存不等于上传、生成、付费、发布或研究同意。
@@ -21,7 +21,9 @@
 - **Seedance / 即梦生产支持**：包含镜头分组、素材职责、正式请求、续接、十维评审和局部返修方法。
 - **研究默认关闭**：生产、方法溯源和研究分层管理，研究使用必须另行获得明确同意。
 
-## 十个 Skills
+## Plugin 内的十个 Skills
+
+这十个 Skill 是同一个 Plugin 的内部专业模块，不需要分别安装。`ai-creative-workflow-router` 负责入口和跨阶段路由，其余九个 Skill 按任务自动参与。
 
 | Skill | 用途 |
 |---|---|
@@ -40,16 +42,16 @@
 
 ### 在 Codex 中安装（推荐）
 
-最简单的方法是不手动下载文件，直接把 GitHub 链接交给 Codex。复制下面整段文字，新建一个 Codex 任务并粘贴发送：
+最简单的方法是不手动下载文件，也不分别安装十个 Skill。复制下面整段文字，新建一个 Codex 任务并粘贴发送：
 
 ```text
-请使用 $skill-installer 从这个 GitHub 仓库安装全部 Skills：
+请把下面的 GitHub 仓库作为一个完整的 Codex Plugin 安装：
 https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 
-请安装仓库 skills/ 目录下的全部十个 Skill，保留每个 Skill 的 references、scripts、assets 等配套资源。安装完成后，请列出成功安装的 Skill；如果当前账户无法访问这个私有仓库，请先提示我登录或授权 GitHub，不要改用来源不明的副本。
+这是一个包含 Marketplace 清单的 Plugin 仓库，不要把 skills/ 目录中的十个 Skill 分别安装。请把这个 GitHub 仓库添加为 Plugin Marketplace，再安装其中的 universal-ai-video-production。安装后确认内部十个 Skill 均可发现。如果当前账户无法访问这个私有仓库，请先提示我登录或授权 GitHub，不要改用来源不明的副本。
 ```
 
-然后按 Codex 的提示完成 GitHub 登录或授权。安装完成后，通常可以立即使用；如果新 Skill 没有出现在 Codex 中，请重启 Codex 再检查。
+然后按 Codex 的提示完成 GitHub 登录或授权。安装完成后，用户看到的是一个 `Universal AI Video Production` Plugin；十个 Skill 作为内部能力自动加载，无需逐个选择。如果新插件没有出现在 Codex 中，请新建任务或重启 Codex 后再检查。
 
 后续可直接用自然语言开始，不需要记住 Skill 名，例如：
 
@@ -57,7 +59,7 @@ https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 我是第一次使用这套 AI 影像制作 Skills。我只有一个模糊想法，请一次只带我完成一个小目标；我不知道时给我容易比较的选项。
 ```
 
-Codex 官方说明：[`$skill-installer` 可以从其他仓库下载 Skills](https://developers.openai.com/codex/skills#install-curated-skills-for-local-use)。
+Codex 官方说明：[Plugin 可以在一个包中包含多个 Skill](https://developers.openai.com/codex/plugins)。
 
 ### 手动获取并作为项目使用
 

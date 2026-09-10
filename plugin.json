@@ -1,0 +1,33 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "universal-ai-video-production",
+  "version": "0.5.0",
+  "description": "A guided AI video production workflow with ten coordinated skills for ideation, writing, design, production, and review.",
+  "author": {
+    "name": "Domain Knowledge Distillation",
+    "url": "https://github.com/pigjio"
+  },
+  "homepage": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+  "repository": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+  "license": "MIT",
+  "keywords": ["ai-video", "creative-workflow", "screenplay", "storyboard", "production"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Universal AI Video Production",
+        "shortDescription": "One guided workflow with ten AI video production skills.",
+        "longDescription": "Guides creators from early visual ideas through screenplay, worldbuilding, character and scene design, storyboards, generation requests, video production, and evidence-based review.",
+        "developerName": "Domain Knowledge Distillation",
+        "category": "Creative",
+        "capabilities": ["Interactive", "Write"],
+        "websiteURL": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+        "defaultPrompt": [
+          "Help me turn a rough visual idea into an AI short film, one small decision at a time.",
+          "我只有一个模糊的短片想法，请从一个容易比较的小目标开始。",
+          "막연한 영상 아이디어가 있습니다. 한 번에 작은 목표 하나씩 진행해 주세요."
+        ],
+        "brandColor": "#D94841"
+      }
+    }
+  }
+}
