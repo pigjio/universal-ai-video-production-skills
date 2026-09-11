@@ -1,5 +1,7 @@
 # 0.5.1 韩文自然语言增强测试报告
 
+[中文说明](korean-validation-0.5.1.md)｜[한국어 안내](korean-validation-0.5.1.ko-KR.md)
+
 测试日期：2026-09-10
 
 ## 目标

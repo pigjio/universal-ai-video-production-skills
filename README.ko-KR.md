@@ -1,6 +1,6 @@
 # 범용 AI 영상 제작 Plugin
 
-[中文说明](README.md)｜[한국어 안내](README.ko-KR.md)
+[중국어 안내](README.md)｜[한국어 안내](README.ko-KR.md)
 
 AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창작 협업 플러그인입니다. 한 번만 설치하면 하나의 라우터와 9개의 전문 Skill을 함께 사용할 수 있습니다. 이 모듈들은 아이디어, 시나리오, 세계관, 캐릭터, 장면, 스토리보드, 생성 요청, 영상 제작, 결과 리뷰를 추적 가능하고 다시 이어갈 수 있는 하나의 워크플로로 연결합니다.
 
@@ -197,13 +197,13 @@ python evals/validate_package.py .
 
 ## 문서 안내
 
-- [초보자 시작 안내](START_HERE.md)
-- [0.5.0 전체 개요](00_通用AI影像制作Skills_总览.md)
+- [초보자 시작 안내](START_HERE.ko-KR.md)
+- [0.5.0 전체 개요](00_通用AI影像制作Skills_总览.ko-KR.md)
 - [한국어 상세 사용 설명](skills/ai-creative-workflow-router/references/user-guide.ko-KR.md)
-- [초보자 협업 프로토콜](shared/novice-guidance-protocol.md)
-- [공통 상태 및 권한 프로토콜](shared/common-contract.md)
-- [0.5.0 검증 보고서](03_0.5.0_新手引导与阶段落盘验证报告.md)
-- [0.5.1 한국어 강화 테스트 보고서](evals/korean-validation-0.5.1.md)
+- [초보자 협업 프로토콜](shared/novice-guidance-protocol.ko-KR.md)
+- [공통 상태 및 권한 프로토콜](shared/common-contract.ko-KR.md)
+- [0.5.0 검증 보고서](03_0.5.0_新手引导与阶段落盘验证报告.ko-KR.md)
+- [0.5.1 한국어 강화 테스트 보고서](evals/korean-validation-0.5.1.ko-KR.md)
 
 ## 검증 범위
 

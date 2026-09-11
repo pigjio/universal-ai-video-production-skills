@@ -1,6 +1,6 @@
 # 범용 AI 영상 제작 Skills 사용 설명서
 
-[中文说明](user-guide.md)｜[한국어 안내](user-guide.ko-KR.md)
+[중국어 안내](user-guide.md)｜[한국어 안내](user-guide.ko-KR.md)
 
 적용 버전: **0.5.1｜한국어 자연어 지원 강화 버전**.
 
@@ -152,4 +152,4 @@ Agent는 복잡한 동작을 여러 번의 생성으로 나눌 필요가 있는�
 - **생성 도구가 없음**: 복사해 사용할 수 있는 완전한 요청문, 소재 역할, 결과 회수 목록은 제공할 수 있지만 작업 ID나 결과를 꾸며 내서는 안 됩니다.
 - **미디어를 관찰할 수 없음**: 판단할 수 없는 항목을 `unconfirmable`로 표시하며 실제로 보거나 들은 것처럼 말해서는 안 됩니다.
 
-자세한 프로토콜은 [`novice-guidance-protocol.md`](../../../shared/novice-guidance-protocol.md)와 [`common-contract.md`](../../../shared/common-contract.md)를 참고하세요.
+자세한 프로토콜은 [`novice-guidance-protocol.ko-KR.md`](../../../shared/novice-guidance-protocol.ko-KR.md)와 [`common-contract.ko-KR.md`](../../../shared/common-contract.ko-KR.md)를 참고하세요.
