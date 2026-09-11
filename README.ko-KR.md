@@ -199,7 +199,7 @@ python evals/validate_package.py .
 
 - [초보자 시작 안내](START_HERE.md)
 - [0.5.0 전체 개요](00_通用AI影像制作Skills_总览.md)
-- [상세 사용 설명](skills/ai-creative-workflow-router/references/user-guide.md)
+- [한국어 상세 사용 설명](skills/ai-creative-workflow-router/references/user-guide.ko-KR.md)
 - [초보자 협업 프로토콜](shared/novice-guidance-protocol.md)
 - [공통 상태 및 권한 프로토콜](shared/common-contract.md)
 - [0.5.0 검증 보고서](03_0.5.0_新手引导与阶段落盘验证报告.md)
