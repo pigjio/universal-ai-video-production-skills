@@ -6,8 +6,8 @@
     "name": "Domain Knowledge Distillation",
     "url": "https://github.com/pigjio"
   },
-  "homepage": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
-  "repository": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+  "homepage": "https://github.com/pigjio/universal-ai-video-production-skills",
+  "repository": "https://github.com/pigjio/universal-ai-video-production-skills",
   "license": "MIT",
   "keywords": ["ai-video", "creative-workflow", "screenplay", "storyboard", "production"],
   "skills": "./skills/",
@@ -18,7 +18,7 @@
     "developerName": "Domain Knowledge Distillation",
     "category": "Creative",
     "capabilities": ["Interactive", "Write"],
-    "websiteURL": "https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0",
+    "websiteURL": "https://github.com/pigjio/universal-ai-video-production-skills",
     "defaultPrompt": [
       "Help me turn a rough visual idea into an AI short film, one small decision at a time.",
       "我只有一个模糊的短片想法，请从一个容易比较的小目标开始。",

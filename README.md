@@ -54,7 +54,7 @@
 管理员进入 **Admin → Plugins → Add → Import marketplace**，填写仓库地址：
 
 ```text
-https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
+https://github.com/pigjio/universal-ai-video-production-skills
 ```
 
 Marketplace 清单位于仓库根目录的 `.agents/plugins/marketplace.json`，因此 **Path 留空**。这是公开仓库，不需要私有仓库读取权限；导入后，成员即可通过 Plugins 目录安装。
@@ -78,8 +78,8 @@ Codex 官方说明：[构建 Plugins](https://learn.chatgpt.com/docs/build-plugi
 ### 手动获取并作为项目使用
 
 ```bash
-git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
-cd universal-ai-video-production-skills-v0.5.0
+git clone https://github.com/pigjio/universal-ai-video-production-skills.git
+cd universal-ai-video-production-skills
 ```
 
 仓库已经公开，克隆时不需要 GitHub 私有仓库访问权限。

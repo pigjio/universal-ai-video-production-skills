@@ -1,88 +1,33 @@
 {
   "package_version": "0.6.0",
-  "baseline_version": "0.5.1",
+  "baseline_version": "0.6.0",
   "manifest_self_excluded": true,
   "summary": {
     "files_excluding_manifest": 162,
-    "added": 9,
-    "modified": 50,
+    "added": 0,
+    "modified": 5,
     "removed": 0,
-    "unchanged": 103
+    "unchanged": 157
   },
-  "added": [
-    "evals/check_creative_chain_0_6_0.py",
-    "evals/creative-chain-cases-0.6.0.json",
-    "evals/validation-0.6.0.ko-KR.md",
-    "evals/validation-0.6.0.md",
-    "skills/ai-prompt-execution-contract/references/seedance-student-delivery.md",
-    "skills/ai-screenplay-development/references/collaborative-revision-cases.md",
-    "skills/ai-screenplay-development/references/genre-conventions-and-promises.md",
-    "skills/ai-screenplay-development/references/screenplay-theory-selection-matrix.md",
-    "skills/ai-storyboard-design/references/shot-language-taxonomy.md"
-  ],
+  "added": [],
   "modified": [
     ".agents/plugins/marketplace.json",
     ".codex-plugin/plugin.json",
-    "00_通用AI影像制作Skills_总览.ko-KR.md",
-    "00_通用AI影像制作Skills_总览.md",
-    "evals/check_korean_support.py",
-    "evals/validate_package.py",
     "plugin.json",
     "README.ko-KR.md",
-    "README.md",
-    "shared/common-contract.ko-KR.md",
-    "shared/common-contract.md",
-    "shared/novice-guidance-protocol.ko-KR.md",
-    "shared/novice-guidance-protocol.md",
-    "skills/ai-character-design/references/common-contract.md",
-    "skills/ai-character-design/references/novice-guidance-protocol.md",
-    "skills/ai-character-design/SKILL.md",
-    "skills/ai-creative-workflow-router/references/common-contract.md",
-    "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
-    "skills/ai-creative-workflow-router/references/user-guide.ko-KR.md",
-    "skills/ai-creative-workflow-router/references/user-guide.md",
-    "skills/ai-creative-workflow-router/SKILL.md",
-    "skills/ai-generation-review/references/common-contract.md",
-    "skills/ai-generation-review/references/novice-guidance-protocol.md",
-    "skills/ai-generation-review/SKILL.md",
-    "skills/ai-prompt-execution-contract/references/common-contract.md",
-    "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
-    "skills/ai-prompt-execution-contract/references/source-map.md",
-    "skills/ai-prompt-execution-contract/SKILL.md",
-    "skills/ai-scene-design/references/common-contract.md",
-    "skills/ai-scene-design/references/novice-guidance-protocol.md",
-    "skills/ai-scene-design/SKILL.md",
-    "skills/ai-screenplay-development/references/common-contract.md",
-    "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
-    "skills/ai-screenplay-development/references/source-map.md",
-    "skills/ai-screenplay-development/SKILL.md",
-    "skills/ai-storyboard-design/references/common-contract.md",
-    "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
-    "skills/ai-storyboard-design/references/source-map.md",
-    "skills/ai-storyboard-design/SKILL.md",
-    "skills/ai-video-production-classroom/references/common-contract.md",
-    "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
-    "skills/ai-video-production-classroom/SKILL.md",
-    "skills/ai-visual-ideation/references/common-contract.md",
-    "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
-    "skills/ai-visual-ideation/SKILL.md",
-    "skills/ai-worldbuilding/references/common-contract.md",
-    "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
-    "skills/ai-worldbuilding/SKILL.md",
-    "START_HERE.ko-KR.md",
-    "START_HERE.md"
+    "README.md"
   ],
   "removed": [],
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "7ba6002290887c31d2c5b984786fef3e524653090df6ff522a2f8b2cad68bc94",
-      "bytes": 1014
+      "sha256": "d75da0f437ce8f4a91ab01d3f03baf382688db83e51ef87b669325be330b8098",
+      "bytes": 993
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "576c75acafe760e5dde7326c23be067118bb1f5afc86c285072908625113b28e",
-      "bytes": 1567
+      "sha256": "c215ad0975d014948ab6c0b3dc373e80e076efeef77b2469f12c8db99dc00bc5",
+      "bytes": 1546
     },
     {
       "path": "00_通用AI影像制作Skills_审查总文档.md",
@@ -276,8 +221,8 @@
     },
     {
       "path": "plugin.json",
-      "sha256": "6b8b1a009323bfa036f5ce06d62192477fd3f8069314734eb0fd2027edf33bc6",
-      "bytes": 1725
+      "sha256": "07dec4400a3917e9c9584efc93cc5d5fc7c57d809cffd516a8be603caa9181ad",
+      "bytes": 1704
     },
     {
       "path": "provenance/README.md",
@@ -291,13 +236,13 @@
     },
     {
       "path": "README.ko-KR.md",
-      "sha256": "23e3f84c31621317af1f449d35040cd483f49e80214df18456f88968120e75ef",
-      "bytes": 15706
+      "sha256": "18123002b73b60eec8296e66465e28aa11b89e8c7b9b2b99afc7ce3096f25230",
+      "bytes": 15685
     },
     {
       "path": "README.md",
-      "sha256": "48688c5c295ef10fa07f019e4984e7b254bc64ed517808e6a643336be33dfedd",
-      "bytes": 11794
+      "sha256": "55aa9eda0f6177bdfaae70af5d049dff8c28dfea0498859fef7ddae88f04d96c",
+      "bytes": 11773
     },
     {
       "path": "research-extension/README.md",
@@ -887,13 +832,8 @@
   ],
   "last_updated": "2026-09-11",
   "post_review_changes": [
-    "Added problem-led screenplay theory selection, bounded genre conventions, and collaborative local-revision cases",
-    "Added explicit shot-size and viewpoint taxonomy with screenplay-to-storyboard evidence tracing",
-    "Added a ten-part Seedance/Jimeng student delivery contract with copy-first per-shot output",
-    "Aligned Chinese and Korean onboarding around screenplay, storyboard, and generation-prompt deliverables",
-    "Added eight representative creative-chain cases and a 23-check deterministic validation suite",
-    "Passed the 52-check Korean regression suite, 11-check novice regression suite, and static package validation",
-    "Preserved source, copyright, privacy, and honest platform-validation boundaries",
-    "Pinned the Marketplace source to the immutable v0.6.0 release tag"
+    "Renamed the public GitHub repository to remove the historical v0.5.0 suffix",
+    "Updated plugin metadata, Marketplace source, documentation links, clone commands, and local remote URL",
+    "Preserved package version 0.6.0 and the existing immutable v0.6.0 release tag"
   ]
 }

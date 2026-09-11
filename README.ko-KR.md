@@ -54,7 +54,7 @@ Codex CLI에서 `/plugins`를 입력하고, 설정된 Marketplace에서 `univers
 관리자는 **Admin → Plugins → Add → Import marketplace**로 이동한 뒤 다음 저장소 주소를 입력합니다.
 
 ```text
-https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
+https://github.com/pigjio/universal-ai-video-production-skills
 ```
 
 Marketplace 매니페스트는 저장소 루트의 `.agents/plugins/marketplace.json`에 있으므로 **Path는 비워 둡니다**. 공개 저장소이므로 비공개 저장소 읽기 권한은 필요하지 않습니다. 가져오기가 끝나면 구성원이 Plugins 디렉터리에서 설치할 수 있습니다.
@@ -74,8 +74,8 @@ Codex 공식 안내: [Plugin 만들기](https://learn.chatgpt.com/docs/build-plu
 ### 수동으로 저장소를 받아 프로젝트로 사용하기
 
 ```bash
-git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.git
-cd universal-ai-video-production-skills-v0.5.0
+git clone https://github.com/pigjio/universal-ai-video-production-skills.git
+cd universal-ai-video-production-skills
 ```
 
 이 저장소는 공개되어 있으므로 GitHub 비공개 저장소 접근 권한 없이도 복제할 수 있습니다.
