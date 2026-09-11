@@ -1,6 +1,6 @@
 # 通用 AI 影像制作 Plugin
 
-[中文](README.md)｜[한국어](README.ko-KR.md)
+[中文说明](README.md)｜[한국어 안내](README.ko-KR.md)
 
 面向 AI 短片、动画和视觉叙事的 Codex 创作协作插件。用户只需安装一次，即可获得一个总控 Router 和九个专业 Skill；它们共同把创意、剧本、世界观、角色、场景、分镜、生成请求、视频生产和结果评审串成一条可追踪、可恢复的工作流。
 
@@ -43,7 +43,7 @@
 
 ### ChatGPT 桌面端 / Codex
 
-打开 **Plugins** 目录，找到 `Universal AI Video Production` 并选择安装。这个仓库目前是私有仓库，因此相关账户或工作区必须具有 GitHub 读取权限。安装完成后请新建聊天或会话；十个 Skill 会变为可用能力，并在匹配任务时按需加载。
+打开 **Plugins** 目录，找到 `Universal AI Video Production` 并选择安装。仓库已经公开，无需申请私有仓库读取权限。如果目录中尚未出现该插件，请让工作区管理员先按下方步骤导入 Marketplace。安装完成后请新建聊天或会话；十个 Skill 会变为可用能力，并在匹配任务时按需加载。
 
 ### Codex CLI
 
@@ -57,7 +57,7 @@
 https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 ```
 
-Marketplace 清单位于仓库根目录的 `.agents/plugins/marketplace.json`，因此 **Path 留空**。按提示授权 GitHub 读取这个私有仓库，导入后再由成员通过 Plugins 目录安装。
+Marketplace 清单位于仓库根目录的 `.agents/plugins/marketplace.json`，因此 **Path 留空**。这是公开仓库，不需要私有仓库读取权限；导入后，成员即可通过 Plugins 目录安装。
 
 如果本地 Agent 已具备 GitHub 与插件管理能力，也可以让它协助完成上述步骤；这只是便捷方式，不是所有 Codex 入口都支持的通用安装方式。
 
@@ -82,7 +82,7 @@ git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.
 cd universal-ai-video-production-skills-v0.5.0
 ```
 
-这是私有仓库时，需要使用具备访问权限的 GitHub 账户。
+仓库已经公开，克隆时不需要 GitHub 私有仓库访问权限。
 
 ### 在 Agent 中打开仓库
 

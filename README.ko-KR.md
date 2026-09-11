@@ -1,6 +1,6 @@
 # 범용 AI 영상 제작 Plugin
 
-[中文](README.md)｜[한국어](README.ko-KR.md)
+[中文说明](README.md)｜[한국어 안내](README.ko-KR.md)
 
 AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창작 협업 플러그인입니다. 한 번만 설치하면 하나의 라우터와 9개의 전문 Skill을 함께 사용할 수 있습니다. 이 모듈들은 아이디어, 시나리오, 세계관, 캐릭터, 장면, 스토리보드, 생성 요청, 영상 제작, 결과 리뷰를 추적 가능하고 다시 이어갈 수 있는 하나의 워크플로로 연결합니다.
 
@@ -43,7 +43,7 @@ AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창
 
 ### ChatGPT 데스크톱 / Codex
 
-**Plugins** 디렉터리를 열고 `Universal AI Video Production`을 찾아 설치합니다. 현재 이 저장소는 비공개이므로 해당 계정 또는 워크스페이스에 GitHub 읽기 권한이 있어야 합니다. 설치가 끝나면 새 대화나 세션을 시작하세요. 10개의 Skill이 사용 가능한 기능으로 등록되고, 작업과 맞을 때 필요에 따라 로드됩니다.
+**Plugins** 디렉터리를 열고 `Universal AI Video Production`을 찾아 설치합니다. 이 저장소는 공개되어 있으므로 비공개 저장소 읽기 권한을 별도로 요청할 필요가 없습니다. 목록에 플러그인이 아직 보이지 않으면 워크스페이스 관리자에게 아래 절차에 따라 Marketplace를 먼저 가져오도록 요청하세요. 설치가 끝나면 반드시 새 대화나 세션을 시작하세요. 10개의 Skill이 사용 가능한 기능으로 등록되고, 작업에 맞는 Skill이 필요할 때 로드됩니다.
 
 ### Codex CLI
 
@@ -57,7 +57,7 @@ Codex CLI에서 `/plugins`를 입력하고, 설정된 Marketplace에서 `univers
 https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0
 ```
 
-Marketplace 매니페스트는 저장소 루트의 `.agents/plugins/marketplace.json`에 있으므로 **Path는 비워 둡니다**. 안내에 따라 이 비공개 저장소에 대한 GitHub 읽기 권한을 승인하고, 가져오기가 끝나면 구성원이 Plugins 디렉터리에서 설치할 수 있습니다.
+Marketplace 매니페스트는 저장소 루트의 `.agents/plugins/marketplace.json`에 있으므로 **Path는 비워 둡니다**. 공개 저장소이므로 비공개 저장소 읽기 권한은 필요하지 않습니다. 가져오기가 끝나면 구성원이 Plugins 디렉터리에서 설치할 수 있습니다.
 
 로컬 Agent에 GitHub 및 플러그인 관리 기능이 이미 있다면 위 단계를 도와달라고 요청할 수도 있습니다. 이는 편의를 위한 선택 사항이며 모든 Codex 진입점에서 지원되는 공통 설치 방식은 아닙니다.
 
@@ -78,7 +78,7 @@ git clone https://github.com/pigjio/universal-ai-video-production-skills-v0.5.0.
 cd universal-ai-video-production-skills-v0.5.0
 ```
 
-비공개 저장소인 경우 접근 권한이 있는 GitHub 계정이 필요합니다.
+이 저장소는 공개되어 있으므로 GitHub 비공개 저장소 접근 권한 없이도 복제할 수 있습니다.
 
 ### Agent에서 저장소 열기
 
