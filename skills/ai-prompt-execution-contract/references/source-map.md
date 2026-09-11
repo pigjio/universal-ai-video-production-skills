@@ -14,6 +14,7 @@
 | **seedance-prompt-capacity-compression.md** | 按独立提交块计数、保护区、详细版/提交版、压缩回归 | **seedance-capacity-compression.md** | 固定字符数；改为当前入口能力证据 |
 | **seedance-2-official-prompt-audit.md**、**handbook-to-tested-project-rule-audit.md** | 官方事实、官方案例归纳、第三方经验、项目观察分层 | 本技能正文与视频生产能力档案 | 历史数值不作为永久常量 |
 | **baseline-regression-minimal-diff.md** 等项目回归经验 | 授权范围、跨提示层残留、最小差异保护 | **causality-and-diagnostics.md** | 项目文件名、确认索引和具体剧情事实 |
+| Seedance 电影镜头提示词手册的目标/资产/起点/空间/摄影/时间轴/物理/声音/终点/禁止结构 | 面向普通创作者的最小可复制出口 | **seedance-student-delivery.md** | 本地路径、固定项目素材和长段原文；重组为原创交付模板与小例 |
 
 ## 证据说明
 

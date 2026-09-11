@@ -1,7 +1,7 @@
 ---
 name: ai-video-production-classroom
 description: "用于教学或执行平台中立的 AI 视频生产，把镜头变成生产组、Seedance/即梦 Clip/DO、生成请求、参考绑定、真实尾帧/文字续接、评审与剪辑交接；한국어로 ‘이 숏들을 영상 생성 계획으로 묶어 주세요’라고 해도 트리거된다. Use for image-to-video, text-to-video, multimodal generation, capability-based grouping, continuation, baseline logging and unavailable-generator handoffs. A single-character classroom profile is optional, never a universal prerequisite."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

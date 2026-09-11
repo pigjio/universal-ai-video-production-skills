@@ -1,60 +1,87 @@
 {
-  "package_version": "0.5.1",
-  "baseline_version": "0.5.0",
+  "package_version": "0.6.0",
+  "baseline_version": "0.5.1",
   "manifest_self_excluded": true,
   "summary": {
-    "files_excluding_manifest": 146,
-    "added": 3,
-    "modified": 29,
+    "files_excluding_manifest": 162,
+    "added": 9,
+    "modified": 50,
     "removed": 0,
-    "unchanged": 114
+    "unchanged": 103
   },
   "added": [
-    "evals/check_korean_support.py",
-    "evals/korean-cases-0.5.1.json",
-    "evals/korean-validation-0.5.1.md"
+    "evals/check_creative_chain_0_6_0.py",
+    "evals/creative-chain-cases-0.6.0.json",
+    "evals/validation-0.6.0.ko-KR.md",
+    "evals/validation-0.6.0.md",
+    "skills/ai-prompt-execution-contract/references/seedance-student-delivery.md",
+    "skills/ai-screenplay-development/references/collaborative-revision-cases.md",
+    "skills/ai-screenplay-development/references/genre-conventions-and-promises.md",
+    "skills/ai-screenplay-development/references/screenplay-theory-selection-matrix.md",
+    "skills/ai-storyboard-design/references/shot-language-taxonomy.md"
   ],
   "modified": [
     ".agents/plugins/marketplace.json",
     ".codex-plugin/plugin.json",
-    "AGENTS.md",
-    "README.ko-KR.md",
-    "README.md",
-    "START_HERE.md",
+    "00_通用AI影像制作Skills_总览.ko-KR.md",
+    "00_通用AI影像制作Skills_总览.md",
+    "evals/check_korean_support.py",
     "evals/validate_package.py",
     "plugin.json",
+    "README.ko-KR.md",
+    "README.md",
+    "shared/common-contract.ko-KR.md",
+    "shared/common-contract.md",
+    "shared/novice-guidance-protocol.ko-KR.md",
     "shared/novice-guidance-protocol.md",
-    "skills/ai-character-design/SKILL.md",
+    "skills/ai-character-design/references/common-contract.md",
     "skills/ai-character-design/references/novice-guidance-protocol.md",
-    "skills/ai-creative-workflow-router/SKILL.md",
+    "skills/ai-character-design/SKILL.md",
+    "skills/ai-creative-workflow-router/references/common-contract.md",
     "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
-    "skills/ai-generation-review/SKILL.md",
+    "skills/ai-creative-workflow-router/references/user-guide.ko-KR.md",
+    "skills/ai-creative-workflow-router/references/user-guide.md",
+    "skills/ai-creative-workflow-router/SKILL.md",
+    "skills/ai-generation-review/references/common-contract.md",
     "skills/ai-generation-review/references/novice-guidance-protocol.md",
-    "skills/ai-prompt-execution-contract/SKILL.md",
+    "skills/ai-generation-review/SKILL.md",
+    "skills/ai-prompt-execution-contract/references/common-contract.md",
     "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
-    "skills/ai-scene-design/SKILL.md",
+    "skills/ai-prompt-execution-contract/references/source-map.md",
+    "skills/ai-prompt-execution-contract/SKILL.md",
+    "skills/ai-scene-design/references/common-contract.md",
     "skills/ai-scene-design/references/novice-guidance-protocol.md",
-    "skills/ai-screenplay-development/SKILL.md",
+    "skills/ai-scene-design/SKILL.md",
+    "skills/ai-screenplay-development/references/common-contract.md",
     "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
-    "skills/ai-storyboard-design/SKILL.md",
+    "skills/ai-screenplay-development/references/source-map.md",
+    "skills/ai-screenplay-development/SKILL.md",
+    "skills/ai-storyboard-design/references/common-contract.md",
     "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
-    "skills/ai-video-production-classroom/SKILL.md",
+    "skills/ai-storyboard-design/references/source-map.md",
+    "skills/ai-storyboard-design/SKILL.md",
+    "skills/ai-video-production-classroom/references/common-contract.md",
     "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
-    "skills/ai-visual-ideation/SKILL.md",
+    "skills/ai-video-production-classroom/SKILL.md",
+    "skills/ai-visual-ideation/references/common-contract.md",
     "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
+    "skills/ai-visual-ideation/SKILL.md",
+    "skills/ai-worldbuilding/references/common-contract.md",
+    "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
     "skills/ai-worldbuilding/SKILL.md",
-    "skills/ai-worldbuilding/references/novice-guidance-protocol.md"
+    "START_HERE.ko-KR.md",
+    "START_HERE.md"
   ],
   "removed": [],
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "c0a6decfe8a3b09d96277cac7ac98b8a86b54e4f37be37734c8401a4b087922e",
+      "sha256": "7ba6002290887c31d2c5b984786fef3e524653090df6ff522a2f8b2cad68bc94",
       "bytes": 1014
     },
     {
       "path": ".codex-plugin/plugin.json",
-      "sha256": "c94cfba40db6e670e5c12afe792cab9a500f11b827c13ecab8feeff47645ab11",
+      "sha256": "576c75acafe760e5dde7326c23be067118bb1f5afc86c285072908625113b28e",
       "bytes": 1567
     },
     {
@@ -63,9 +90,14 @@
       "bytes": 170519
     },
     {
+      "path": "00_通用AI影像制作Skills_总览.ko-KR.md",
+      "sha256": "6885d5a155349bdf058a0273123170c594cc13349ace32ce13c094b36eda2477",
+      "bytes": 5438
+    },
+    {
       "path": "00_通用AI影像制作Skills_总览.md",
-      "sha256": "ad0a78bed80647118dae27320e588da34f88d6bc8f7ddc29c20fb8dabd701c52",
-      "bytes": 3826
+      "sha256": "43eb31f1799a06cc562202dd586304bbe58a3e248b6fdfe2aebf07622e278ff9",
+      "bytes": 4299
     },
     {
       "path": "01_0.4.0_Seedance生产融合与验证报告.md",
@@ -78,9 +110,14 @@
       "bytes": 3127
     },
     {
+      "path": "03_0.5.0_新手引导与阶段落盘验证报告.ko-KR.md",
+      "sha256": "b0f91d17ec15aab0138604878dd326f8e9ce8457ab5845c10528bfae89e3d7c1",
+      "bytes": 7007
+    },
+    {
       "path": "03_0.5.0_新手引导与阶段落盘验证报告.md",
-      "sha256": "834da2275eca7a889dd758b950d220ac5c57a7ae9d71b6bd7621cb9e7cc11668",
-      "bytes": 4879
+      "sha256": "9cff3f8d0ff4762bb7ba46ab66d7880de97cabbd543ea7bcfb95bc404574a6dd",
+      "bytes": 5028
     },
     {
       "path": "09_通用提示词格式与项目实测规则融合.md",
@@ -98,39 +135,24 @@
       "bytes": 1558
     },
     {
-      "path": "LICENSE",
-      "sha256": "313ee4fda47bb7190305a89ae1344f069fbdce53101e4cc3e735773bf6e93ce1",
-      "bytes": 1086
-    },
-    {
-      "path": "README.ko-KR.md",
-      "sha256": "f3fada94c96f3ce5a9f183abecfe151a97afd2b74f6363dbd43a68ff7025e347",
-      "bytes": 13862
-    },
-    {
-      "path": "README.md",
-      "sha256": "2beff0e17798386aa4554ba7e6d6acf240a8eeae52173416c31395df8428574d",
-      "bytes": 10629
-    },
-    {
-      "path": "README_审查包说明.md",
-      "sha256": "7274297d8bf74105d405c678cb6d5907f4c69a610eb9b82ff3368bfff1b9592e",
-      "bytes": 5160
-    },
-    {
-      "path": "START_HERE.md",
-      "sha256": "9b0f2409b3e918f053719f7f80682fbe1ab037c52abb65ac241132b523510a57",
-      "bytes": 3087
+      "path": "evals/check_creative_chain_0_6_0.py",
+      "sha256": "1ea147ba740654328aba29af94c7ad634d248aec2e6465f499f3481ed42c1b04",
+      "bytes": 6317
     },
     {
       "path": "evals/check_korean_support.py",
-      "sha256": "c70f2cf3900542b97a53237676184bed973578580b36a9ae089b6fbc57460fac",
+      "sha256": "681b9fdf4ac8f0c691130bae877cb875863e5205672f432daaa0b09a1c786307",
       "bytes": 3687
     },
     {
       "path": "evals/check_novice_runs.py",
       "sha256": "a8c4909a5c0d54e13a328795abbded3ce2e6eae8361f0d301d10b38f1daa7b70",
       "bytes": 3036
+    },
+    {
+      "path": "evals/creative-chain-cases-0.6.0.json",
+      "sha256": "cb808926b51b7b200f7d101d46b810491b487d96d5001b6e930f8a17bb64c5e0",
+      "bytes": 2205
     },
     {
       "path": "evals/fixtures/handoff.json",
@@ -143,9 +165,14 @@
       "bytes": 3595
     },
     {
+      "path": "evals/korean-validation-0.5.1.ko-KR.md",
+      "sha256": "b062d375e81a156413e5a5c2eb45a5fcf5b242f7eace7df374012b032fbfbfb1",
+      "bytes": 2788
+    },
+    {
       "path": "evals/korean-validation-0.5.1.md",
-      "sha256": "16d4972876338a76390f611a37391d0cb24da83736364d05ba6c0862f97228fb",
-      "bytes": 2158
+      "sha256": "e706fde0898fd70851b328441bd84cc60baf32bcc109167c1f3c99c0aed88f6d",
+      "bytes": 2257
     },
     {
       "path": "evals/novice-cases-0.5.0.md",
@@ -168,6 +195,16 @@
       "bytes": 4152
     },
     {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v001.md",
+      "sha256": "1aa2336d776812e6f7c45e3c440fc8ee2d5df5df64f87d4e651f8ec6a4513e87",
+      "bytes": 218
+    },
+    {
+      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v002.md",
+      "sha256": "4352f5c1307c38e7ac6497a5c120c9cc75639b09eeffb7bd859c1ad7f23617f3",
+      "bytes": 1957
+    },
+    {
       "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/AUTHORIZATIONS.md",
       "sha256": "61cecd9c22ca102989c8a8985a9b801773a1728bea30f5ecbd5bfeefe679a445",
       "bytes": 240
@@ -181,16 +218,6 @@
       "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/SESSION_HANDOFF.md",
       "sha256": "97a6ea5f2a4b587cbfc9c48a265050eadaea6cee080c9be0f6d50d905bad867e",
       "bytes": 1596
-    },
-    {
-      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v001.md",
-      "sha256": "1aa2336d776812e6f7c45e3c440fc8ee2d5df5df64f87d4e651f8ec6a4513e87",
-      "bytes": 218
-    },
-    {
-      "path": "evals/runs/novice-0.5.0/case-2-stage-save/project/剧本_v002.md",
-      "sha256": "4352f5c1307c38e7ac6497a5c120c9cc75639b09eeffb7bd859c1ad7f23617f3",
-      "bytes": 1957
     },
     {
       "path": "evals/runs/novice-0.5.0/case-3-capability-fallback/output.md",
@@ -229,12 +256,27 @@
     },
     {
       "path": "evals/validate_package.py",
-      "sha256": "d740e5ae4ec094644996cf3292abe7778bdaf592f1d3eac5a5f9b2b7e3922820",
-      "bytes": 11270
+      "sha256": "f67110be8bab11efb74c2b120d2f146b19ad30bda960a0e974232fa1157e7334",
+      "bytes": 11509
+    },
+    {
+      "path": "evals/validation-0.6.0.ko-KR.md",
+      "sha256": "ae770d443fa7c94879ce28223a738749251ebea6cee129545ffede6c564376c1",
+      "bytes": 3018
+    },
+    {
+      "path": "evals/validation-0.6.0.md",
+      "sha256": "f6284fd670e2afad78e354a5fdb99ca7adc935ed95b110c672a6427f524c9580",
+      "bytes": 2393
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "313ee4fda47bb7190305a89ae1344f069fbdce53101e4cc3e735773bf6e93ce1",
+      "bytes": 1086
     },
     {
       "path": "plugin.json",
-      "sha256": "63a096c9791fcc3339438c197374a481811e92c294c453ab57bccc979cddb292",
+      "sha256": "6b8b1a009323bfa036f5ce06d62192477fd3f8069314734eb0fd2027edf33bc6",
       "bytes": 1725
     },
     {
@@ -243,24 +285,44 @@
       "bytes": 1156
     },
     {
+      "path": "README_审查包说明.md",
+      "sha256": "7274297d8bf74105d405c678cb6d5907f4c69a610eb9b82ff3368bfff1b9592e",
+      "bytes": 5160
+    },
+    {
+      "path": "README.ko-KR.md",
+      "sha256": "23e3f84c31621317af1f449d35040cd483f49e80214df18456f88968120e75ef",
+      "bytes": 15706
+    },
+    {
+      "path": "README.md",
+      "sha256": "48688c5c295ef10fa07f019e4984e7b254bc64ed517808e6a643336be33dfedd",
+      "bytes": 11794
+    },
+    {
       "path": "research-extension/README.md",
       "sha256": "cc11a0e12ba8754fff153965c4d78fad38a14aa9fd58f3140eb4aa0eb999d040",
       "bytes": 1672
     },
     {
+      "path": "shared/common-contract.ko-KR.md",
+      "sha256": "239373bf248afe071a26aa3b8c92df5b9224ce48eab0619cf9ebd4e019d631d1",
+      "bytes": 18730
+    },
+    {
       "path": "shared/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
-      "path": "shared/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
-      "bytes": 9152
+      "path": "shared/novice-guidance-protocol.ko-KR.md",
+      "sha256": "a7228805e3f50f2d5ae9f508cb967d03e60e1f8af737ed0805b31addc08da049",
+      "bytes": 12917
     },
     {
-      "path": "skills/ai-character-design/SKILL.md",
-      "sha256": "8af30edd2100e10916240df02ad369914137c294ff2db2e8d91efc12ad0d0cbf",
-      "bytes": 26799
+      "path": "shared/novice-guidance-protocol.md",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
+      "bytes": 9152
     },
     {
       "path": "skills/ai-character-design/references/branches-and-diagnostics.md",
@@ -269,7 +331,7 @@
     },
     {
       "path": "skills/ai-character-design/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -279,7 +341,7 @@
     },
     {
       "path": "skills/ai-character-design/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -298,13 +360,13 @@
       "bytes": 3097
     },
     {
-      "path": "skills/ai-creative-workflow-router/SKILL.md",
-      "sha256": "5d70f2823481ed4bad41f15212c1551c9ea5a0518923374e7c5e0806274f3cf7",
-      "bytes": 12574
+      "path": "skills/ai-character-design/SKILL.md",
+      "sha256": "e1f2bd48f8240c2e044cbd6934b8f6e09d6caf2a679fa16712b27330ea641f6a",
+      "bytes": 26799
     },
     {
       "path": "skills/ai-creative-workflow-router/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -314,7 +376,7 @@
     },
     {
       "path": "skills/ai-creative-workflow-router/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -323,18 +385,23 @@
       "bytes": 1039
     },
     {
-      "path": "skills/ai-creative-workflow-router/references/user-guide.md",
-      "sha256": "5eb14f42987fed09bf2daf42b9d511021a67da156c1d2d7b73de6eee7f7e8138",
-      "bytes": 7088
+      "path": "skills/ai-creative-workflow-router/references/user-guide.ko-KR.md",
+      "sha256": "7f42cc91956c6814e83f3ae14f9875fa87ee33c2d317534be7037ddd2377a7dd",
+      "bytes": 11769
     },
     {
-      "path": "skills/ai-generation-review/SKILL.md",
-      "sha256": "1e40f57bb5fc749d8caac07dddae2199d831ca50a2fe64b825d801c57813354f",
-      "bytes": 14624
+      "path": "skills/ai-creative-workflow-router/references/user-guide.md",
+      "sha256": "90d2fed6718171460826deaf6956ccd7bb1a786ab8b65ef52ee5472a28f4d2b9",
+      "bytes": 7716
+    },
+    {
+      "path": "skills/ai-creative-workflow-router/SKILL.md",
+      "sha256": "6ff271204b19abbcdae5972d9753e4d5fe4c4cec1d9669b28b2da6f6ea1bb760",
+      "bytes": 12920
     },
     {
       "path": "skills/ai-generation-review/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -344,7 +411,7 @@
     },
     {
       "path": "skills/ai-generation-review/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -373,9 +440,9 @@
       "bytes": 4656
     },
     {
-      "path": "skills/ai-prompt-execution-contract/SKILL.md",
-      "sha256": "acb3a518873175a5cd862a7a70241b7f8883da470aaa9f08d468b3b2bc4385c2",
-      "bytes": 15277
+      "path": "skills/ai-generation-review/SKILL.md",
+      "sha256": "c3258289e4667da98045dbccb35ad448764d45480f30ef53a232907477062db3",
+      "bytes": 14624
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/causality-and-diagnostics.md",
@@ -384,7 +451,7 @@
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -394,7 +461,7 @@
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -418,9 +485,14 @@
       "bytes": 3691
     },
     {
+      "path": "skills/ai-prompt-execution-contract/references/seedance-student-delivery.md",
+      "sha256": "91453a21214f42740e71afc590e3d25d2f37df8e6339a8fec0c4e1d8236d50b7",
+      "bytes": 3614
+    },
+    {
       "path": "skills/ai-prompt-execution-contract/references/source-map.md",
-      "sha256": "b08914f157bf6ec79c063b5f3b7ef693ba5c9920288341313160407515841853",
-      "bytes": 2834
+      "sha256": "ef74b4cca4e812f6e97db98dfbf6a64d61bfddb47f379f118ac614d0a556bd73",
+      "bytes": 3129
     },
     {
       "path": "skills/ai-prompt-execution-contract/references/static-vs-temporal.md",
@@ -433,9 +505,9 @@
       "bytes": 4243
     },
     {
-      "path": "skills/ai-scene-design/SKILL.md",
-      "sha256": "ed4dc334a7f4f199fc37013951953c4cc39faef0b69f89429ef7c5f4bd606c49",
-      "bytes": 20082
+      "path": "skills/ai-prompt-execution-contract/SKILL.md",
+      "sha256": "2fbb23649c68ca96b3016485c922781f511cdd70c5df5d7c11bf3f8bf612beb3",
+      "bytes": 15826
     },
     {
       "path": "skills/ai-scene-design/references/color-script.md",
@@ -444,7 +516,7 @@
     },
     {
       "path": "skills/ai-scene-design/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -459,7 +531,7 @@
     },
     {
       "path": "skills/ai-scene-design/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -483,9 +555,9 @@
       "bytes": 1984
     },
     {
-      "path": "skills/ai-screenplay-development/SKILL.md",
-      "sha256": "fb97bcfec3fff9f7919396f5e54baae23632589f14e46a5f269de0e1213ebfa0",
-      "bytes": 16671
+      "path": "skills/ai-scene-design/SKILL.md",
+      "sha256": "e93f287c0e17a0073226e10be771fb08abefd1503cecb5e80d8d5e0a5b7a10ee",
+      "bytes": 20082
     },
     {
       "path": "skills/ai-screenplay-development/references/character-and-opposition.md",
@@ -498,8 +570,13 @@
       "bytes": 6221
     },
     {
+      "path": "skills/ai-screenplay-development/references/collaborative-revision-cases.md",
+      "sha256": "8d2d0a66a2e6078fd2db12dac998984ec848168c342d562bc06e620e01d7e3fa",
+      "bytes": 4522
+    },
+    {
       "path": "skills/ai-screenplay-development/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -518,14 +595,24 @@
       "bytes": 5626
     },
     {
+      "path": "skills/ai-screenplay-development/references/genre-conventions-and-promises.md",
+      "sha256": "0d474dae0939bfa6faf9f8b5d78a92079e129a59632156b4a9d82c09cc59f144",
+      "bytes": 5504
+    },
+    {
       "path": "skills/ai-screenplay-development/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
+      "path": "skills/ai-screenplay-development/references/screenplay-theory-selection-matrix.md",
+      "sha256": "4e03aea66f1228fb8797f85753118beddb4ea2ebf22ea5ea273e9c6cda0b0855",
+      "bytes": 3937
+    },
+    {
       "path": "skills/ai-screenplay-development/references/source-map.md",
-      "sha256": "6f666d04bd42a1d3c7e8d01f7f1a6d3ffe7ba5127fb1f4b8c0e42533ab5f0c8e",
-      "bytes": 1065
+      "sha256": "b142bc58ed30ee1229228080981ad43a65f771350dc7d5b6b68687d5ed2eb4da",
+      "bytes": 1871
     },
     {
       "path": "skills/ai-screenplay-development/references/structure-and-scene-chain.md",
@@ -533,13 +620,13 @@
       "bytes": 6662
     },
     {
-      "path": "skills/ai-storyboard-design/SKILL.md",
-      "sha256": "a7b866c33a67f315cee0ec6854cd2c1c93590055800cb9ceb47da1dc5e4ef8ee",
-      "bytes": 22182
+      "path": "skills/ai-screenplay-development/SKILL.md",
+      "sha256": "3f67f5dd67bbb7e7943af646519aeabd5535326c82bb22d15aa7c4508afcde13",
+      "bytes": 17841
     },
     {
       "path": "skills/ai-storyboard-design/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -559,7 +646,7 @@
     },
     {
       "path": "skills/ai-storyboard-design/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -573,14 +660,19 @@
       "bytes": 6978
     },
     {
+      "path": "skills/ai-storyboard-design/references/shot-language-taxonomy.md",
+      "sha256": "154347b892317f99554cba907ad5c0ea5d78cef1878c920431dac3ee0909e502",
+      "bytes": 5041
+    },
+    {
       "path": "skills/ai-storyboard-design/references/shot-transition-audit.md",
       "sha256": "e39684c40b8fe58b5522f30735716cceb8d97cac97f84d0e4ec63d8c3f431487",
       "bytes": 6544
     },
     {
       "path": "skills/ai-storyboard-design/references/source-map.md",
-      "sha256": "6cf98ec2f17c37f9a8582ab37c2fa38eb4068ffc314948f8ce9d9df1d8bc674c",
-      "bytes": 2354
+      "sha256": "5fb22b70ef9073801e52058d902c453e9eaf3be8c5d4e6c09e21c038ef39f9e5",
+      "bytes": 2613
     },
     {
       "path": "skills/ai-storyboard-design/references/storyboard-methodology-map.md",
@@ -613,9 +705,9 @@
       "bytes": 6337
     },
     {
-      "path": "skills/ai-video-production-classroom/SKILL.md",
-      "sha256": "9c3c5bd5e0b7ba5aa6fb61655830e45771c3ed30d01c948c710f306904739643",
-      "bytes": 15469
+      "path": "skills/ai-storyboard-design/SKILL.md",
+      "sha256": "4256785626f04314624aa2ad754a9b96fed1fd0fb0207cb431039823c00f9b7c",
+      "bytes": 22683
     },
     {
       "path": "skills/ai-video-production-classroom/references/clip-continuity.md",
@@ -624,7 +716,7 @@
     },
     {
       "path": "skills/ai-video-production-classroom/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -634,7 +726,7 @@
     },
     {
       "path": "skills/ai-video-production-classroom/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -663,13 +755,13 @@
       "bytes": 4426
     },
     {
-      "path": "skills/ai-visual-ideation/SKILL.md",
-      "sha256": "88ccd5a9becb38ff6ae7160d1165342c160f34e5e1e713b56a64e8aecaa36149",
-      "bytes": 12868
+      "path": "skills/ai-video-production-classroom/SKILL.md",
+      "sha256": "1d391d68dd4e7f1716189cc24ea48a9c8c95ff08e2bc7854b720b31d3b9657e2",
+      "bytes": 15469
     },
     {
       "path": "skills/ai-visual-ideation/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -679,7 +771,7 @@
     },
     {
       "path": "skills/ai-visual-ideation/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -708,13 +800,13 @@
       "bytes": 2420
     },
     {
-      "path": "skills/ai-worldbuilding/SKILL.md",
-      "sha256": "355d2c1edbbc3021e13426e6ca2a55b191a0288a7c0f5073689e77433973efd5",
-      "bytes": 14660
+      "path": "skills/ai-visual-ideation/SKILL.md",
+      "sha256": "8e84fec916fbb6528c0cb7224d2a16110b73de39694e4fdb32c2938eba744941",
+      "bytes": 12868
     },
     {
       "path": "skills/ai-worldbuilding/references/common-contract.md",
-      "sha256": "b865ffb47fbb67fc7e137e80c4d67eed9a585325b9c97453afe818a652ed2905",
+      "sha256": "48421333c101851d343ae29e41681cc60bf351b2d641d8f809b9250b84a0aae1",
       "bytes": 13568
     },
     {
@@ -724,7 +816,7 @@
     },
     {
       "path": "skills/ai-worldbuilding/references/novice-guidance-protocol.md",
-      "sha256": "78ceb2d6cabad51918927c94a1aaefc7a50d3f1da0ef5b60affe9c0da242830c",
+      "sha256": "fd7b16c604ad9330c58e58285f8e2cd285fa4d44a8501f0b48ae79905b74d2dc",
       "bytes": 9152
     },
     {
@@ -746,6 +838,21 @@
       "path": "skills/ai-worldbuilding/references/visual-state-and-handoff.md",
       "sha256": "3d74602998f6865fd3a3e66b21229381536a74bc553abd5537b7ad6946b72fb2",
       "bytes": 3036
+    },
+    {
+      "path": "skills/ai-worldbuilding/SKILL.md",
+      "sha256": "7b0308db0ad5fdcd1f4576a1af7b0be2dcc879a86956e04f5d772f46c362a272",
+      "bytes": 14660
+    },
+    {
+      "path": "START_HERE.ko-KR.md",
+      "sha256": "9f313e254f4ab911402f2894681703dbf5de43f3b63a5c07919d7512a106bbd7",
+      "bytes": 4765
+    },
+    {
+      "path": "START_HERE.md",
+      "sha256": "2cf31a990ce1c7cfd524a04497a5f625ae6b09c1ba5c80004fbe2e1ef56b94b7",
+      "bytes": 3434
     },
     {
       "path": "templates/AUTHORIZATIONS.md",
@@ -778,14 +885,15 @@
       "bytes": 1698
     }
   ],
-  "last_updated": "2026-09-10",
+  "last_updated": "2026-09-11",
   "post_review_changes": [
-    "Added Korean natural-language discovery examples to all 10 bundled Skills",
-    "Added user-language following and Korean authorization semantics to the canonical novice protocol and all Skill copies",
-    "Added Korean onboarding examples and behavioral boundaries to Chinese and Korean documentation",
-    "Added 10 Korean routing cases, 6 authorization behavior cases, and a 52-check deterministic suite",
-    "Validated all 16 cases in a read-only ephemeral Codex model smoke test",
-    "Preserved existing Chinese novice-flow regression coverage and privacy-path detection",
-    "Pinned the Marketplace source to the immutable v0.5.1 release tag"
+    "Added problem-led screenplay theory selection, bounded genre conventions, and collaborative local-revision cases",
+    "Added explicit shot-size and viewpoint taxonomy with screenplay-to-storyboard evidence tracing",
+    "Added a ten-part Seedance/Jimeng student delivery contract with copy-first per-shot output",
+    "Aligned Chinese and Korean onboarding around screenplay, storyboard, and generation-prompt deliverables",
+    "Added eight representative creative-chain cases and a 23-check deterministic validation suite",
+    "Passed the 52-check Korean regression suite, 11-check novice regression suite, and static package validation",
+    "Preserved source, copyright, privacy, and honest platform-validation boundaries",
+    "Pinned the Marketplace source to the immutable v0.6.0 release tag"
   ]
 }

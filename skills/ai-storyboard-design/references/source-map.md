@@ -15,5 +15,6 @@
 | threat-response-and-emotion-continuity.md | creative/storyboarding/references/threat-response-and-emotion-continuity.md | 本轮读取该源参考后泛化：保留并行时间、情绪继承；去项目例子、固定交替与每镜单阶段要求，补信息增量/负载判断 |
 | timing-verification.md | 本包修订方法 | 工具算术、编号映射、时间轨道与证据范围，不依赖包外脚本 |
 | common-contract.md | 根修订合同及公共协议 | 由总控统一维护；阶段入口、交付、上游改版时加载 |
+| shot-language-taxonomy.md | Steve D. Katz 的景别/镜头流；Joseph V. Mascelli 的摄影机角度、特写与连续性蒸馏 | 重组为景别、实际裁切、视点、景别曲线及剧本依据链；不是原书原表，不复制书中项目案例 |
 
 原有八份参考按现存迁移标识定位；本轮未重新加载大型源技能或逐一比对源全文，不将路径标识写成已完成独立核验。源文件缺失时继续使用本包自包含方法；若要追溯新增争议结论，再按授权补充查证。

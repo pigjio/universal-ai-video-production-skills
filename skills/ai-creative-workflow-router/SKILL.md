@@ -1,7 +1,7 @@
 ---
 name: ai-creative-workflow-router
 description: "AI 影像创作的唯一新手入口与跨阶段总控；用户只需自然地说‘我有个画面但不知道怎么开始’‘帮我做短片’‘接下来做什么’或直接描述需求即可触发。한국어로 ‘AI 영상을 처음 만드는데 어디서 시작하나요?’ ‘다음에 무엇을 해야 하나요?’라고 말해도 같은 초보자 라우팅을 적용한다. Use for novice onboarding, project routing, stage coordination, Seedance/即梦 production handoff and recovery while preserving versions, evidence and human approval."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -71,6 +71,7 @@ metadata:
 - 无工具：准备自足提交文本、计划素材、待核验参数和回传清单，等待外部结果。
 - 真实结果：保留返回文件/ID及当时输入，再评审。无法观察结果时明确证据缺口。
 - Seedance 路径：storyboard 的镜头先形成 production_group/Clip/DO，再形成独立 generation_request；生成后才建立 edit_unit。四层 ID 与时长账本分开，不能把“DO 已写”说成“视频已生成”。
+- 学生目标默认收口为三个可独立阅读的成果：满意的剧本、有剧本依据的分镜、可直接复制的 Seedance/即梦提示词，并按镜头交付。专业理论只在后台帮助判断；除非用户追问依据，不输出成课程、练习或考试。
 - 平台证据：当前时长、素材槽位、输入模态、声音和容量必须按模型/入口/日期核验；官方事实、案例归纳、第三方经验和项目实测分层。
 - 用户拒绝：保留理由，定位最小需改层，不默认重做全片。
 - 上游变更：加载公共协议的影响传播步骤；先完成变更记录，再按依赖复核。不要自动覆写下游执行稿。

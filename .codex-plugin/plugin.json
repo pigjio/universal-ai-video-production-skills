@@ -1,6 +1,6 @@
 {
   "name": "universal-ai-video-production",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A guided AI video production workflow with ten coordinated skills for ideation, writing, design, production, and review.",
   "author": {
     "name": "Domain Knowledge Distillation",

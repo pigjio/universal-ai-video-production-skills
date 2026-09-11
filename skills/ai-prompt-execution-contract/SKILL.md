@@ -1,7 +1,7 @@
 ---
 name: ai-prompt-execution-contract
 description: "用于把已确认的创意、角色、环境、物体、抽象视觉或分镜转成可执行且可评审的生成合同；Seedance/即梦正式 DO、逐镜视频提示词、参考素材职责、状态接力和容量压缩也触发。한국어로 ‘이 콘셉트를 실행 가능한 생성 프롬프트로 만들어 주세요’라고 해도 트리거된다. Use when writing, auditing, assembling or repairing static-image and temporal-video prompts, including self-contained Seedance generation requests. Separate record shorthand from submitted payload, encode observable outcomes, and preserve authorization and evidence boundaries."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -39,6 +39,7 @@ metadata:
 | 有参考图、继承上下文或需压缩提交 | `references/reference-duty-and-assembly.md` | 事实→读取范围→禁止继承、提交账本 |
 | 动作、抽象效果、失败诊断或局部修复 | `references/causality-and-diagnostics.md` | 正向生命周期、竞争假设、修复范围 |
 | 要写可复制的 Seedance/即梦正式 DO 或逐镜视频稿 | `references/seedance-formal-request-contract.md` | 自包含请求块、逐镜五字段、确定性结构校验 |
+| 面向学生/创作者交付可直接复制的 Seedance 提示词 | `references/seedance-student-delivery.md` | 用户优先的交付顺序、十项最小骨架、失败修改顺序 |
 | 相邻请求需要真实尾帧、文字状态或独立重启 | `references/seedance-state-handoff.md` | 接口来源、状态字段、禁止重演与坏尾帧阻断 |
 | 当前入口有已核验容量限制且提交块超限 | `references/seedance-capacity-compression.md` | 详细审核版→精简提交版的无损压缩与回归 |
 | 需要完整交付或异常分支示范 | `references/worked-examples.md` | 完成合同、缺证据与失败记录 |
@@ -79,13 +80,15 @@ metadata:
 
 当用户只要求拆分 Clip/DO 时，先交生产组与请求映射；当用户明确要求“正式 DO”“可复制 Seedance 提示词”时，才加载正式请求合同并逐请求展开。`DO` 是可选显示别名，不得暗中混同导演镜头、平台调用和剪辑采用段。
 
+面向学生或普通创作者时同时加载 `references/seedance-student-delivery.md`：先给使用说明、参考素材绑定和逐镜可复制代码块，再给续接与失败修改建议。十项骨架在后台保证目标、资产、起点、空间、摄影、时间轴、物理、声音、终点和禁止项闭合，不要求用户填写内部 schema。
+
 每个独立平台请求必须自包含：请求窗口与画幅、视觉状态、唯一任务及完成判据、主体边界、实际上传素材职责、逐镜镜头任务/构图动作/摄影注意力/声音切点，以及真实需要时的续接接口。公共 YAML、内部路径和审批记录留在记录层，不粘入平台代码块。
 
 Seedance 的时长、素材数量、输入模态和字符限制是动态能力。只采用带官方来源、核验日期、模型、产品入口和模式的当前证据；官方案例归纳、第三方经验与项目实测分别标注，均不冒充永久官方语法。
 
 ## 5. 公共头与输出模板
 
-以下是记录模板，不把行政字段直接粘入平台提示词。`version` 是该制品修订号，技能版本为 0.5.0。引用素材的 ID 不含版本。空列表表示尚无证据，不代表已核验。
+以下是记录模板，不把行政字段直接粘入平台提示词。`version` 是该制品修订号，技能版本为 0.6.0。引用素材的 ID 不含版本。空列表表示尚无证据，不代表已核验。
 
 ```yaml
 artifact_id: PROMPT-example

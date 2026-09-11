@@ -1,7 +1,7 @@
 ---
 name: ai-generation-review
 description: "用于评审 AI 生成的角色、环境、物体、抽象图像、分镜帧及 Seedance/即梦视频；한국어로 ‘생성 결과가 왜 어색한지 먼저 진단해 주세요’라고 해도 트리거된다. Use when judging identity, space, geometry, action, direction, props, camera, information boundaries, audio, tail-frame usability or repair priority. Separate observations from competing causes, design distinguishing tests, route post-fix/regeneration/storyboard return, and never infer motion or sound from stills."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

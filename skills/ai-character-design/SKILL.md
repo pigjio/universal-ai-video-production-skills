@@ -1,7 +1,7 @@
 ---
 name: ai-character-design
 description: "角色设计创作搭档与生产封装；新手自然地说‘帮我想一个角色’‘这个人看起来太僵’‘强大但胆小怎么画’也触发，无需完整角色包或母版。한국어로 ‘캐릭터를 같이 만들어 주세요’ ‘이 인물이 너무 뻣뻣해 보여요’라고 해도 트리거된다. Use for guided character ideation, critique, silhouette, proportions, identity, expression, pose, costume, non-human casts, consistency and handoff without replacing story, world or rig validation."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

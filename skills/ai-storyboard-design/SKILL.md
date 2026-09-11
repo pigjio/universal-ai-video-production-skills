@@ -1,7 +1,7 @@
 ---
 name: ai-storyboard-design
 description: "Use when discussing, exploring, designing or diagnosing narrative and non-narrative AI storyboards. 支持分镜讨论与非叙事感知/概念序列，比较构图语气、视觉七要素、空间显隐和试讲反馈；按需深化 Beat、Blocking、连续性、Timing 与 Animatic 交接，不替代平台 SOP。한국어로 ‘이 장면을 스토리보드로 나눠 주세요’라고 해도 트리거된다."
-version: 0.5.1
+version: 0.6.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -209,6 +209,8 @@ Thumbnail 的任务是测试大形和观看路径，不是完成美术。每个�
 
 ### Step 5：选择景别、角度、POV 与运镜
 
+涉及具体景别类别、人物裁切、客观/主观/POV/OTS、景别曲线或“为什么用这个镜头”时加载 `references/shot-language-taxonomy.md`。每个镜头先追溯剧本中的场景功能、动作、信息、Reaction/Decision、空间或声音依据，再选择能让关键证据可读的景别；景别是叙事距离，不按模型常识随意装饰。
+
 | 选择 | 主要功能 |
 |---|---|
 | 宽景 | 空间、路线、人物关系、后果 |
@@ -363,6 +365,7 @@ payload: {}
 - `references/source-map.md`：需要定位源技能与参考资料、核来源边界时加载；来源不是执行依赖。
 - `references/storyboard-methodology-map.md`：十类专业来源与方法互补关系；需要追溯知识来源时读取。
 - `references/director-decision-layer.md`：观众体验、Goal/Opposition/Decision、Reaction和技法功能判断。
+- `references/shot-language-taxonomy.md`：具体景别、人物裁切、视点、角度、景别曲线及剧本依据链。
 - `references/detailed-shot-expansion.md`：从场级结构扩写到逐镜卡时读取。
 - `references/storyboard-quality-gates.md`：进行系统质量审查时读取。
 - `references/shot-transition-audit.md`：逐对审查镜间尾帧—起帧时读取。
