@@ -7,9 +7,9 @@
   "summary": {
     "files_excluding_manifest": 173,
     "added": 11,
-    "modified": 28,
+    "modified": 29,
     "removed": 0,
-    "unchanged": 134
+    "unchanged": 133
   },
   "added": [
     "evals/check_performance_chain_0_7_0.py",
@@ -47,6 +47,7 @@
     "skills/ai-prompt-execution-contract/references/source-map.md",
     "skills/ai-scene-design/SKILL.md",
     "skills/ai-screenplay-development/SKILL.md",
+    "skills/ai-screenplay-development/references/format-and-handoff.md",
     "skills/ai-screenplay-development/references/source-map.md",
     "skills/ai-storyboard-design/SKILL.md",
     "skills/ai-video-production-classroom/SKILL.md",
@@ -393,8 +394,8 @@
     },
     {
       "path": "skills/ai-creative-workflow-router/SKILL.md",
-      "sha256": "a8f3f39944cd7cc2cd790f9a07977a78fa41063586ebf1818fd03200f1363ed2",
-      "bytes": 13354
+      "sha256": "a7d0cf1f88c7b237e68b7285f0cd583c749e8b55f56e258309e6f7843197b015",
+      "bytes": 14170
     },
     {
       "path": "skills/ai-creative-workflow-router/references/common-contract.md",
@@ -598,8 +599,8 @@
     },
     {
       "path": "skills/ai-screenplay-development/SKILL.md",
-      "sha256": "34ca577f41350e9c0a78b35485cb6185108b2c19eb6ed6abe8b22eca45713e36",
-      "bytes": 18429
+      "sha256": "9f97436d3fd369a5230de3903c59d1663c6603e1b233cecae7a265940c5f263c",
+      "bytes": 19212
     },
     {
       "path": "skills/ai-screenplay-development/references/character-and-opposition.md",
@@ -633,8 +634,8 @@
     },
     {
       "path": "skills/ai-screenplay-development/references/format-and-handoff.md",
-      "sha256": "3ac9c6df8354a92d242bc01b5023b3fa8f97d0f6598ce791ee9b1721802b5bcf",
-      "bytes": 5626
+      "sha256": "0936cac0a093c990c9e61485a2a175c22664323c184147d0975095d5458d33f2",
+      "bytes": 9061
     },
     {
       "path": "skills/ai-screenplay-development/references/genre-conventions-and-promises.md",
