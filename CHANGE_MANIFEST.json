@@ -73,13 +73,13 @@
     },
     {
       "path": "00_通用AI影像制作Skills_总览.ko-KR.md",
-      "sha256": "ec730cdb4e164bbbe45b78287e96ffe1e5e2d97b8cd70a9396552f92d3c30af3",
-      "bytes": 7099
+      "sha256": "cb909b440f095175fbca980855db840870a2e712738a7f2f6ab7912a99cafff8",
+      "bytes": 7181
     },
     {
       "path": "00_通用AI影像制作Skills_总览.md",
-      "sha256": "3a5d7e681b9ae3a9d075c82af878ffc8263272c0d06196d98efe8c3712417093",
-      "bytes": 5530
+      "sha256": "69b1220a3fd835055a5fc98dbbcb72ec4695b7820abd2e23decc6e2cb7e50c3e",
+      "bytes": 5578
     },
     {
       "path": "01_0.4.0_Seedance生产融合与验证报告.md",
@@ -123,13 +123,13 @@
     },
     {
       "path": "README.ko-KR.md",
-      "sha256": "5113de16edb7490fd198a87904a052d5c3a26a73c2b88f1d57a81b38ea0f9ab3",
-      "bytes": 17403
+      "sha256": "3a322f69ce54462e96ba8481d9778aa7097546d58e975d13e319389ffda64963",
+      "bytes": 17485
     },
     {
       "path": "README.md",
-      "sha256": "b26c4efd4972619809107796d8289eff30c80963ffd248f5e2e3604efde8e12a",
-      "bytes": 13051
+      "sha256": "ad3ae413566491aa4865992cc65b0380ef70649d99f90dbc48e8942d47b09379",
+      "bytes": 13099
     },
     {
       "path": "README_审查包说明.md",
@@ -423,13 +423,13 @@
     },
     {
       "path": "skills/ai-creative-workflow-router/references/user-guide.ko-KR.md",
-      "sha256": "cb724f5b23e2fd3f5d1a303a793bcedd5f43ce6bed7f3931c31276a7752c23e2",
-      "bytes": 13360
+      "sha256": "1a48bb5884cbc69cf295b3b5823f205c11e85cb395585f6a01c3f74687ba5d06",
+      "bytes": 13442
     },
     {
       "path": "skills/ai-creative-workflow-router/references/user-guide.md",
-      "sha256": "a5bdbdbffc246415deed3965bde9eaa501ea8bfce1ae6be2ca2d5343ce36b578",
-      "bytes": 8895
+      "sha256": "47c5d926d73fa322e7d11328b3a1839953bd9f4ed145f54b0f896afba4c295c9",
+      "bytes": 8943
     },
     {
       "path": "skills/ai-generation-review/SKILL.md",
