@@ -1,15 +1,15 @@
 {
   "package_version": "0.7.0",
-  "release_status": "tag_ready",
+  "release_status": "published",
   "baseline_version": "0.6.0",
   "baseline_commit": "d85ca8acbadc61db7678c3da39e0d228201046b4",
   "manifest_self_excluded": true,
   "summary": {
     "files_excluding_manifest": 173,
     "added": 11,
-    "modified": 27,
+    "modified": 28,
     "removed": 0,
-    "unchanged": 135
+    "unchanged": 134
   },
   "added": [
     "evals/check_performance_chain_0_7_0.py",
@@ -25,6 +25,7 @@
     "skills/ai-video-production-classroom/references/generation-risk-and-shot-feasibility.md"
   ],
   "modified": [
+    ".agents/plugins/marketplace.json",
     ".codex-plugin/plugin.json",
     "00_通用AI影像制作Skills_总览.ko-KR.md",
     "00_通用AI影像制作Skills_总览.md",
@@ -57,7 +58,7 @@
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
-      "sha256": "d75da0f437ce8f4a91ab01d3f03baf382688db83e51ef87b669325be330b8098",
+      "sha256": "54eb1d6056fac51533a2453c08ae88a8c6981671e021f928aac00c41213c8989",
       "bytes": 993
     },
     {
@@ -72,13 +73,13 @@
     },
     {
       "path": "00_通用AI影像制作Skills_总览.ko-KR.md",
-      "sha256": "f926a08bce519eeb302c481c1f6c6217d045b0e8bf76a99dc91f69360f264edd",
-      "bytes": 7088
+      "sha256": "ec730cdb4e164bbbe45b78287e96ffe1e5e2d97b8cd70a9396552f92d3c30af3",
+      "bytes": 7099
     },
     {
       "path": "00_通用AI影像制作Skills_总览.md",
-      "sha256": "6d0077db0c170f68a8b356fafde326251d2a84fa6c12a6fd66fa5b131a15352c",
-      "bytes": 5512
+      "sha256": "3a5d7e681b9ae3a9d075c82af878ffc8263272c0d06196d98efe8c3712417093",
+      "bytes": 5530
     },
     {
       "path": "01_0.4.0_Seedance生产融合与验证报告.md",
@@ -122,13 +123,13 @@
     },
     {
       "path": "README.ko-KR.md",
-      "sha256": "860540e880cdcced8c011c38a8db007e0a46dc2dc8956a312457666e5d1cd818",
-      "bytes": 17392
+      "sha256": "5113de16edb7490fd198a87904a052d5c3a26a73c2b88f1d57a81b38ea0f9ab3",
+      "bytes": 17403
     },
     {
       "path": "README.md",
-      "sha256": "fe0e0c09eef4eb24175269321bb16799327aa6f856702bca0e747c103522625f",
-      "bytes": 13033
+      "sha256": "b26c4efd4972619809107796d8289eff30c80963ffd248f5e2e3604efde8e12a",
+      "bytes": 13051
     },
     {
       "path": "README_审查包说明.md",
@@ -172,7 +173,7 @@
     },
     {
       "path": "evals/deterministic-results-0.7.0.json",
-      "sha256": "693524cacb24d24cae0d598de9d4bd8ac2a579b4dbfa2d17befde7ebfce631fc",
+      "sha256": "46af0b0377c0573771ac16e7f865364500ff5e6288413c11021dcece959d9bda",
       "bytes": 1065
     },
     {
@@ -422,13 +423,13 @@
     },
     {
       "path": "skills/ai-creative-workflow-router/references/user-guide.ko-KR.md",
-      "sha256": "fd341a8ba31a3837caa9b6e128bcd77e2e3fe9dd9fc69cf5f61e5892ecf2225a",
-      "bytes": 13349
+      "sha256": "cb724f5b23e2fd3f5d1a303a793bcedd5f43ce6bed7f3931c31276a7752c23e2",
+      "bytes": 13360
     },
     {
       "path": "skills/ai-creative-workflow-router/references/user-guide.md",
-      "sha256": "96ef48a44329222c42903855a62d306ca4982d240a991466702e3f4594e191b7",
-      "bytes": 8877
+      "sha256": "a5bdbdbffc246415deed3965bde9eaa501ea8bfce1ae6be2ca2d5343ce36b578",
+      "bytes": 8895
     },
     {
       "path": "skills/ai-generation-review/SKILL.md",

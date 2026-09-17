@@ -1,6 +1,6 @@
 {
   "candidate": "0.7.0",
-  "release_status": "tag_ready",
+  "release_status": "published",
   "baseline_commit": "d85ca8acbadc61db7678c3da39e0d228201046b4",
   "scope": "Deterministic package and authored-rule checks, not video or student acceptance.",
   "checks": {
