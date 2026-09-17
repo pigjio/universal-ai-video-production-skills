@@ -1,7 +1,7 @@
 ---
 name: ai-video-production-classroom
 description: "用于教学或执行平台中立的 AI 视频生产，把镜头变成生产组、Seedance/即梦 Clip/DO、生成请求、参考绑定、真实尾帧/文字续接、评审与剪辑交接；한국어로 ‘이 숏들을 영상 생성 계획으로 묶어 주세요’라고 해도 트리거된다. Use for image-to-video, text-to-video, multimodal generation, capability-based grouping, continuation, baseline logging and unavailable-generator handoffs. A single-character classroom profile is optional, never a universal prerequisite."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -44,6 +44,7 @@ metadata:
 | 导演镜头转 Clip/DO、任务合同、重试/桥接/合并映射 | `references/production-grouping-and-task-contract.md` | shot→production_group→request→edit_unit 四层映射 |
 | 目标为 Seedance/即梦或需核验平台能力 | `references/seedance-capability-and-evidence.md` | 生成模式、动态能力档案、官方/经验/实测证据分层 |
 | 镜头分组、长短请求、续接与剪辑 | `references/clip-continuity.md` | 四层映射、能力矩阵、接口和回退策略 |
+| 精细接触、多人交互、遮挡、密集运动或音画同步风险 | `references/generation-risk-and-shot-feasibility.md` | 待测失败、证据等级、备选拍法、叙事代价与最小测试 |
 | 真实尾帧、文字重启、长窗桥接或剪辑交付 | `references/continuation-and-edit-delivery.md` | 接口资格、EDL、来源追溯和输出验证 |
 | 课堂演示、无角色或受阻交接 | `references/worked-examples.md` | 可交付实例与上游改版影响链 |
 | 溯源或核对是否夹带私有规则 | `references/source-map.md` | 源版位置、通用化范围 |
@@ -51,6 +52,8 @@ metadata:
 提交文本由 `ai-prompt-execution-contract` 组装；真实结果交 `ai-generation-review`。这些是包内技能，不依赖源版安装路径。
 
 ## 3. 进入条件与输入冻结
+
+先保护镜头不可替代的作用，再评估生成风险。风险启发式不是平台能力结论；没有当前实测不报成功率。涉及对白/音轨时转提示词阶段的声音合同，分别确认原文、语言、发声者、口部可见性与生成/后期路线。测试计划不等于获准付费执行。
 
 1. 记录本轮授权：分组、写稿、上传、付费生成、审查、剪辑分别确认。已有镜头可局部进入，不必重走全流程。
 2. 引用必要上游稳定 ID→版本及当前批准证据；候选输入可用于授权探索，不能标生产批准。无角色不要求角色资产；纯文字生成可无参考图，但空间/材料/变化仍应明确。

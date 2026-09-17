@@ -1,7 +1,7 @@
 ---
 name: ai-storyboard-design
 description: "Use when discussing, exploring, designing or diagnosing narrative and non-narrative AI storyboards. 支持分镜讨论与非叙事感知/概念序列，比较构图语气、视觉七要素、空间显隐和试讲反馈；按需深化 Beat、Blocking、连续性、Timing 与 Animatic 交接，不替代平台 SOP。한국어로 ‘이 장면을 스토리보드로 나눠 주세요’라고 해도 트리거된다."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -224,6 +224,8 @@ Thumbnail 的任务是测试大形和观看路径，不是完成美术。每个�
 先问“观众现在需要知道什么”，再问“用什么镜头拍”。相邻镜头若角度、焦点和画面结构完全相同，必须说明重复的功能，否则合并或制造有意义的对比。
 
 ### Step 6：写逐镜卡
+
+人物改变策略、压抑情绪或无对白决定时，先沿剧本意图选择可见证据，不把“悲伤/紧张”直接换成通用表情；需要补意图时经剧本阶段读取[表演节拍](../ai-screenplay-development/references/performance-beat-and-physical-action.md)，身份/习惯脸回角色的表演参考。有对白不自动切说话者：比较听者反应、同场画外声和声音桥，写清谁能听见、何时听见；声音执行交提示词阶段。跨阶段覆盖由总控的[意图追踪参考](../ai-creative-workflow-router/references/creative-intent-traceability.md)维护，不让生产层为避风险擅改镜头。
 
 ```text
 镜头编号 / 时长：

@@ -1,7 +1,7 @@
 ---
 name: ai-worldbuilding
 description: "用于 AI 电影、动画及视觉作品的世界规则、资源制度、历史文化、时空与设定一致性；新手自然地说‘帮我搭一个世界’‘这里的人怎么生活’‘这个机制合理吗’也触发，无需先写世界圣经。한국어로 ‘이 세계의 규칙을 만들어 주세요’ ‘여기 사람들은 어떻게 사나요?’라고 해도 트리거된다. Use for guided worldbuilding and small rule-testing drafts; do not silently canonize proposals or take over screenplay, character visuals or composition."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

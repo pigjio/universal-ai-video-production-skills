@@ -1,7 +1,7 @@
 ---
 name: ai-scene-design
 description: "Use when discussing or designing narrative and non-narrative environments for AI films or animation. 支持场景讨论、探索草案及非叙事感知/概念设计，推导运行空间、构图关系、光色信息显隐；按需深化拓扑、尺度、母版派生与生产交接，不替代具体平台操作手册。한국어로 ‘이 장면의 공간과 조명을 설계해 주세요’라고 해도 트리거된다."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:

@@ -1,7 +1,7 @@
 ---
 name: ai-creative-workflow-router
 description: "AI 影像创作的唯一新手入口与跨阶段总控；用户只需自然地说‘我有个画面但不知道怎么开始’‘帮我做短片’‘接下来做什么’或直接描述需求即可触发。한국어로 ‘AI 영상을 처음 만드는데 어디서 시작하나요?’ ‘다음에 무엇을 해야 하나요?’라고 말해도 같은 초보자 라우팅을 적용한다. Use for novice onboarding, project routing, stage coordination, Seedance/即梦 production handoff and recovery while preserving versions, evidence and human approval."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -63,6 +63,8 @@ metadata:
 路径可从任何已有有效输入进入。静态交付可在角色/场景/静态合同和图片评审结束，不强加声音、尾帧或视频。环境基准可以本来黑白、损坏、抽象、无人或有人。
 
 ## 4. 阶段闸门与协调
+
+剧本→分镜→提示词交接、局部修改或追问镜头依据时，加载 `references/creative-intent-traceability.md`。只在已有成果内维护关键意图、镜头、请求和保护项的轻量映射；不增加学生表格、不要求每轮输出完整账本。表演意图回剧本，角色结构回角色，观看证据回分镜，声轨执行回提示词，生成风险回生产；只加载本轮需要的参考。
 
 进入下游前核对：模式、唯一当前交付目标、公共头、依赖版本、所需批准范围、真实可用素材和完成判据。一个交付目标可以包含多个有功能的动作，不等于每镜只能一个动词。
 

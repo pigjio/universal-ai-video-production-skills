@@ -1,5 +1,9 @@
 # 来源与通用化边界
 
+## 0.7.0 增量来源
+
+0.7.0 新增 `performance-beat-and-physical-action.md`：依据 Dialogue 方法论总纲的意图、语言行动、活动/行动与节拍，以及 Directing the Story 蒸馏的动作四阶段和因果阅读，综合为可见表演判断。Dialogue 源蒸馏为 NEEDS_REVIEW，未核验原书全页；例子与跨阶段职责为原创综合。
+
 ## 可识别的方法来源
 
 本模块由已有 `screenplay-writing` 的方法二次转译，并结合 v2 实际审查问题修订。相关来源入口：short-animation-logic-hardening.md；script-quality-gates.md；restore-rich-scene-logic-without-canon-regression.md。这些名称用于定位原设计与迁移记录，不是本包运行时外部依赖；执行所需步骤已随正文及参考提供。

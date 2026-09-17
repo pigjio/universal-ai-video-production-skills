@@ -14,6 +14,7 @@ except ImportError:
 ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
 CASES = json.loads((ROOT / "evals/korean-cases-0.5.1.json").read_text(encoding="utf-8"))
 PROTOCOL = (ROOT / "shared/novice-guidance-protocol.md").read_text(encoding="utf-8")
+EXPECTED_VERSION = json.loads((ROOT / "plugin.json").read_text(encoding="utf-8"))["version"]
 checks = []
 
 def add(name, ok, evidence):
@@ -36,7 +37,7 @@ for case in route_cases:
     description = frontmatter.get("description", "") if isinstance(frontmatter, dict) else ""
     skill_names.add(skill)
     add(f"{case['id']}_discoverable", case.get("trigger_fragment", "") in description, f"Korean trigger is present in {skill} description")
-    add(f"{case['id']}_version", frontmatter.get("version") == "0.6.0", f"{skill} declares version 0.6.0")
+    add(f"{case['id']}_version", frontmatter.get("version") == EXPECTED_VERSION, f"{skill} declares version {EXPECTED_VERSION}")
     add(f"{case['id']}_description_limit", len(description) <= 1024, f"{skill} description remains within the discovery limit")
 
 add("route_skills_unique", len(skill_names) == 10, "route cases cover ten distinct skill identifiers")

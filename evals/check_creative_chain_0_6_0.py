@@ -11,6 +11,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parents[1]
+EXPECTED_VERSION = json.loads((ROOT / "plugin.json").read_text(encoding="utf-8"))["version"]
 checks = []
 
 def read(rel):
@@ -49,22 +50,22 @@ add("script_basis_chain", "从剧本到分镜的依据链" in taxonomy and all(x
 add("local_revision_examples", all(x in revision for x in ["太普通", "不够电影感", "人物不对", "这一段太慢", "镜头太碎", "动作生成很乱", "只改第三镜"]), "seven common feedback paths are covered")
 add("protected_scope", "受保护" in revision and "只改受影响" in revision, "confirmed and unaffected content is protected")
 
-delivery_fields = ["目标", "资产", "起点", "空间", "摄影", "时间轴", "物理", "声音", "终点", "禁止"]
-add("seedance_ten_part_contract", all(x + "：" in delivery for x in delivery_fields), "student delivery contains the ten-part minimum contract")
+delivery_fields = ["镜头编号", "镜头任务", "目标时长", "景别与机位", "画面构图", "起始状态", "动作与表演", "时间轴", "摄影机运动", "物理与空间约束", "声音", "结束状态", "切点与衔接", "高风险限制"]
+add("seedance_structured_contract", all(x + "：" in delivery for x in delivery_fields), "student delivery explicitly expands the former ten-part contract into labeled shot fields without a request header")
 add("copy_first_delivery", all(x in delivery for x in ["使用说明", "参考素材绑定", "可直接复制", "连续生成与尾帧接力", "生成失败时优先修改什么"]), "student-facing output leads with usable blocks")
 add("honest_generation_boundary", all(x in delivery for x in ["不能说已上传", "不能说已生成", "未观看视频"]), "prompt completion is separated from platform results")
 add("three_outputs", all(x in router for x in ["满意的剧本", "有剧本依据的分镜", "可直接复制的 Seedance/即梦提示词"]), "router names the three student outcomes")
 
 zh = read("skills/ai-creative-workflow-router/references/user-guide.md")
 ko = read("skills/ai-creative-workflow-router/references/user-guide.ko-KR.md")
-add("bilingual_version", "0.6.0" in zh and "0.6.0" in ko, "Chinese and Korean guides declare 0.6.0")
+add("bilingual_version", EXPECTED_VERSION in zh and EXPECTED_VERSION in ko, f"Chinese and Korean guides declare {EXPECTED_VERSION}")
 add("bilingual_three_outputs", "讨论到满意的剧本" in zh and "만족할 때까지 논의한 시나리오" in ko and "바로 복사" in ko, "both guides expose the same three-result path")
 
 skill_versions = []
 for f in (ROOT / "skills").glob("*/SKILL.md"):
     m = re.search(r"^version:\s*(\S+)", f.read_text(encoding="utf-8"), re.M)
     skill_versions.append((f.parent.name, m.group(1) if m else None))
-add("ten_skill_versions", len(skill_versions) == 10 and all(v == "0.6.0" for _, v in skill_versions), "all ten skills declare version 0.6.0")
+add("ten_skill_versions", len(skill_versions) == 10 and all(v == EXPECTED_VERSION for _, v in skill_versions), f"all ten skills declare version {EXPECTED_VERSION}")
 
 scan_ext = {".md", ".json", ".py", ".yaml", ".yml", ".txt"}
 leaks = []

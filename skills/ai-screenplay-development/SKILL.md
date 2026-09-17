@@ -1,7 +1,7 @@
 ---
 name: ai-screenplay-development
 description: "用于 AI 电影、动画及视觉作品的剧本、动作谱、场景链、对白、结构诊断和改写；新手自然地说‘帮我把点子写成故事’‘下一场怎么写’‘先试两句对白’也触发，无需完整大纲。한국어로 ‘이 아이디어를 이야기로 써 주세요’ ‘다음 장면을 써 주세요’라고 해도 트리거된다. Use for guided screenplay drafting through visible action, information and causality; world encyclopedias, character visuals and shot lists route elsewhere."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -71,6 +71,8 @@ Logline 内部草拟公式：
 
 ## 5. 人物行为与弧线（仅适用时）
 
+人物表演僵硬、无对白选择或潜台词难以落地时，加载 `references/performance-beat-and-physical-action.md`：先判断当下目标、策略与反馈，再写可见行动；不用情绪标签配固定动作，不要求用户填表。角色外形/习惯脸的问题转角色阶段，观众能否看到关键证据转分镜阶段。
+
 不写性格标签代替行为。Want 为可追踪外部目标；Need 为需要发展或坚持的价值/能力；Lie 是存在时驱动错误选择的信念；Truth 是主题提供的替代答案；Ghost/Wound 为已建立的相关过去经历；Defect/Core action 是压力下反复产生后果的策略/习惯。Lie、Ghost 允许不适用，不能为填表编创伤。
 
 - 正弧：旧信念或策略承压→主动新选择→结果证明变化；伤口只是可选原因。
@@ -118,6 +120,8 @@ Gap：预期与实际反馈不同，推动策略调整。升级可通过时间/�
 旧稿丰富度恢复必须加载 `references/diagnosis-and-rewrite.md`：先读当前确认事实与相邻场，提取旧稿互动/升级/认知/决定功能，再用当前道具、母题、能力和场界重建。旧稿不是当前 Canon，禁止顺带恢复过期名词、能力或损坏时点。先写完整表演版并诚实标估时，再考虑压缩；未经请求与批准不反向同步分镜/Clip/Prompt。
 
 ## 10. 格式与交接
+
+交给分镜或局部改稿影响下游时，调用总控并显式读取[创作意图追踪](../ai-creative-workflow-router/references/creative-intent-traceability.md)，保留关键决定的触发、首次揭示与用户保护范围。
 
 需要规范正文、完整示例或制作交接时加载 `references/format-and-handoff.md`。标准格式含场景标题、现在时动作、角色对白和必要特殊格式；短句短段，可见可听，少写心理解释和镜头指令。投稿稿与制作稿的编号习惯不同，由交付要求决定，不把固定场数/时长当规范。
 

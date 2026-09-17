@@ -1,7 +1,7 @@
 ---
 name: ai-generation-review
 description: "用于评审 AI 生成的角色、环境、物体、抽象图像、分镜帧及 Seedance/即梦视频；한국어로 ‘생성 결과가 왜 어색한지 먼저 진단해 주세요’라고 해도 트리거된다. Use when judging identity, space, geometry, action, direction, props, camera, information boundaries, audio, tail-frame usability or repair priority. Separate observations from competing causes, design distinguishing tests, route post-fix/regeneration/storyboard return, and never infer motion or sound from stills."
-version: 0.6.0
+version: 0.7.0
 author: Domain Knowledge Distillation
 license: MIT
 metadata:
@@ -68,6 +68,8 @@ metadata:
 
 ## 4. 评审闭环
 
+表演检查对照上游触发、策略与可见动作，不以“像不像某种情绪”的固定脸谱打分。声音检查对照发声者、逐字台词、语言、听者反应与口型；没有视听证据就保持 unconfirmable。局部修复沿总控的意图映射核对首次揭示、物件状态及保护范围，再复核相关前后接口，不把所有下游一律重做。
+
 1. **冻结参照**：读取本轮真实结果、实际 Prompt/素材/参数及必要上游版本。要求不明确时先作描述性观察，不能伪造合规标准。缺上传日志时标不能核对实际绑定。
 2. **判定适用性**：按模式与主体类型选择身份、空间、结构/材质、动作、表演、摄影、声音和续接接口；静态不评运动，抽象不强制地面支撑/物理接触。
 3. **记录症状事实**：例如“入口在该帧从左移至右”，先核对是否授权反打/反向视角，不能直接称空间拓扑坏了。用户指出某缺陷时围绕该缺陷取证，不偷换成较易观察的问题。
@@ -91,7 +93,7 @@ metadata:
 
 ## 6. 输出合同
 
-详细模板见 `references/review-template.md`；下列公共头与核心 payload 同样可直接交接。制品 version 与技能 0.5.0 分开。
+详细模板见 `references/review-template.md`；下列公共头与核心 payload 同样可直接交接。制品 version 与技能版本分开。
 
 ```yaml
 artifact_id: REVIEW-example
