@@ -15,7 +15,7 @@
         "installation": "AVAILABLE",
         "authentication": "ON_INSTALL"
       },
-      "description": "A guided AI video production workflow with ten coordinated skills.",
+      "description": "A compact public workflow for AI video creation with ten coordinated skills.",
       "version": "0.7.0",
       "author": {
         "name": "Domain Knowledge Distillation"
@@ -23,9 +23,18 @@
       "homepage": "https://github.com/pigjio/universal-ai-video-production-skills",
       "repository": "https://github.com/pigjio/universal-ai-video-production-skills",
       "license": "MIT",
-      "keywords": ["ai-video", "creative-workflow", "screenplay", "storyboard", "production"],
+      "keywords": [
+        "ai-video",
+        "creative-workflow",
+        "screenplay",
+        "storyboard",
+        "production"
+      ],
       "category": "Creative",
-      "tags": ["ai-video", "creative-workflow"]
+      "tags": [
+        "ai-video",
+        "creative-workflow"
+      ]
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "universal-ai-video-production",
   "version": "0.7.0",
-  "description": "A guided AI video production workflow with ten coordinated skills for ideation, writing, design, production, and review.",
+  "description": "A compact public workflow for AI video creation with ten coordinated skills.",
   "author": {
     "name": "Domain Knowledge Distillation",
     "url": "https://github.com/pigjio"
@@ -9,15 +9,24 @@
   "homepage": "https://github.com/pigjio/universal-ai-video-production-skills",
   "repository": "https://github.com/pigjio/universal-ai-video-production-skills",
   "license": "MIT",
-  "keywords": ["ai-video", "creative-workflow", "screenplay", "storyboard", "production"],
+  "keywords": [
+    "ai-video",
+    "creative-workflow",
+    "screenplay",
+    "storyboard",
+    "production"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Universal AI Video Production",
-    "shortDescription": "One guided workflow with ten AI video production skills.",
-    "longDescription": "Guides creators from early visual ideas through screenplay, worldbuilding, character and scene design, storyboards, generation requests, video production, and evidence-based review.",
+    "shortDescription": "A compact workflow for AI video creation.",
+    "longDescription": "Supports idea discussion, screenplay revision, character and scene concepts, text storyboards, generation prompts, and review of actual media.",
     "developerName": "Domain Knowledge Distillation",
     "category": "Creative",
-    "capabilities": ["Interactive", "Write"],
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
     "websiteURL": "https://github.com/pigjio/universal-ai-video-production-skills",
     "defaultPrompt": [
       "Help me turn a rough visual idea into an AI short film, one small decision at a time.",
