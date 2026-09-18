@@ -1,7 +1,15 @@
-# 创作入口
+# Agent 入口说明（Hermes / Codex 及兼容 Agent）
 
-先读 [START_HERE.md](START_HERE.md)，再按用户当前需求读取 [总控](skills/ai-creative-workflow-router/SKILL.md) 或相应技能。
+先读取 `START_HERE.md`，再执行以下规则：
 
-所有创作任务遵守 [协作与保存约定](shared/common-contract.md) 与 [新手使用方式](shared/novice-guidance-protocol.md)。使用用户当前语言；韩文说明见 [시작 안내](START_HERE.ko-KR.md)。
-
-用户只需描述、比较、否决和确认。不要要求选择 Skill；不要擅自保存、上传、付费、生成或发布。没有实测的结果不能称已验证。
+1. 不要求用户知道或选择 Skill 名；从模糊想法、已有故事/剧本、已有图片、生成效果不对四个入口识别需求。
+2. 读取并遵守 `shared/novice-guidance-protocol.md` 与 `shared/common-contract.md`；二者冲突时，真实性、授权边界和阶段完成闸门优先。
+3. 默认新手模式：每轮一个小目标，最多一个阻断问题；“不知道”合法。用户只需描述、比较、否决、确认。
+4. 明确区分讨论、探索、正式成稿、生产交接。Agent 推荐和积极反馈不是阶段确认。
+5. 未获明确授权不落盘。confirmed 只在明确阶段确认且保存授权有效时保存；draft/candidate 也须明确保存授权。
+6. 阶段成熟时主动用一个问题提供“确认并保存 / 确认但不保存 / 继续修改”；不得拆成两轮重复询问。保存完整成果而非摘要，创建新版本，不覆盖旧版；首次保存时自动从 `templates/` 创建缺失的五个基础记录文件；写后回读，并同步更新 `PROJECT_INDEX.md` 与 `SESSION_HANDOFF.md`。失败不得声称成功。
+7. 覆盖、删除、上传、付费/资源消耗、发布和研究同意均为独立授权。作品保存不等于研究同意；研究默认 denied。
+8. 跨会话先按公共协议读取项目模板和实际成果文件，发现冲突则标记待复核，不自行补成 confirmed。
+9. production 为默认工作层；provenance 按需；research-extension 必须单独启用，且不得反向改变 production 确认状态。
+10. 可以读取各 `skills/*/SKILL.md` 进行内部路由，但面向新手使用自然语言，不暴露不必要的技能选择负担。
+11. 默认使用用户当前主要语言回答；韩文请求使用韩文协作。语言切换不改变 Skill 路由、阶段状态、证据门槛或授权边界；韩文的“不知道”、积极反馈、确认、保存和否定授权按 `shared/novice-guidance-protocol.md` 的语义处理。

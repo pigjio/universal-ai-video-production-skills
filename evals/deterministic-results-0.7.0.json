@@ -1,0 +1,44 @@
+{
+  "candidate": "0.7.0",
+  "release_status": "published",
+  "baseline_commit": "d85ca8acbadc61db7678c3da39e0d228201046b4",
+  "scope": "Deterministic package and authored-rule checks, not video or student acceptance.",
+  "checks": {
+    "check_creative_chain_0_6_0.py": {
+      "exit_code": 0,
+      "checks": 23,
+      "passed": 23,
+      "failed": []
+    },
+    "check_korean_support.py": {
+      "exit_code": 0,
+      "checks": 52,
+      "passed": 52,
+      "failed": []
+    },
+    "check_novice_runs.py": {
+      "exit_code": 0,
+      "checks": 11,
+      "passed": 11,
+      "failed": []
+    },
+    "validate_package.py": {
+      "exit_code": 0,
+      "skills": 10,
+      "references": 98,
+      "schema_records_checked": 34,
+      "errors": [],
+      "warnings": []
+    },
+    "check_performance_chain_0_7_0.py": {
+      "exit_code": 0,
+      "checks": 20,
+      "passed": 20,
+      "failed": []
+    },
+    "local_markdown_links": {
+      "broken": 0,
+      "scope": "all package Markdown relative link targets; external URLs and anchors excluded"
+    }
+  }
+}

@@ -4,30 +4,35 @@
 
 AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창작 협업 플러그인입니다. 한 번만 설치하면 하나의 라우터와 9개의 전문 Skill을 함께 사용할 수 있습니다. 이 모듈들은 아이디어, 시나리오, 세계관, 캐릭터, 장면, 스토리보드, 생성 요청, 영상 제작, 결과 리뷰를 추적 가능하고 다시 이어갈 수 있는 하나의 워크플로로 연결합니다.
 
-버전: **0.7.0**
+버전: **0.7.0｜연기·사운드·단계 간 일관성 강화 버전**
 
 > Skill 이름이나 프롬프트 작성법을 먼저 배울 필요가 없습니다. 사용자는 설명하고, 비교하고, 거절하고, 확정하면 됩니다. Agent가 방법 선택과 단계·버전·파일 관리를 담당합니다.
 
-## 창작 협업
+## 0.7.0에서 달라지는 점
 
-학생은 이론을 먼저 배우거나 긴 양식을 채울 필요가 없습니다. 아이디어와 수정하고 싶은 점을 자연스럽게 말하면 됩니다. 개요, 상세 시나리오, 캐릭터, 장소, 스토리보드 중 필요한 작업에서 시작하거나 기존 결과를 수정할 수 있습니다.
+학생은 이론을 배우거나 추적표를 작성할 필요가 없습니다. 원하는 변화만 자연어로 말하면 Agent가 다음 판단을 내부에서 처리합니다.
 
-개요나 상세 시나리오의 논의가 정리되면 Agent가 캐릭터·장소 목록과 Midjourney 콘셉트 프롬프트가 필요한지 묻습니다. 캐릭터 프롬프트에는 얼굴 특징을 포함하며 3D 스타일을 자동으로 넣지 않습니다. 장소 프롬프트는 시나리오 키워드와 필요한 시각적 방향을 중심으로 작성합니다.
+- **연기:** 감정 이름 대신 자극을 보고 행동을 바꾸는 과정을 설계합니다. 멈춤·시선·물건을 다루는 행동으로 선택이 읽히게 합니다.
+- **사운드:** 대사 원문, 말하는 사람, 듣는 사람, 화면에 보이는 입, 소리의 시작·끝을 구분합니다. 화면 밖 인물의 대사를 내레이션으로 바꾸지 않습니다. 기능이 미확인인 경우 후반 작업 대안을 제시하며, 더빙만으로 립싱크가 완성된다고 말하지 않습니다.
+- **생성 위험:** 복잡한 접촉이나 여러 동작의 위험을 설명하고 이야기의 의미를 지키는 대안을 비교합니다. 플랫폼 실험은 별도 승인 후에만 실행합니다.
+- **부분 수정:** 시나리오의 의도와 숏·프롬프트의 연결을 추적합니다. 영향받는 부분과 보존할 부분을 구분하고 충돌을 몰래 수정하지 않습니다.
 
-**v0.7.0이 공개되었으며 Marketplace 설치 진입점은 v0.7.0을 가리킵니다.** 기존 설치본이나 캐시를 사용하는 경우 다시 받아야 합니다. 실제 영상 생성, 학생 사용성, 예술적 만족도는 별도 검증 대상입니다.
+예: “감정 설명 대신 행동으로 보여 주세요.” / “이 대사는 듣는 사람을 보여 주세요.” / “두 번째 숏만 바꾸고 뒤쪽의 충돌은 먼저 알려 주세요.”
+
+**v0.7.0이 공개되었으며 Marketplace 설치 진입점은 v0.7.0을 가리킵니다.** 사용자 요청에 따라 캐릭터 콘셉트 프롬프트 수정을 같은 버전에 통합하고 v0.7.0 태그를 갱신했습니다. 기존 설치본이나 캐시를 사용하는 경우 다시 받아야 합니다. 실제 영상 생성, 학생 사용성, 예술적 만족도는 별도 검증 대상입니다.
 
 ## 주요 특징
 
 - **네 가지 자연스러운 시작점**: 막연한 아이디어, 기존 이야기/시나리오, 보유 이미지, 만족스럽지 않은 생성 결과 어디에서든 시작할 수 있습니다.
 - **하나의 Plugin, 10개의 전문 Skill**: 한 번만 설치하면 초기 아이디어부터 실제 생성 결과 리뷰까지 전 과정을 사용할 수 있습니다.
-- **자연어 협업**: 방향 비교, 시험 작성, 부분 수정을 요청할 수 있으며 전문 용어를 먼저 배울 필요가 없습니다.
+- **초보자·협업·전문가 모드**: 대화 복잡도는 조절하되 전문 판단과 증거 기준은 낮추지 않습니다.
 - **한 번에 하나의 작은 목표**: 실제로 진행을 막는 질문은 최대 하나만 하며, “모르겠다”도 유효한 답입니다.
 - **단계 확정과 저장 분리**: 긍정적인 반응은 확정이 아니며, 저장은 업로드·생성·결제·게시·연구 동의를 뜻하지 않습니다.
 - **완전한 Markdown 단계 산출물**: 확정 후 새 버전을 만들고 기존 버전을 조용히 덮어쓰지 않으며, 저장 뒤 다시 읽어 검증합니다.
 - **세션 간 복구**: 프로젝트 인덱스, 권한 기록, 세션 인계 문서를 통해 실제 진행 상태를 복원합니다.
 - **제작 증거 추적**: planned, submitted, generated, reviewed, 사람의 최종 승인을 구분합니다.
-- **Seedance / Jimeng 프롬프트 지원**: 숏별 전체 항목과 자료 준비·연결 안내를 제공합니다. 영상 프롬프트 마지막 줄은 “无背景音乐”로 고정합니다.
-- **연구 활용에는 별도 동의 필요**: 일반 창작이나 저장 동의는 연구 활용 동의가 아닙니다.
+- **Seedance / Jimeng 제작 지원**: 숏 그룹, 소재 역할, 정식 생성 요청, 이어 만들기, 10차원 리뷰, 부분 수정 방법을 포함합니다.
+- **연구 사용 기본 비활성화**: production, provenance, research를 분리하며 연구 사용에는 별도의 명시적 동의가 필요합니다.
 - **한국어 자연어 협업 강화**: 한국어 요청으로 라우터와 10개 전문 단계를 직접 호출할 수 있습니다. Agent는 사용자의 언어를 따르며, 언어가 바뀌어도 승인과 상태 규칙은 바뀌지 않습니다.
 
 ## Plugin에 포함된 10개의 Skills
@@ -36,30 +41,48 @@ AI 단편 영상, 애니메이션, 비주얼 스토리텔링을 위한 Codex 창
 
 | Skill | 용도 |
 |---|---|
-| [`ai-creative-workflow-router`](skills/ai-creative-workflow-router/SKILL.md) | 초보자 안내, 현재 작업 선택, 대화 재개 |
-| [`ai-visual-ideation`](skills/ai-visual-ideation/SKILL.md) | 막연한 아이디어를 비교 가능한 방향으로 발전 |
-| [`ai-screenplay-development`](skills/ai-screenplay-development/SKILL.md) | 개요, 상세 시나리오, 행동과 대사 수정 |
-| [`ai-worldbuilding`](skills/ai-worldbuilding/SKILL.md) | 현재 이야기에 필요한 세계 설정과 일관성 |
-| [`ai-character-design`](skills/ai-character-design/SKILL.md) | 캐릭터 외형과 Midjourney 콘셉트 프롬프트 |
-| [`ai-scene-design`](skills/ai-scene-design/SKILL.md) | 시나리오의 장소와 Midjourney 콘셉트 프롬프트 |
-| [`ai-storyboard-design`](skills/ai-storyboard-design/SKILL.md) | 시나리오 기반 텍스트 스토리보드, 리듬과 연결 |
-| [`ai-prompt-execution-contract`](skills/ai-prompt-execution-contract/SKILL.md) | 복사 가능한 이미지·Seedance 영상 프롬프트 |
-| [`ai-video-production-classroom`](skills/ai-video-production-classroom/SKILL.md) | 생성 준비, 자료 배치, 영상 연결 |
-| [`ai-generation-review`](skills/ai-generation-review/SKILL.md) | 실제 이미지·영상의 문제와 수정 방향 검토 |
+| [`ai-creative-workflow-router`](skills/ai-creative-workflow-router/SKILL.md) | 초보자 진입, 단계 간 라우팅, 복구, 최소 범위 되돌리기 |
+| [`ai-visual-ideation`](skills/ai-visual-ideation/SKILL.md) | 막연한 아이디어를 비교 가능한 창작 방향으로 발전 |
+| [`ai-screenplay-development`](skills/ai-screenplay-development/SKILL.md) | 시나리오, 장면 연결, 행동, 대사, 진단과 수정 |
+| [`ai-worldbuilding`](skills/ai-worldbuilding/SKILL.md) | 세계 규칙, 자원 체계, 시공간 관계와 일관성 |
+| [`ai-character-design`](skills/ai-character-design/SKILL.md) | 캐릭터 콘셉트, 외형, 연기와 제작 자산 |
+| [`ai-scene-design`](skills/ai-scene-design/SKILL.md) | 공간 구조, 구도, 빛과 색, 재질, 상태 파생 |
+| [`ai-storyboard-design`](skills/ai-storyboard-design/SKILL.md) | 비트, 블로킹, 숏 리듬과 연속성 |
+| [`ai-prompt-execution-contract`](skills/ai-prompt-execution-contract/SKILL.md) | 정지 이미지 및 영상용 실행 가능한 생성 요청 |
+| [`ai-video-production-classroom`](skills/ai-video-production-classroom/SKILL.md) | 플랫폼 요청, 영상 이어 만들기, 제작 상태와 편집 인계 |
+| [`ai-generation-review`](skills/ai-generation-review/SKILL.md) | 실제 미디어 증거에 기반한 진단, 수정, 회귀 리뷰 |
 
 ## 빠른 시작
 
-### 받기 및 설치
+### ChatGPT 데스크톱 / Codex
 
-[v0.7.0 압축 파일](https://github.com/pigjio/universal-ai-video-production-skills/archive/refs/tags/v0.7.0.zip)을 다운로드하고 압축을 푼 뒤 호환 Agent에 `START_HERE.ko-KR.md`를 읽도록 요청하세요. 업데이트할 때는 새 폴더를 사용하고 이전 파일과 섞지 마세요.
+**Plugins** 디렉터리를 열고 `Universal AI Video Production`을 찾아 설치합니다. 이 저장소는 공개되어 있으므로 비공개 저장소 읽기 권한을 별도로 요청할 필요가 없습니다. 목록에 플러그인이 아직 보이지 않으면 워크스페이스 관리자에게 아래 절차에 따라 Marketplace를 먼저 가져오도록 요청하세요. 설치가 끝나면 반드시 새 대화나 세션을 시작하세요. 10개의 Skill이 사용 가능한 기능으로 등록되고, 작업에 맞는 Skill이 필요할 때 로드됩니다.
 
-플러그인 설치를 지원하는 환경에서는 이 저장소의 Marketplace 목록인 `.agents/plugins/marketplace.json`을 사용할 수 있습니다. 플러그인 ID는 `universal-ai-video-production`이며 한 번만 설치하면 됩니다. 구체적인 설치 방법은 현재 클라이언트에 따릅니다.
+### Codex CLI
 
-저장소 주소:
+Codex CLI에서 `/plugins`를 입력하고, 설정된 Marketplace에서 `universal-ai-video-production`을 설치한 다음 새 세션을 시작합니다. Codex IDE 확장 프로그램은 현재 Plugins를 지원하지 않습니다. IDE에서는 아래의 “수동으로 저장소를 받아 프로젝트로 사용하기” 방식을 이용하세요.
+
+### 워크스페이스 관리자가 GitHub에서 가져오기
+
+관리자는 **Admin → Plugins → Add → Import marketplace**로 이동한 뒤 다음 저장소 주소를 입력합니다.
 
 ```text
 https://github.com/pigjio/universal-ai-video-production-skills
 ```
+
+Marketplace 매니페스트는 저장소 루트의 `.agents/plugins/marketplace.json`에 있으므로 **Path는 비워 둡니다**. 공개 저장소이므로 비공개 저장소 읽기 권한은 필요하지 않습니다. 가져오기가 끝나면 구성원이 Plugins 디렉터리에서 설치할 수 있습니다.
+
+로컬 Agent에 GitHub 및 플러그인 관리 기능이 이미 있다면 위 단계를 도와달라고 요청할 수도 있습니다. 이는 편의를 위한 선택 사항이며 모든 Codex 진입점에서 지원되는 공통 설치 방식은 아닙니다.
+
+설치 후에는 Skill 이름을 외우지 않고 자연어로 바로 시작할 수 있습니다.
+
+```text
+이 AI 영상 제작 Skills를 처음 사용합니다. 지금은 막연한 아이디어만 있습니다. 한 번에 작은 목표 하나씩 진행해 주세요. 제가 모르겠다고 하면 쉽게 비교할 수 있는 선택지를 제안해 주세요.
+```
+
+Agent는 계속 한국어로 답하고, “모르겠어요”라고 해도 중단하지 않고 임시 가정을 표시한 뒤 비교하기 쉬운 제안을 제공합니다. “좋아요”나 “계속해 주세요”는 단계 확정 또는 저장 권한으로 간주하지 않습니다.
+
+Codex 공식 안내: [Plugin 만들기](https://learn.chatgpt.com/docs/build-plugins), [Plugin 사용하기](https://learn.chatgpt.com/docs/plugins), [엔터프라이즈 워크스페이스 Plugin 관리](https://learn.chatgpt.com/docs/enterprise/plugin-management).
 
 ### 수동으로 저장소를 받아 프로젝트로 사용하기
 
@@ -74,7 +97,7 @@ cd universal-ai-video-production-skills
 
 - **Codex / Hermes 및 호환 Agent**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`AGENTS.md`](AGENTS.md)에 있습니다.
 - **Claude Code**: 저장소 루트 폴더를 엽니다. 진입 규칙은 [`CLAUDE.md`](CLAUDE.md)에 있습니다.
-- **기타 Agent**: 먼저 [`START_HERE.ko-KR.md`](START_HERE.ko-KR.md), [`shared/novice-guidance-protocol.ko-KR.md`](shared/novice-guidance-protocol.ko-KR.md), [`shared/common-contract.ko-KR.md`](shared/common-contract.ko-KR.md)를 읽게 합니다.
+- **기타 Agent**: 먼저 [`START_HERE.md`](START_HERE.md), [`shared/novice-guidance-protocol.md`](shared/novice-guidance-protocol.md), [`shared/common-contract.md`](shared/common-contract.md)를 읽게 합니다.
 
 사용자가 Skill을 직접 고를 필요는 없습니다. 라우터가 현재 작업에 필요한 최소한의 전문 방법을 선택합니다.
 
@@ -124,8 +147,8 @@ cd universal-ai-video-production-skills
 
 학생은 시나리오 이론, 연출 이론, 프롬프트 작성법을 먼저 공부할 필요가 없습니다. 자연어로 설명하고, 비교하고, 거절하고, 확정하면 Agent가 전문 방법을 내부에서 사용해 다음 세 가지 결과를 만듭니다.
 
-1. **대화로 다듬은 시나리오**: 사용자의 아이디어를 중심으로 사건, 행동, 대사를 수정합니다.
-2. **시나리오 근거가 있는 스토리보드**: 현재 시나리오에 따라 숏 크기, 시점, 동작, 길이와 연결을 논의합니다.
+1. **사용자가 만족한 시나리오**: 장르 약속, 인물의 선택, 장면 인과, 대사를 대화로 다듬습니다.
+2. **시나리오 근거가 있는 스토리보드**: 각 숏의 크기, 시점, 동작, 컷 지점을 장면 기능·정보·연기 필요와 연결합니다.
 3. **Seedance / Jimeng에 바로 복사할 수 있는 영상 프롬프트**: 생성 요청별로 소재 역할, 시작 상태, 공간, 촬영, 시간축, 물리, 음향, 끝 상태, 핵심 금지 사항을 제공합니다.
 
 “너무 평범해요”, “영화적인 느낌이 부족해요”, “인물이 제가 원한 사람 같지 않아요”, “이 부분이 느려요”, “숏이 너무 잘게 나뉘었어요”, “세 번째 숏만 바꿔 주세요”라고 말해도 됩니다. Agent는 피드백을 비교 가능한 소수의 안으로 바꾸고 영향받는 부분만 수정해야 합니다. 프롬프트 완성은 업로드나 생성 완료를 뜻하지 않으며 실제 결과는 플랫폼 실행과 결과 리뷰가 필요합니다.
@@ -147,18 +170,30 @@ cd universal-ai-video-production-skills
 스토리보드에서 제작으로 넘어갈 때의 흐름은 다음과 같습니다.
 
 ```text
-텍스트 스토리보드
-→ 복사 가능한 영상 프롬프트와 자료 준비
-→ 동의 후 실제 플랫폼 생성
-→ 실제 결과를 보고 수정 논의
-→ 사용자 확정 및 전달
+storyboard shots
+→ production_group / Clip / DO
+→ generation_request
+→ 실제 플랫폼 제출 및 원본 출력
+→ 10차원 리뷰
+→ edit_unit
+→ 사람의 최종 판단과 납품
 ```
 
 계획, 제출, 생성, 리뷰, 사람의 최종 승인은 서로 다른 상태입니다. 실제 미디어가 없으면 작업 ID, 타임코드, 음향 판단 또는 통과 결과를 꾸며 내지 않습니다.
 
-## 대화 방식
+## 대화 방식과 작업 깊이
 
-기본적으로 쉬운 말로 한 단계씩 진행합니다. 전체 묶음 출력, 대안 비교 또는 특정 부분만 수정하도록 요청할 수 있습니다. 모든 단계를 고정된 순서대로 거칠 필요는 없으며 잠시 멈추거나 저장하지 않고 논의만 해도 됩니다.
+대화 방식은 언제든 바꿀 수 있습니다.
+
+- **초보자 모드**: 기본값이며 쉬운 말로 한 단계씩 진행합니다.
+- **협업 모드**: Agent와 함께 대안을 비교하고 시험 작성하며 다듬습니다.
+- **전문가 모드**: 전체 필드, 의존성, 상태, 제작 인계 정보를 표시합니다.
+
+작업 깊이는 별도로 관리합니다.
+
+- `production`: 기본값이며 실제 창작과 제작에 사용합니다.
+- `provenance`: 필요할 때 방법의 출처와 증거 범위를 확인합니다.
+- `research`: 명시적으로 동의한 경우에만 활성화되며 production 확정 상태를 역으로 바꿀 수 없습니다.
 
 ## 권한 경계
 
@@ -175,25 +210,26 @@ cd universal-ai-video-production-skills
 
 ## 검증
 
-저장소 루트에서 실행합니다.
+저장소 루트에서 다음을 실행합니다.
 
 ```bash
-python evals/validate_public.py
+python evals/validate_package.py .
 ```
 
-정적 검사는 패키지 구조, 링크, 중·한 문서 안내, 프롬프트 항목과 파일 목록을 확인합니다. 실제 플랫폼 생성, 예술적 품질 판단 또는 사용자 테스트를 대신하지 않습니다.
+정적 검증은 Skill 버전과 참조, 공유 프로토콜 일관성, 프로젝트 템플릿, 공통 schema, 재귀 리소스, 비공개 경로 노출을 검사합니다. 실제 플랫폼 생성, 예술적 품질 판단, 외부 사용자 테스트를 대신하지는 않습니다.
 
 ## 문서 안내
 
-- [빠른 시작](START_HERE.ko-KR.md)
-- [사용 설명서](skills/ai-creative-workflow-router/references/user-guide.ko-KR.md)
-- [기능 개요](00_通用AI影像制作Skills_总览.ko-KR.md)
-- [처음 사용하는 분을 위한 안내](shared/novice-guidance-protocol.ko-KR.md)
-- [협업 및 저장 원칙](shared/common-contract.ko-KR.md)
-- [영상 프롬프트 양식 · 한국어 포함](skills/ai-prompt-execution-contract/references/video-template.md)
-- [출처와 라이선스 · 한국어 포함](NOTICE.md)
-- [MIT 라이선스 원문](LICENSE)
+- [초보자 시작 안내](START_HERE.ko-KR.md)
+- [0.7.0 후보 버전 개요](00_通用AI影像制作Skills_总览.ko-KR.md)
+- [한국어 상세 사용 설명](skills/ai-creative-workflow-router/references/user-guide.ko-KR.md)
+- [초보자 협업 프로토콜](shared/novice-guidance-protocol.ko-KR.md)
+- [공통 상태 및 권한 프로토콜](shared/common-contract.ko-KR.md)
+- [0.5.0 검증 보고서](03_0.5.0_新手引导与阶段落盘验证报告.ko-KR.md)
+- [0.5.1 한국어 강화 테스트 보고서](evals/korean-validation-0.5.1.ko-KR.md)
+- [0.6.0 창작 협업 강화 및 검증 보고서](evals/validation-0.6.0.ko-KR.md)
+- [0.7.0 변경 및 검증 보고서](evals/validation-0.7.0.ko-KR.md)
 
 ## 검증 범위
 
-이 플러그인은 창작 협업과 텍스트 결과를 제공하며 이미지·영상 생성 서비스는 포함하지 않습니다. 프롬프트 완성은 업로드·생성·검토 완료가 아니며 작품 품질이나 인물 일관성을 보장하지 않습니다. 길이, 자료 수, 음성 및 립싱크 기능은 실제 모델과 플랫폼에서 확인해야 합니다.
+0.6.0은 기존 구조화 워크플로와 한국어 지원에 시나리오 이론 선택, 장르 관습, 시나리오에서 스토리보드로 이어지는 근거 사슬, Seedance / Jimeng용 복사 가능 산출물 구조를 추가했습니다. 그러나 모든 모델, 플랫폼 진입점, 랜덤 시드, 예술 스타일, 실제 사용자 경로가 검증되었다는 뜻은 아닙니다. 플랫폼 기능은 바뀔 수 있으므로 모델 길이, 소재 수, 음향 또는 편집 기능에 관한 판단에는 출처, 모델, 진입점, 확인 날짜를 기록해야 합니다.

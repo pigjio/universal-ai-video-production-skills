@@ -1,0 +1,20 @@
+{
+  "skills": 10,
+  "references": 78,
+  "schema_records_checked": 34,
+  "errors": [],
+  "warnings": [
+    "skills/ai-character-design/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-creative-workflow-router/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-creative-workflow-router/references/user-guide.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-generation-review/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-prompt-execution-contract/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-scene-design/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-screenplay-development/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-storyboard-design/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-video-production-classroom/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-visual-ideation/SKILL.md: bare filename requires scope review: 角色设定_角色名.md",
+    "skills/ai-worldbuilding/SKILL.md: bare filename requires scope review: 角色设定_角色名.md"
+  ],
+  "scope": "static recursive resources + schema only"
+}

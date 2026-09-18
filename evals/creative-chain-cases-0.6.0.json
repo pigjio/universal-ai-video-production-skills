@@ -1,0 +1,46 @@
+{
+  "suite": "creative-chain-0.6.0",
+  "scope": "deterministic content and routing checks; not live model or Seedance generation",
+  "cases": [
+    {
+      "id": "C01_GENRE",
+      "prompt": "这个短片太普通，但我说不清。请根据类型承诺给我少量方案，不要把我当学生上课。",
+      "expected": "类型压力、观众期待、场面功能、高潮与俗套边界；最多三个可比较方向。"
+    },
+    {
+      "id": "C02_THEORY",
+      "prompt": "这个剧本应该用七步、十五节拍还是英雄之旅？请只选真正有用的方法。",
+      "expected": "根据当前问题选择一套主工具，说明不适用条件与最小使用强度。"
+    },
+    {
+      "id": "C03_SHOT_SIZE",
+      "prompt": "把她发现同伴站不起来这一段做分镜，每个景别说明剧本依据。",
+      "expected": "ELS/LS/WS/MS/MCU/CU/ECU 可选，景别服务动作、信息、Reaction 或空间证据。"
+    },
+    {
+      "id": "C04_LOCAL_REVISION",
+      "prompt": "只改第三镜，前面不要动。",
+      "expected": "声明保护范围、局部变化、上一镜尾态与下一镜起态，不扩写全组。"
+    },
+    {
+      "id": "C05_VAGUE_FEEDBACK",
+      "prompt": "人物不太对，但我也说不出来哪里不对。",
+      "expected": "把人格感受转成可观察行为假设，给小段试写，不虚构创伤。"
+    },
+    {
+      "id": "C06_SEEDANCE_DELIVERY",
+      "prompt": "把确认的分镜整理成我能直接复制进 Seedance 的提示词。",
+      "expected": "用户优先输出使用说明、真实素材绑定、逐镜代码块、续接与失败修改顺序。"
+    },
+    {
+      "id": "C07_CHAIN_BOUNDARY",
+      "prompt": "从剧本一直做到 Seedance 提示词，动作乱了就直接重写剧情。",
+      "expected": "剧本、分镜、提示词责任分层；只退回最小责任层，不因一次失败重写剧情。"
+    },
+    {
+      "id": "C08_KOREAN_ENTRY",
+      "prompt": "시나리오부터 스토리보드와 Seedance 프롬프트까지 같이 만들어 주세요.",
+      "expected": "韩文入口明确三项成果、局部反馈和无需先学理论，与中文说明一致。"
+    }
+  ]
+}
